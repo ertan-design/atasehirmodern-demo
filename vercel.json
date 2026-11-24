@@ -31,5 +31,15 @@
       "destination": "/",
       "source": "/atasehir-kent-pilot"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/gaia-ucus",
+      "destination": "/gaia-ucus/index.html"
+    },
+    {
+      "source": "/gaia-ucus/",
+      "destination": "/gaia-ucus/index.html"
+    }
   ]
 }

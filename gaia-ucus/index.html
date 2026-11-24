@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ataşehir Modern’den Watergarden, Finanskent ve Maltepe’ye üç kurgusal uçuş. Moda, sanat ve şehir yaşamı için gerçek girişler.">
+<title>Başka İstanbul Yok · Üç blok, üç rota</title>
+<link rel="stylesheet" href="/gaia-ucus/sahne.css">
+<script src="/gaia-ucus/sahne.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#ana">İçeriğe geç</a>
+<header class="mast">
+  <a class="brand" href="#ana">Başka İstanbul Yok</a>
+  <nav aria-label="Ana menü"><a href="#rotalar">Uçuş</a><a href="#yasam">Yaşam</a><a href="#doku">Doku</a></nav>
+</header>
+<main id="ana">
+<section class="intro" aria-labelledby="baslik">
+  <div><p class="eyebrow">ATAŞEHİR MODERN / İSTANBUL</p><h1 id="baslik">Eve geldin.<br><em>Şehre açıl.</em></h1></div>
+  <p class="lead">İlk günün. GAIA’yı üç çatıdan birine al, şehrin neresine açılacağını seç.</p>
+</section>
+<section id="rotalar" aria-labelledby="rota-baslik">
+  <h2 id="rota-baslik" class="sr">Sanal uçuşu seç</h2>
+  <div class="flight">
+    <div class="stage">
+      <canvas id="sahne" width="1200" height="620" aria-label="GAIA ile İstanbul’un temsili üç boyutlu uçuş sahnesi"></canvas>
+      <div class="hud"><span id="hud-clock">HAZIR</span><span>GAIA / İSTANBUL</span></div>
+      <div class="arrival" id="arrival" hidden><p class="eyebrow" id="arrival-block"></p><strong id="arrival-name"></strong></div>
+    </div>
+    <div class="route-list" role="group" aria-label="Başlangıç blokları">
+      <button type="button" class="route" data-route="a" aria-pressed="true"><span>Blok A · Moda ve kent</span><strong>Watergarden</strong></button>
+      <button type="button" class="route" data-route="b" aria-pressed="false"><span>Blok B · İş ve teknoloji</span><strong>Finanskent</strong></button>
+      <button type="button" class="route" data-route="c" aria-pressed="false"><span>Blok C · Kültür ve açık hava</span><strong>Maltepe Sahili</strong></button>
+    </div>
+    <div class="flight-info">
+      <div><h3 id="rota-adi">Watergarden İstanbul</h3><p id="rota-adres">Barbaros Mahallesi, Kızılbegonya Sokak 10/1, Ataşehir.</p><a id="rota-kaynak" href="https://watergarden.com.tr/iletisim">Adres ve ulaşım kaynağı ↗</a> · <a id="rota-devam" href="https://watergarden.com.tr/">Watergarden’ı keşfet ↗</a></div>
+      <div class="flight-actions"><button class="action" id="uc" type="button">GAIA ile uç</button><button class="outline" id="direkt" type="button">Doğrudan varışa geç</button></div>
+    </div>
+    <p id="ucus-durum" class="status" role="status">Blok A seçili. Görsel rota temsili.</p>
+  </div>
+</section>
+<section id="yasam" class="sheet" aria-labelledby="yasam-baslik">
+  <div class="section-head"><p class="eyebrow">TAŞINDIKTAN SONRA</p><h2 id="yasam-baslik">Bir ilk gün listesi.</h2></div>
+  <div class="doors">
+    <article><h3>Çevreyi tanı</h3><p>Adres, yaya bağlantısı ve mahallede ilk duraklar.</p><a href="https://www.xn--ataehirmodern-ktc.com/">Ataşehir Pilot’u aç ↗</a></article>
+    <article><h3>Evi çalışır hâle getir</h3><p>İnternet, modem, cihazlar ve ortak alan. Evdeki ilk kurulum için bir kontrol listesi.</p><a href="https://www.xn--modernataehir-qtc.com/">Bina sahnesini aç ↗</a><details><summary>Kurulum listesi</summary><label><input type="checkbox" data-check="internet"> İnternet altyapısını sor</label><label><input type="checkbox" data-check="elektrik"> Elektrik ve sayaç bilgisini öğren</label><label><input type="checkbox" data-check="modem"> Modem için priz ve konum seç</label></details></article>
+    <article><h3>Terziyle görüş</h3><p>Dila’yla kumaş ve renk provası. Canlı terzi müsaitliği doğrulanmadı.</p><a href="https://www.afair.studio/dila-prova">Dila provasını aç ↗</a><button class="text-btn" type="button" data-book="terzi">Terzi için talep hazırla</button></article>
+    <article><h3>Sanatla tanış</h3><p>Üretken sergi, kumaş çalışmaları ve Dila filmleri.</p><a href="https://www.afair.studio/">AFAIR Studio’yu aç ↗</a><a href="https://kultur.istanbul/etkinlikler/">İstanbul etkinlik takvimi ↗</a></article>
+    <article><h3>Balkon ve bahçeyi kur</h3><p>Işık, su ve toprak bilgisiyle danışman görüşmesine hazırlan. Canlı danışman takvimi doğrulanmadı.</p><a href="https://www.tarim.online/">Tarım Online’ı aç ↗</a><button class="text-btn" type="button" data-book="tarim">Danışman için talep hazırla</button></article>
+    <article><h3>Podyuma çık</h3><p>Kumaşı iki ışık altında gör, sonra filmi aç.</p><a href="https://www.afair.live/">AFAIR Live’ı aç ↗</a><a href="https://www.afair.live/#filmler">Dila filmlerini izle ↗</a></article>
+  </div>
+  <p class="location">Başlangıç adresi <strong>Gülnihal Sokak, Ataşehir Modern Sitesi, Atatürk Mahallesi, Ataşehir.</strong> <a href="https://atasehirmodern.com/iletisim">Projenin iletişim kaydı ↗</a></p>
+  <div id="talep" class="appointment" aria-labelledby="talep-baslik" hidden>
+    <h3 id="talep-baslik" tabindex="-1">Görüşme taslağı</h3>
+    <p>Tarih seçtiğinde bir talep taslağı ve kişisel takvim hatırlatıcısı hazırlanır. Hizmet sağlayıcıdan onay alınır.</p>
+    <div class="form-row">
+       <label>Tarih <input type="date" id="talep-tarih"></label>
+       <label>Saat <input type="time" id="talep-saat" value="14:00"></label>
+       <label>Konu <select id="talep-konu"></select></label>
+       <button type="button" class="action" id="hazirla">Taslağı hazırla</button>
+    </div>
+    <label class="draft" id="taslak-panel" hidden>Talep metni <textarea id="taslak" rows="4" readonly></textarea></label>
+    <div class="flight-actions" id="taslak-eylemler" hidden><button type="button" class="outline" id="kopyala">Metni kopyala</button><button type="button" class="outline" id="takvim">Takvim hatırlatıcısını indir</button></div>
+    <p class="status" id="talep-durum" role="status"></p>
+  </div>
+</section>
+<section id="doku" class="sheet" aria-labelledby="doku-baslik">
+  <div class="section-head"><p class="eyebrow">AFAIR / NUMUNE MASASI</p><h2 id="doku-baslik">Rengi ipliğinden ayır.</h2><p>Ekran rengi, gerçek lif ve fiziksel Pantone TCX kartı üç ayrı kayıt.</p></div>
+  <div class="samples">
+    <figure><img src="/gaia-ucus/tartan.webp" alt="Çapraz sıraları belirgin, renkli dimi dokuma kumaşın yakın çekimi" width="960" height="830" loading="lazy"><figcaption><strong>Dimi dokuma</strong><span>SMcCandlish · <a href="https://commons.wikimedia.org/wiki/File:Tartan_cloth_closeup.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> · küçültüldü</span></figcaption></figure>
+    <figure><img src="/gaia-ucus/denim.jpg" alt="Mikroskop altında görülen kot lifleri" width="640" height="480" loading="lazy"><figcaption><strong>Kot lifleri</strong><span>Rickfrombaltimore · <a href="https://commons.wikimedia.org/wiki/File:Denim_Fibers.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · küçültüldü</span></figcaption></figure>
+  </div>
+  <div class="sample-card"><h3>Kendi fiziksel numuneni kaydet</h3>
+    <div class="form-row">
+      <label>Lif <select id="lif"><option>Pamuk</option><option>Keten</option><option>İpek</option><option>Yün</option><option>Karışım</option></select></label>
+      <label>Dokuma <select id="orgu"><option>Bezayağı</option><option>Dimi</option><option>Saten</option><option>Diğer</option></select></label>
+      <label>Ekran önizlemesi <input type="color" id="renk" value="#b67b5c"></label>
+      <label>Fiziksel TCX <input id="tcx" placeholder="Örn. 15-1247 TCX" maxlength="16"></label>
+      <button type="button" class="action" id="numune-kaydet">Numuneyi kaydet</button>
+    </div>
+    <p class="status" id="numune-durum" role="status">Numune tarayıcıda saklanır.</p>
+    <p><a href="https://www.pantone.com/na/en-us/fashion-home-interiors">Pantone tekstil kartı kılavuzu ↗</a></p>
+  </div>
+</section>
+</main>
+<footer>Başka İstanbul Yok <span>Uçuş sahnesi özgün bir görsel anlatımdır. Adresler kaynaklarından açılır.</span></footer>
+</body>
+</html>
