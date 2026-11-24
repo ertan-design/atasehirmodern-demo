@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Başka İstanbul Yok</title>
+<meta name="description" content="Ataşehir'in üst halkası: üç bloğun çatısından üç uçuş, gerçek iplik ve dokumayla çizilmiş bir şehir. Harita altlığı yok.">
+<link rel="stylesheet" href="bi.css">
+<script type="module" src="bi.js"></script>
+</head>
+<body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<header class="ust">
+  <a class="logo" href="#kasnak">Başka İstanbul Yok</a>
+  <nav aria-label="Bölümler"><a href="#ucus">Uçuş</a><a href="#misafir">Misafir masası</a><a href="#iplik">İplik</a><a href="#ilke">İlke</a></nav>
+  <button id="hareket" class="dugme ince" type="button" aria-pressed="true">Hareket: açık</button>
+</header>
+
+<main id="icerik">
+<section id="kasnak" class="kasnak" aria-labelledby="kasnak-b">
+  <canvas id="dokuma" aria-hidden="true"></canvas>
+  <div class="kasnak-ic">
+    <p class="ust-yazi">ATAŞEHİR'İN ÜST HALKASI</p>
+    <h1 id="kasnak-b">Başka İstanbul yok.</h1>
+    <p class="giris">Binaya yeni taşınan misafir kapıdan girdiği gün modayla, sanatla, elektronikle ve topraktan gelen her şeyle tanışır. Şehri burada harita gibi değil, kumaş gibi görürsün: her yol bir iplik, her durak bir ilmek.</p>
+    <p class="kucuk" id="dokuma-bilgi" aria-live="polite">Dokuma hazırlanıyor…</p>
+  </div>
+</section>
+
+<section id="ucus" class="bolum" aria-labelledby="ucus-b">
+  <p class="ust-yazi">ÜÇ ÇATI · ÜÇ YÖN</p>
+  <h2 id="ucus-b">Çatıdan atla, ipliği takip et.</h2>
+  <p class="aciklama">Ataşehir Modern'in üç bloğunun çatısından üç uçuş çıkar ve halkalardan geçerek kendi durağına ilmeklenir. Konumlar sokak düzeyinde değil; yön ve uzaklık koordinattan hesaplandı. Kasnakta yön gerçek, uzaklık sıkıştırılmış ölçekte; yazan kilometre gerçek değerdir.</p>
+  <div class="blok-sec" role="radiogroup" aria-label="Blok seç">
+    <button type="button" role="radio" aria-checked="true" data-blok="0" class="dugme">A Blok → Watergarden</button>
+    <button type="button" role="radio" aria-checked="false" data-blok="1" class="dugme bos">B Blok → Finanskent</button>
+    <button type="button" role="radio" aria-checked="false" data-blok="2" class="dugme bos">C Blok → Maltepe sahil</button>
+  </div>
+  <div class="ucus-kutu">
+    <canvas id="ucus-tuval" width="1200" height="800" role="img" aria-label="Kasnak içinde üç bloktan üç durağa uçuş yolları; seçili uçuş halkalardan geçen bir iplikle çizilir."></canvas>
+  </div>
+  <div id="ucus-kart" class="kart ucus-kart" aria-live="polite"></div>
+</section>
+
+<section id="misafir" class="bolum" aria-labelledby="misafir-b">
+  <p class="ust-yazi">YENİ TAŞINAN MİSAFİR</p>
+  <h2 id="misafir-b">Bugün neye ihtiyacın var?</h2>
+  <p class="aciklama">Dört kapı, tek masa. Seçtiğin saat için randevu talebi hazırlanır ve takvimine eklenebilir bir dosya olarak iner. Bu sayfa canlı müsaitlik bilgisi tutmaz; talep, ilgili kapının ekibine senin elinle gider.</p>
+  <div class="kapilar" id="kapilar"></div>
+  <form id="randevu" class="kart randevu" novalidate>
+    <fieldset><legend id="randevu-baslik">Kapı seç</legend>
+      <label>Adın <input name="ad" maxlength="60" autocomplete="name" required></label>
+      <label>İhtiyaç <select name="ihtiyac" required></select></label>
+      <div class="ikili">
+        <label>Gün <input name="gun" type="date" required></label>
+        <label>Saat <select name="saat" required></select></label>
+      </div>
+      <label>Not <textarea name="not" rows="2" maxlength="600" placeholder="Ölçü, ürün, parsel ya da soru"></textarea></label>
+    </fieldset>
+    <div class="satir"><button class="dugme" type="submit">Talep hazırla</button><button class="dugme bos" type="button" id="ics-indir" disabled>Takvime ekle (.ics)</button></div>
+    <p id="randevu-durum" class="kucuk" role="status"></p>
+  </form>
+</section>
+
+<section id="iplik" class="bolum" aria-labelledby="iplik-b">
+  <p class="ust-yazi">RENK DEĞİL İPLİK</p>
+  <h2 id="iplik-b">Her yolun lifi, numarası ve boyası var.</h2>
+  <p class="aciklama">Düz renk kartı yerine iplik kartı: lif, iplik numarası, büküm, örgü ve boyanın kaynağı. Tarlada parseli nasıl ölçüyorsak kumaşta ipliği öyle ölçeriz.</p>
+  <div id="iplik-kart" class="iplikler"></div>
+</section>
+
+<section id="ilke" class="bolum" aria-labelledby="ilke-b">
+  <p class="ust-yazi">İLKE</p>
+  <h2 id="ilke-b">Bu sayfada ne yok?</h2>
+  <ul class="ilke">
+    <li>Harita altlığı, uydu görüntüsü, sokak görüntüsü, iğne işareti ve yakınlaştırma karosu yok. Şehir dokumayla çiziliyor.</li>
+    <li>Blok konumları temsili; durakların koordinatları yaklaşık. Maltepe Miting Alanı 40,9249 K · 29,1206 D yayımlanmış değerdir.</li>
+    <li>Randevu canlı bir sisteme bağlı değil; talep dosyası tarayıcıda hazırlanır, hiçbir yere gönderilmez.</li>
+    <li>Renkler boya adlarıyla tanımlı; ekran rengi kumaşın kendisi değil, ona en yakın tahmindir.</li>
+  </ul>
+</section>
+</main>
+<footer class="alt"><p class="kucuk">Başka İstanbul Yok · Ataşehir'in üst halkası. <a href="https://www.xn--ataehirmodern-ktc.com/">ataşehirmodern.com</a> · <a href="https://www.afair.live/">afair.live</a> · <a href="https://www.selinahbap.com/terazi">selinahbap.com/terazi</a></p></footer>
+</body>
+</html>
