@@ -1,0 +1,181 @@
+{
+  "schema": "ucyon.release.v1",
+  "date_local": "2026-11-25",
+  "timezone": "Europe/Istanbul",
+  "sites": [
+    {
+      "url": "https://www.xn--ataehirmodern-ktc.com/",
+      "repo": "atasehirmodern-demo",
+      "role": "Özgün üç yönlü şehir sahnesi",
+      "commit": "4724e6bd1af3d79547542d0e7d7f0fd85d9757a6",
+      "vercel_status": "success"
+    },
+    {
+      "url": "https://www.xn--modernataehir-qtc.com/",
+      "repo": "modernatasehir",
+      "role": "Bina ve yeni yaşam girişi",
+      "commit": "67e6e3ee7a3ed5c37bc1f5df27672afffa9c797c",
+      "vercel_status": "success"
+    },
+    {
+      "url": "https://www.afair.studio/",
+      "repo": "afair-studio",
+      "role": "Lif/dokuma/ışık karşılaştırma atölyesi",
+      "commit": "df8acc9355aa46e52403a4700be2b8044c8baf15",
+      "vercel_status": "success"
+    },
+    {
+      "url": "https://www.afair.live/",
+      "repo": "afair-live",
+      "role": "Terzi, tarım, sanat ve teknoloji talep masası",
+      "commit": "12dd9427fa34cdd59dad10c5d7b0f248c2410e8b",
+      "vercel_status": "success"
+    }
+  ],
+  "upper_ring": {
+    "local": "C:\\www\\baskaistanbulyok.com\\yasam-halkasi",
+    "live": "https://www.xn--ataehirmodern-ktc.com/uc-yon/istanbul",
+    "domain_status": "baskaistanbulyok.com production target unverified; new content not claimed on that domain."
+  },
+  "agents": {
+    "actual_subtasks": 3,
+    "implementation": 2,
+    "research": 1
+  },
+  "checks": {
+    "javascript_syntax": "passed",
+    "webgl_scene": "rendered in browser; no console errors",
+    "routes": "three selection states and manual flight progress verified; animated progress observed",
+    "reference_video": {
+      "duration_seconds": 20.110331,
+      "width": 1280,
+      "height": 704
+    },
+    "material_controls": "silk + warm light updated Canvas aria description; no console errors",
+    "service_deep_link": "tarim query corrected; root draft verified as agriculture request",
+    "booking": "local draft only, not sent, no availability confirmed",
+    "responsive": "Studio tested at 390px without horizontal overflow; multi-window viewport tool did not apply requested 5120px to target city tab, so 5120px pass is not claimed.",
+    "minimum_body_font": "48px observed"
+  },
+  "paid_generation_this_turn": 0,
+  "remaining": [
+    "Service-provider calendars, accepted contact channel and real booking backend are not connected.",
+    "Real supplier swatches, yarn count, grammage, lot, spectral/Pantone reference and measurements are not supplied.",
+    "Three towers and route curves are schematic; not an as-built or georeferenced project reconstruction.",
+    "baskaistanbulyok.com current production project/root/domain binding needs verification."
+  ],
+  "collaboration": "Other GPT sessions also edit live navigation. Fast-forward checks preserved concurrent work; one rejected push was retried against the new head.",
+  "source_method": "No Google map/earth tiles, street panorama or geographic route calculations. Pure local WebGL geometry and Bezier scene motion.",
+  "publication_files": [
+    {
+      "path": "C:\\www\\atasehirmodern.com\\index.html",
+      "bytes": 5369,
+      "sha256": "d7c313c1963048e049f6fd7b082ed1df3b1e80035f420a8ebd685a5c91ec8e64"
+    },
+    {
+      "path": "C:\\www\\atasehirmodern.com\\uc-yon\\index.html",
+      "bytes": 5137,
+      "sha256": "088bc1cb177a562af87d12342a1fcbbf40b612d0d8b6340f7d3ec97995ba116f"
+    },
+    {
+      "path": "C:\\www\\atasehirmodern.com\\uc-yon\\ucyon.css",
+      "bytes": 3686,
+      "sha256": "849a2e8662047c3d2e02978b1aa206e1b86071bb413e45bab22cbdfeaa2f77fe"
+    },
+    {
+      "path": "C:\\www\\atasehirmodern.com\\uc-yon\\ucyon.js",
+      "bytes": 11049,
+      "sha256": "8a99ec702ea216ba563fe63753205c68833d1ec82c568eacef60ba6aa4f358db"
+    },
+    {
+      "path": "C:\\www\\atasehirmodern.com\\uc-yon\\istanbul.html",
+      "bytes": 2012,
+      "sha256": "2c4d4ec6315b768406a4eba4a69adb5a78543da3d1a900608452de97498b368c"
+    },
+    {
+      "path": "C:\\www\\atasehirmodern.com\\uc-yon\\kaynaklar.json",
+      "bytes": 1139,
+      "sha256": "5afeb396033f52182ca0229f3f93a366312b8f579c0a68da0739863bcc40883a"
+    },
+    {
+      "path": "C:\\www\\atasehirmodern.com\\uc-yon\\referans-ucus.mp4",
+      "bytes": 14011798,
+      "sha256": "6af87abb2a4cbca58b1056eb9c59100beaf3fea8a516fa145d3fc71865545f4a"
+    },
+    {
+      "path": "C:\\www\\modernatasehir.com\\index.html",
+      "bytes": 5449,
+      "sha256": "af93af7e2a3099cffb838be5e569476eaac72d390c50103d1943fd0f72ba6ce6"
+    },
+    {
+      "path": "C:\\www\\modernatasehir.com\\uc-yon\\index.html",
+      "bytes": 5174,
+      "sha256": "a01f4eeb8460bcc259fc886e7607f4eac2b2bcef70f609e21db641611cce0910"
+    },
+    {
+      "path": "C:\\www\\modernatasehir.com\\uc-yon\\ucyon.css",
+      "bytes": 3686,
+      "sha256": "849a2e8662047c3d2e02978b1aa206e1b86071bb413e45bab22cbdfeaa2f77fe"
+    },
+    {
+      "path": "C:\\www\\modernatasehir.com\\uc-yon\\ucyon.js",
+      "bytes": 11049,
+      "sha256": "8a99ec702ea216ba563fe63753205c68833d1ec82c568eacef60ba6aa4f358db"
+    },
+    {
+      "path": "C:\\www\\modernatasehir.com\\uc-yon\\istanbul.html",
+      "bytes": 2012,
+      "sha256": "2c4d4ec6315b768406a4eba4a69adb5a78543da3d1a900608452de97498b368c"
+    },
+    {
+      "path": "C:\\www\\modernatasehir.com\\uc-yon\\kaynaklar.json",
+      "bytes": 1139,
+      "sha256": "5afeb396033f52182ca0229f3f93a366312b8f579c0a68da0739863bcc40883a"
+    },
+    {
+      "path": "C:\\www\\modernatasehir.com\\uc-yon\\referans-ucus.mp4",
+      "bytes": 14011798,
+      "sha256": "6af87abb2a4cbca58b1056eb9c59100beaf3fea8a516fa145d3fc71865545f4a"
+    },
+    {
+      "path": "C:\\www\\afair.studio\\index.html",
+      "bytes": 7688,
+      "sha256": "722656c9e5ecd95042b7a933969683eee619c31af8073743e8ce943ffa737d4f"
+    },
+    {
+      "path": "C:\\www\\afair.studio\\lif-atolyesi\\index.html",
+      "bytes": 7499,
+      "sha256": "42b2b20a302ae18646470b280beb8e5b1c244328b248fe798136ee49d0f80fdf"
+    },
+    {
+      "path": "C:\\www\\afair.studio\\lif-atolyesi\\lif.css",
+      "bytes": 4701,
+      "sha256": "ffd0283c304d0f735180d887f7da53b7364169945d6f40e426bc106bc4df5126"
+    },
+    {
+      "path": "C:\\www\\afair.studio\\lif-atolyesi\\lif.js",
+      "bytes": 6904,
+      "sha256": "1f5aa22cc8c0e3817c16770cafbbb7e2ec88d709c3020a6e6d1153e2619a9a8a"
+    },
+    {
+      "path": "C:\\www\\afair.live\\index.html",
+      "bytes": 5802,
+      "sha256": "e09d769f2d4cc25aed0267680ef3f0c3cff0a035ffbb991b5e52b3ad274f5208"
+    },
+    {
+      "path": "C:\\www\\afair.live\\yasam-destegi\\index.html",
+      "bytes": 5532,
+      "sha256": "15c52c3407b4e377ee2cdb14517f10fc614de665d79992ae3e2b994f41ca9220"
+    },
+    {
+      "path": "C:\\www\\afair.live\\yasam-destegi\\yasam.css",
+      "bytes": 3459,
+      "sha256": "99de0c00fedfec563054e75194abfde3658b080a6e91ae649dbf1a7069d7ddb2"
+    },
+    {
+      "path": "C:\\www\\afair.live\\yasam-destegi\\yasam.js",
+      "bytes": 7895,
+      "sha256": "2316c789bebe36772e2fb5944aa4b92453922fc6245739fbd10486411c0a7e6d"
+    }
+  ]
+}
