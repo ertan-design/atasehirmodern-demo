@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#05070b">
+<meta name="description" content="Ataşehir AIOS şehir pilotu: mahalleyi üç boyutta gez, ihtiyaç ve iyileştirme önerini hazırla.">
+<title>ATAŞEHİR / PİLOT · 3B şehir</title>
+<link rel="stylesheet" href="/ana.css">
+<script src="/ana.js" defer></script>
+<script src="/sehir3d.js" defer></script>
+<script src="/site.js" defer></script>
+</head>
+<body>
+<a class="atla" href="#ana">İçeriğe geç</a>
+<header class="ust">
+  <p class="marka">ATAŞEHİR <span>/</span> PİLOT</p>
+  <nav aria-label="Ana gezinme">
+    <a href="#katmanlar">Katmanlar</a>
+    <a href="#oneri">Öneri hazırla</a>
+    <a class="dar" href="https://www.xn--modernataehir-qtc.com/">Modern Ataşehir ↗</a>
+  </nav>
+</header>
+
+<main id="ana">
+  <section class="sahne" aria-label="Ataşehir üç boyutlu şehir modeli">
+    <canvas id="sahne3d" data-sehir3d="sehir" tabindex="0" aria-label="3B şehir modeli. Sürükleyerek döndür, tekerlekle yakınlaştır, ok tuşlarıyla gez."></canvas>
+    <div class="giris">
+      <p class="ust-not">AIOS 3B şehir pilotu · ilk sürüm 24 Kasım 2026</p>
+      <h1>Mahalleden şehre. <em>Üç boyutta.</em></h1>
+      <p>Ataşehir'i ada ada, sokak sokak gez. Altın kuleler Modern Ataşehir'in üç bloğu; dokunarak seç, içine girmek için bina alanına geç.</p>
+      <div class="dugmeler">
+        <button type="button" class="dugme ana" id="vr-gir" hidden>VR'da gez</button>
+        <a class="dugme" href="#oneri">Pilot önerisi hazırla</a>
+        <a class="dugme" href="https://www.xn--modernataehir-qtc.com/">Bina hizmetleri ↗</a>
+      </div>
+    </div>
+    <aside class="kart" id="secim" hidden aria-live="polite">
+      <p class="k-ust">Seçili</p><h2></h2><p></p>
+    </aside>
+    <p class="ipucu" id="ipucu">Sürükle: döndür · Tekerlek ya da iki parmak: yakınlaştır · Altın kuleye dokun: seç</p>
+  </section>
+
+  <dl class="olcu">
+    <div><dt>Sahnedeki yapı</dt><dd data-olcu="kutu">— <small>kutu, tek çizim çağrısı</small></dd></div>
+    <div><dt>Seçilebilir kule</dt><dd data-olcu="secilebilir">— <small>Modern Ataşehir</small></dd></div>
+    <div><dt>Kütüphane</dt><dd>0 <small>saf WebGL2</small></dd></div>
+    <div><dt>Ağ isteği</dt><dd>0 <small>model tarayıcıda üretilir</small></dd></div>
+  </dl>
+
+  <section class="bolum" id="katmanlar" aria-labelledby="katman-baslik">
+    <h2 id="katman-baslik">Şehir dört katmanda okunur</h2>
+    <p>Pilot, mahalleyi bir harita değil, gezilen bir model olarak ele alır. Bugünkü model temsilidir: ada dokusu ve yükseklikler gerçek ölçüm değil, katmanların nasıl birleşeceğini gösterir.</p>
+    <div class="katman">
+      <article><b>01 · MEKÂN</b><h3>Ada ve sokak dokusu</h3><p>Her ada bir kutu, her sokak ışık çizgisi. Doğrulanmış harita geldiğinde aynı motor gerçek ölçüyle çizer.</p></article>
+      <article><b>02 · BİNA</b><h3>Kule ve daire</h3><p>Altın kuleler Modern Ataşehir. Bina alanında her daire ayrı seçilebilir bir birim.</p></article>
+      <article><b>03 · İHTİYAÇ</b><h3>Yaya, ortak alan, hizmet</h3><p>Öneriler konu ve yerle birlikte hazırlanır. Bugün yalnız taslak olarak indirilir.</p></article>
+      <article><b>04 · DENEYİM</b><h3>Ekranda ya da VR'da</h3><p>Aynı model telefonda dokunarak, bilgisayarda fareyle, VR başlığında masa üstü maket olarak gezilir.</p></article>
+    </div>
+  </section>
+
+  <section class="bolum" id="oneri" aria-labelledby="oneri-baslik">
+    <h2 id="oneri-baslik">Pilot önerisi oluştur</h2>
+    <p>Doğrulanmış şehir haritası veya canlı belediye bağlantısı henüz yok. Buradan hazırlanan notlar resmî başvuru değildir; hesap, ödeme veya kişisel bilgi gerektirmez.</p>
+    <div class="form">
+      <label>Konu<select id="kind"><option>Yaya erişimi</option><option>Ortak alan</option><option>Mahalle hizmeti</option></select></label>
+      <label>Başlık<input id="title" maxlength="180" required></label>
+      <label>Notun<textarea id="note" maxlength="6000" placeholder="Kişisel bilgi eklemeden ihtiyacını anlat."></textarea></label>
+      <div class="satir"><button type="button" class="dugme ana" id="prepare">Taslağı hazırla</button><button type="button" class="dugme" id="download">TXT olarak indir</button></div>
+      <p id="status" role="status" aria-live="polite"></p>
+      <label>Hazırlanan taslak<textarea id="result" readonly></textarea></label>
+    </div>
+  </section>
+</main>
+
+<footer class="alt-bilgi">
+  <p>ATAŞEHİR / PİLOT · 3B model temsilidir; gerçek harita, ölçü veya kat sayısı değildir.</p>
+  <p>Hazırladığın not bu sayfadan sunucuya gönderilmez. Kapanmadan önce indir.</p>
+</footer>
+</body>
+</html>
