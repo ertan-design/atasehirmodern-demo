@@ -19,5 +19,12 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "destination": "/",
+      "permanent": false,
+      "source": "/atasehir-kent-pilot.html"
+    }
   ]
 }
