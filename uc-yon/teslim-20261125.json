@@ -56,7 +56,7 @@
     "booking": "local draft only, not sent, no availability confirmed",
     "responsive": "Studio tested at 390px without horizontal overflow; multi-window viewport tool did not apply requested 5120px to target city tab, so 5120px pass is not claimed.",
     "minimum_body_font": "48px observed",
-    "canvas_back_navigation_fix": "pageshow redraw and preserved framebuffer deployed; browser recheck follows."
+    "canvas_back_navigation_fix": "pageshow redraw and preserved framebuffer deployed; subsequent browser history return showed rendered scene without keyboard redraw; no console errors observed."
   },
   "paid_generation_this_turn": 0,
   "remaining": [
