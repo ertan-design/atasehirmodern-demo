@@ -7,14 +7,14 @@
       "url": "https://www.xn--ataehirmodern-ktc.com/",
       "repo": "atasehirmodern-demo",
       "role": "Özgün üç yönlü şehir sahnesi",
-      "commit": "4724e6bd1af3d79547542d0e7d7f0fd85d9757a6",
+      "commit": "74189e4397ff22b24707d70935608e4a556ae2aa",
       "vercel_status": "success"
     },
     {
       "url": "https://www.xn--modernataehir-qtc.com/",
       "repo": "modernatasehir",
       "role": "Bina ve yeni yaşam girişi",
-      "commit": "67e6e3ee7a3ed5c37bc1f5df27672afffa9c797c",
+      "commit": "480d770ce7c66a5eae44fd853b5d77d16d50b851",
       "vercel_status": "success"
     },
     {
@@ -55,7 +55,8 @@
     "service_deep_link": "tarim query corrected; root draft verified as agriculture request",
     "booking": "local draft only, not sent, no availability confirmed",
     "responsive": "Studio tested at 390px without horizontal overflow; multi-window viewport tool did not apply requested 5120px to target city tab, so 5120px pass is not claimed.",
-    "minimum_body_font": "48px observed"
+    "minimum_body_font": "48px observed",
+    "canvas_back_navigation_fix": "pageshow redraw and preserved framebuffer deployed; browser recheck follows."
   },
   "paid_generation_this_turn": 0,
   "remaining": [
@@ -84,8 +85,8 @@
     },
     {
       "path": "C:\\www\\atasehirmodern.com\\uc-yon\\ucyon.js",
-      "bytes": 11049,
-      "sha256": "8a99ec702ea216ba563fe63753205c68833d1ec82c568eacef60ba6aa4f358db"
+      "bytes": 11145,
+      "sha256": "dd9897c362854fe05ea71b390074e13606607bb2217f4199ffbeb35e288d334c"
     },
     {
       "path": "C:\\www\\atasehirmodern.com\\uc-yon\\istanbul.html",
@@ -119,8 +120,8 @@
     },
     {
       "path": "C:\\www\\modernatasehir.com\\uc-yon\\ucyon.js",
-      "bytes": 11049,
-      "sha256": "8a99ec702ea216ba563fe63753205c68833d1ec82c568eacef60ba6aa4f358db"
+      "bytes": 11145,
+      "sha256": "dd9897c362854fe05ea71b390074e13606607bb2217f4199ffbeb35e288d334c"
     },
     {
       "path": "C:\\www\\modernatasehir.com\\uc-yon\\istanbul.html",
