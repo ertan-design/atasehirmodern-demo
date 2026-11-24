@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101821">
+<meta name="description" content="Ataşehir’de yeni bir yaşam için üç özgün sanal rota ve dört hizmet kapısı.">
+<title>Üç Çatı · Ataşehir Yaşam Atlası</title><link rel="stylesheet" href="./rota.css"><script src="./rota.js" defer></script>
+</head><body>
+<a class="skip" href="#ana">İçeriğe geç</a>
+<header class="bar"><a class="brand" href="./"><span aria-hidden="true">✳</span> ATAŞEHİR <small>/ YAŞAM ATLASI</small></a>
+<nav aria-label="Ana menü"><a href="#hizmetler">Hizmetler</a><a href="./istanbul.html">İstanbul üst halkası ↗</a></nav></header>
+<main id="ana">
+<section class="hero" aria-labelledby="baslik">
+<div class="intro"><p class="mark">ATAŞEHİR MODERN / İSTANBUL</p><h1 id="baslik">Üç çatı.<br><em>Üç rota.</em></h1><p>Yeni taşındın. Bir çatı seç, GAIA ile şehre süzül ve mahallendeki ilk işini hallet.</p></div>
+<div class="scene-wrap">
+<div class="scene" id="scene">
+<canvas id="city" tabindex="0" aria-label="Temsili üç boyutlu şehir dokuması. Görüşü ok tuşlarıyla döndür."></canvas>
+<div class="scene-head"><span>ATAŞEHİR / DİJİTAL UÇUŞ</span><button class="icon-btn" id="reset" type="button">Görüşü sıfırla</button></div>
+<div class="tags" aria-hidden="true"><span id="tag-a">A</span><span id="tag-b">B</span><span id="tag-c">C</span></div>
+<p class="scene-state" id="flight-status" role="status">Bir çatı seç ve rotayı başlat.</p>
+</div>
+<div class="route-buttons" role="group" aria-label="Çatı rotaları">
+<button type="button" data-route="a" aria-pressed="true"><b>A</b><span>Watergarden<small>Moda ve sanat</small></span></button>
+<button type="button" data-route="b" aria-pressed="false"><b>B</b><span>Finanskent<small>Teknoloji ve fırsat</small></span></button>
+<button type="button" data-route="c" aria-pressed="false"><b>C</b><span>Maltepe sahili<small>Müzik ve açık hava</small></span></button>
+</div>
+</div>
+<aside class="route-panel" aria-labelledby="destination"><p class="mark" id="route-kicker">A ÇATISI / MODA VE SANAT</p><h2 id="destination">Watergarden İstanbul</h2><p id="route-address">Barbaros Mah., Kızılbegonya Sok. 10/1, Ataşehir.</p><p id="route-description">Günün rotasını tasarımla aç. Önce prova, ardından galeri.</p><div class="row"><button type="button" class="primary" id="fly">GAIA ile uç <span aria-hidden="true">↗</span></button><a id="destination-source" href="https://watergarden.com.tr/iletisim">Yer bilgisi ↗</a></div></aside>
+<div class="small-print">Temsili 3B sahne. Çatılar rota seçicisidir. Geometri, mesafeler ve uçuşlar gerçek yön tarifi vermez.</div>
+</section>
+<section class="services" id="hizmetler" aria-labelledby="services-title">
+<div class="section-title"><div><p class="mark">YENİ SAKİN REHBERİ</p><h2 id="services-title">İlk gün ne lazım?</h2></div><p>Bir hizmet seç. Hazır sayfayı aç veya görüşme talebini taslak olarak hazırla.</p></div>
+<div class="service-grid">
+<article><span class="mark">01 / MODA</span><h3>Terzi ve prova</h3><p>Ölçü, kumaş ve geceye uygun tasarım.</p><p class="availability">Canlı terzi takvimi bağlı değil.</p><div class="service-actions"><button type="button" data-service="terzi">Talep hazırla</button><a href="https://www.afair.studio/dila">AFAIR Studio ↗</a></div></article>
+<article><span class="mark">02 / SANAT</span><h3>Galeri ve podyum</h3><p>Dila’nın kısa filmleri ve sanal podyum.</p><div class="service-actions"><a href="https://www.afair.live/">AFAIR Live ↗</a><a href="https://www.afair.studio/dila-filmler/">Dila Filmleri ↗</a></div></article>
+<article><span class="mark">03 / TEKNOLOJİ</span><h3>Ev teknolojisi</h3><p>Taşınma, bağlantı ve elektronik ihtiyaçlarını tek notta topla.</p><div class="service-actions"><button type="button" data-service="teknoloji">Talep hazırla</button><a href="https://www.xn--modernataehir-qtc.com/">Modern Ataşehir ↗</a></div></article>
+<article><span class="mark">04 / TARIM</span><h3>Balkon ve bahçe</h3><p>Işık, sulama ve bitki tercihi için danışman görüşmesi.</p><p class="availability">Canlı danışman takvimi bağlı değil.</p><div class="service-actions"><button type="button" data-service="tarim">Talep hazırla</button><a href="https://tarim.online/">Tarım Online ↗</a></div></article>
+</div>
+<section id="request" class="request" hidden aria-labelledby="request-title">
+<div><p class="mark">GÖRÜŞME TASLAĞI</p><h3 id="request-title">Görüşme notu</h3><p>Taslak tarayıcıda hazırlanır. Sağlayıcıya gönderilmez ve randevu ayırmaz. Kişisel bilgi eklemeden içeriği kopyalayabilirsin.</p></div>
+<form id="draft-form"><label>Tercih edilen gün <input name="date" type="date"></label><label>Tercih edilen saat <input name="time" type="time"></label><label class="wide">Kısa ihtiyaç notu <textarea name="note" maxlength="450" rows="3" placeholder="Örneğin balkonum öğleden sonra güneş alıyor."></textarea></label><div class="row wide"><button class="primary" type="submit">Taslağı oluştur</button><button type="button" id="copy-draft" hidden>Kopyala</button><a id="service-link" href="https://www.afair.studio/dila">Hizmet sayfası ↗</a></div><p id="draft-status" class="wide" role="status"></p><textarea id="draft-output" class="wide" readonly aria-label="Hazırlanan taslak" rows="5" hidden></textarea></form>
+</section>
+</section>
+<footer><span>ATAŞEHİR YAŞAM ATLASI</span><a href="https://atasehirmodern.com/iletisim">Proje iletişimi · Atatürk Mah., Gülnihal Sok. ↗</a><a href="./istanbul.html">Başka İstanbul Yok ↗</a></footer>
+</main></body></html>
