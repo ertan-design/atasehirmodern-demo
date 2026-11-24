@@ -1,1 +1,51 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="AIOS şehir pilotu için mekân, ihtiyaç ve iyileştirme önerilerini düzenleyen başlangıç alanı."><title>ATAŞEHİR / PİLOT</title><link rel="stylesheet" href="site.css"></head><body><header><strong>ATAŞEHİR / PİLOT</strong><a href="https://www.xn--modernataehir-qtc.com/">Bina hizmetleri alanı ↗</a></header><main><p>İLK SÜRÜM · 24 KASIM 2026</p><h1>Mahalleden şehre.</h1><p>AIOS şehir pilotu için mekân, ihtiyaç ve iyileştirme önerilerini düzenleyen başlangıç alanı.</p><div class="grid"><article><h2>Pilot kapsamı</h2><p>Doğrulanmış şehir haritası veya canlı belediye bağlantısı henüz yok. Buradan hazırlanan notlar resmî başvuru değildir.</p><p>Hesap, ödeme veya kişisel bilgi gerektirmez.</p></article><article><h2>Pilot önerisi oluştur</h2><label>Konu<select id="kind"><option>Yaya erişimi</option><option>Ortak alan</option><option>Mahalle hizmeti</option></select></label><label>Başlık<input id="title" maxlength="180" required></label><label>Notun<textarea id="note" maxlength="6000" placeholder="Kişisel bilgi eklemeden ihtiyacını anlat."></textarea></label><button id="prepare">Taslağı hazırla</button><p id="status" role="status" aria-live="polite"></p><textarea id="result" readonly aria-label="Hazırlanan taslak"></textarea><button id="download">TXT olarak indir</button></article></div></main><footer><p>ATAŞEHİR / PİLOT · Hazırladığın not bu sayfadan sunucuya gönderilmez. Kapanmadan önce indir.</p></footer><script src="site.js" defer></script></body></html>
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATAŞEHİR / KENT PİLOTU · Temsili 3B mahalle maketi</title>
+<meta name="description" content="3B kent maketinde yaya bağlantılarına, meydanlara ve kamusal alanlara farklı açılardan bak.">
+<link rel="stylesheet" href="/dila-3b/sahne.0fbb13978c.css">
+<script src="/dila-3b/sahne.e1b5005f08.js" defer></script>
+</head>
+<body data-world="pilot">
+<a class="skip" href="#ana">İçeriğe geç</a>
+<header class="bar">
+<a class="wordmark" href="/" aria-label="ATAŞEHİR / KENT PİLOTU · Temsili 3B mahalle maketi ana sayfası">ATAŞEHİR / KENT PİLOTU</a>
+<nav aria-label="Ana menü"><a href="/onceki-ana-sayfa.html">Kent pilotu ve hizmetler</a><a href="/kapi-evreni">Kapı Evreni</a><a href="https://www.xn--modernataehir-qtc.com/">Modern Ataşehir’e geç</a></nav>
+</header>
+<main id="ana">
+<section class="hero" aria-labelledby="baslik">
+<div class="hero-copy">
+<p class="overline">ATAŞEHİR / KENT PİLOTU</p>
+<h1 id="baslik">Mahalle nasıl <em>hareket ediyor?</em></h1>
+<p class="summary">3B kent maketinde yaya bağlantılarına, meydanlara ve kamusal alanlara farklı açılardan bak.</p>
+<div class="actions"><a class="action" href="/onceki-ana-sayfa.html">Kent pilotu ve hizmetler</a><a class="ghost" href="/kapi-evreni">Kapı Evreni</a></div>
+</div>
+<div class="console">
+<figure class="stage">
+<canvas id="sahne" tabindex="0" aria-label="Temsili 3B mahalle maketi">
+Sahneyi görüntülemek için WebGL destekli bir tarayıcı kullan.
+</canvas>
+<figcaption>Temsili 3B mahalle maketi</figcaption>
+</figure>
+<div class="panel">
+<div class="modes" role="group" aria-label="Sahne seçenekleri"><button type="button" class="mode" data-mode="0" aria-pressed="true">Yaya bağlantıları</button>
+<button type="button" class="mode" data-mode="1" aria-pressed="false">Kamusal alan</button>
+<button type="button" class="mode" data-mode="2" aria-pressed="false">Yaklaşım</button></div>
+<div class="camera" role="group" aria-label="Kamera">
+<button id="kamera-sifirla" type="button" class="ghost">Kamerayı sıfırla</button>
+<button id="kamera-oynat" type="button" class="ghost" aria-pressed="false">Otomatik dönüş</button>
+<button id="vr" type="button" class="ghost" hidden>VR gözlükle aç</button>
+</div>
+<p id="sahne-durum" class="state" role="status">Sahne yükleniyor…</p>
+</div>
+</div>
+</section>
+<p class="note">Temsili kent maketi. Yollar ve kütleler keşif amaçlıdır. Parsel, mesafe ve trafik ölçümü içermez.</p>
+<div class="more"><a href="https://www.xn--modernataehir-qtc.com/">Modern Ataşehir’e geç</a></div>
+
+</main>
+<footer><span>ATAŞEHİR / KENT PİLOTU</span><a href="/onceki-ana-sayfa.html">Önceki ana sayfa</a></footer>
+</body>
+</html>
