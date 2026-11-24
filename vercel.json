@@ -25,6 +25,11 @@
       "destination": "/",
       "permanent": false,
       "source": "/atasehir-kent-pilot.html"
+    },
+    {
+      "permanent": false,
+      "destination": "/",
+      "source": "/atasehir-kent-pilot"
     }
   ]
 }
