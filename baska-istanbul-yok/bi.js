@@ -1,3 +1,4 @@
+import { kumasKur } from "./kumas.js";
 // Baska Istanbul Yok · terazi. Bagimsiz ES modulu; harita altligi, karo, uydu, isaretci kullanmaz. Veri gondermez.
 const $ = (s, k = document) => k.querySelector(s);
 const kac = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -37,74 +38,6 @@ function hareketUygula() {
   document.documentElement.dataset.hareket = hareket ? "acik" : "kapali";
   const b = $("#hareket"); b.setAttribute("aria-pressed", String(hareket)); b.textContent = "Hareket: " + (hareket ? "açık" : "kapalı");
   dinle.forEach(f => f());
-}
-
-// ---------- dokuma: WebGL2 golgelendirici (iplik silindiri + lif gurultusu + orgu) ----------
-const FRAG = `#version 300 es
-precision highp float;
-uniform vec2 r; uniform float t; uniform float olcek;
-uniform vec3 cozgu; uniform vec3 atki[4];
-out vec4 o;
-float h(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
-float gurultu(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f);
-  return mix(mix(h(i), h(i+vec2(1,0)), f.x), mix(h(i+vec2(0,1)), h(i+vec2(1,1)), f.x), f.y); }
-void main(){
-  vec2 p = gl_FragCoord.xy / olcek;
-  vec2 hucre = floor(p), ic = fract(p);
-  // orgu: alt bant dimi 2/2, orta bez ayagi, ust saten 5
-  float bant = floor(gl_FragCoord.y / r.y * 3.0);
-  float ust;
-  if (bant < 1.0) ust = step(2.0, mod(hucre.x - hucre.y, 4.0));
-  else if (bant < 2.0) ust = mod(hucre.x + hucre.y, 2.0);
-  else ust = 1.0 - step(0.5, mod(hucre.x * 2.0 + hucre.y, 5.0));
-  // atki rengi: kilim gibi 4 iplik serisi, her seri 9 tel
-  int k = int(mod(floor(hucre.y / 9.0), 4.0));
-  vec3 a = atki[k];
-  // iplik kesiti: silindir golgesi; cozgu dikey, atki yatay
-  float dCozgu = abs(ic.x - 0.5) * 2.0, dAtki = abs(ic.y - 0.5) * 2.0;
-  float silC = sqrt(max(0.0, 1.0 - dCozgu * dCozgu)), silA = sqrt(max(0.0, 1.0 - dAtki * dAtki));
-  // lif: iplik boyunca uzayan ince gurultu ve buküm cizgileri
-  float lifC = gurultu(vec2(p.x * 9.0, p.y * 1.2)) * 0.25 + 0.5 * step(0.82, fract((p.y + p.x * 0.35) * 3.0)) * 0.18;
-  float lifA = gurultu(vec2(p.x * 1.2, p.y * 9.0)) * 0.25 + 0.5 * step(0.82, fract((p.x - p.y * 0.35) * 3.0)) * 0.18;
-  vec3 renk = ust > 0.5 ? cozgu * (0.45 + 0.7 * silC + lifC * 0.4) : a * (0.45 + 0.7 * silA + lifA * 0.4);
-  // tel araliklarinda golge (ipliklerin arasindan gorunen derinlik)
-  float aralik = ust > 0.5 ? smoothstep(0.92, 1.0, dCozgu) : smoothstep(0.92, 1.0, dAtki);
-  renk *= 1.0 - aralik * 0.55;
-  // gezen isik: kumasin parlakligi (saten bantta daha parlak)
-  vec2 isik = vec2(0.5 + 0.35 * sin(t * 0.15), 0.6 + 0.2 * cos(t * 0.11)) * r;
-  float d = length(gl_FragCoord.xy - isik) / r.y;
-  float parlak = exp(-d * d * 3.0) * (bant >= 2.0 ? 0.35 : 0.18);
-  renk += parlak * (ust > 0.5 ? silC : silA);
-  o = vec4(renk * 0.55, 1.0);
-}`;
-function dokumaKur() {
-  const cv = $("#dokuma"), bilgi = $("#dokuma-bilgi");
-  const gl = cv.getContext("webgl2", { antialias: false, alpha: false });
-  if (!gl) { bilgi.textContent = "Dokuma: WebGL2 yok, düz desen gösteriliyor."; return; }
-  const sh = (tip, kaynak) => { const s = gl.createShader(tip); gl.shaderSource(s, kaynak); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s)); return s; };
-  let p;
-  try {
-    p = gl.createProgram();
-    gl.attachShader(p, sh(gl.VERTEX_SHADER, "#version 300 es\nvoid main(){vec2 v=vec2[3](vec2(-1,-3),vec2(3,1),vec2(-1,1))[gl_VertexID];gl_Position=vec4(v,0,1);}"));
-    gl.attachShader(p, sh(gl.FRAGMENT_SHADER, FRAG));
-    gl.linkProgram(p); if (!gl.getProgramParameter(p, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(p));
-  } catch (e) { bilgi.textContent = "Dokuma gölgelendiricisi derlenemedi: " + e.message.slice(0, 80); return; }
-  gl.useProgram(p);
-  const u = n => gl.getUniformLocation(p, n);
-  const n = c => c.map(x => x / 255);
-  gl.uniform3fv(u("cozgu"), n([62, 60, 84]));
-  gl.uniform3fv(u("atki"), new Float32Array(["ipek-civit", "yun-kokboya", "keten-ceviz", "pamuk-cehri"].flatMap(k => n(IPLIK[k].acik))));
-  const tel = 7;  // ekranda bir tel kac CSS pikseli
-  const boyut = () => { const k = Math.min(devicePixelRatio || 1, 2); cv.width = Math.round(cv.clientWidth * k); cv.height = Math.round(cv.clientHeight * k); gl.viewport(0, 0, cv.width, cv.height); gl.uniform1f(u("olcek"), tel * k); };
-  let dongu = 0, t0 = performance.now(), gorunur = true;
-  const kare = () => { gl.uniform2f(u("r"), cv.width, cv.height); gl.uniform1f(u("t"), (performance.now() - t0) / 1000); gl.drawArrays(gl.TRIANGLES, 0, 3); if (hareket && gorunur) dongu = requestAnimationFrame(kare); };
-  const yeniden = () => { cancelAnimationFrame(dongu); kare(); };
-  new ResizeObserver(() => { boyut(); yeniden(); }).observe(cv);
-  new IntersectionObserver(([e]) => { gorunur = e.isIntersecting; if (gorunur) yeniden(); }).observe(cv);
-  dinle.add(yeniden);
-  boyut(); yeniden();
-  const telCm = (96 / 2.54 / tel).toFixed(1);
-  bilgi.textContent = `Dokuma: 3 bant (dimi 2/2 · bez ayağı · saten 5'li), çözgü ve 4 atkı ipliği; ekranda ${telCm} tel/cm. WebGL2 gölgelendirici, harita yok.`;
 }
 
 // ---------- ucus: kasnak icinde iplikle cizilen rotalar ----------
@@ -277,28 +210,28 @@ function misafirKur() {
   });
 }
 
-// ---------- iplik karti: her iplik kendi bobininde cizilir ----------
-function iplikKur() {
-  const kap = $("#iplik-kart");
-  kap.innerHTML = Object.entries(IPLIK).map(([id, x]) => `<div class="kart iplik"><canvas width="176" height="176" data-iplik="${id}" aria-hidden="true"></canvas>
-    <div><b>${kac(x.ad)}</b><dl><dt>lif</dt><dd>${kac(x.lif)}</dd><dt>numara</dt><dd>${kac(x.numara)}</dd><dt>büküm</dt><dd>${kac(x.bukum)}</dd><dt>örgü</dt><dd>${kac(x.orgu)}</dd><dt>boya</dt><dd>${kac(x.boya)}</dd></dl></div></div>`).join("");
-  kap.querySelectorAll("canvas").forEach(cv => {
-    const x = IPLIK[cv.dataset.iplik], c = cv.getContext("2d"), m = 88;
-    c.fillStyle = "#2b2b40"; c.beginPath(); c.arc(m, m, 86, 0, Math.PI * 2); c.fill();
-    for (let r = 78; r > 18; r -= 3.2) {  // bobine sarili tel: her tur hafif aci ve golge
-      const g = c.createLinearGradient(m - r, m - r, m + r, m + r);
-      g.addColorStop(0, `rgb(${x.koyu})`); g.addColorStop(.45, `rgb(${x.acik})`); g.addColorStop(1, `rgb(${x.koyu.map(v => v * .7 | 0)})`);
-      c.strokeStyle = g; c.lineWidth = 2.6; c.beginPath(); c.arc(m, m, r, (r % 7) * .1, Math.PI * 2 + (r % 7) * .1); c.stroke();
-    }
-    c.fillStyle = "#c9a36e"; c.beginPath(); c.arc(m, m, 16, 0, Math.PI * 2); c.fill();
-    c.fillStyle = "#14141f"; c.beginPath(); c.arc(m, m, 6, 0, Math.PI * 2); c.fill();
+// ---------- kumas arayuzu: ruzgar ve iplik secimi kullanicida ----------
+function kumasArayuz() {
+  const bilgi = $("#kumas-bilgi");
+  let k;
+  try { k = kumasKur({ tuval: $("#kumas"), bilgi, iplikler: IPLIK, hareketAcik: () => hareket, dinle }); }
+  catch (e) { bilgi.textContent = "Kumaş çizilemedi: " + String(e.message || e).slice(0, 80); return; }
+  if (!k) return;
+  window.kumasOlc = n => k.olc(n);  // GPT/denetim icin: fizik gercekten calisiyor mu
+  const ruzgar = document.querySelectorAll("[data-ruzgar]");
+  ruzgar.forEach(b => b.addEventListener("click", () => { ruzgar.forEach(x => x.setAttribute("aria-pressed", String(x === b))); k.ruzgar(+b.dataset.ruzgar); }));
+  const sec = $("#iplik-sec");
+  sec.innerHTML = Object.entries(IPLIK).map(([id, x], i) => `<button type="button" class="cip" data-iplik="${id}" aria-pressed="${i === 0}" aria-label="${kac(x.ad)}"><i></i>${kac(x.ad.split(" · ")[1])}</button>`).join("");
+  sec.querySelectorAll("[data-iplik]").forEach(b => {
+    b.querySelector("i").style.setProperty("--c", `rgb(${IPLIK[b.dataset.iplik].acik})`);
+    b.addEventListener("click", () => { sec.querySelectorAll("[data-iplik]").forEach(x => x.setAttribute("aria-pressed", String(x === b))); k.iplik(b.dataset.iplik); bilgi.textContent = `${IPLIK[b.dataset.iplik].ad} · ${IPLIK[b.dataset.iplik].orgu} · ${IPLIK[b.dataset.iplik].numara}`; });
   });
 }
 
 function baslat() {
   hareketUygula();
   $("#hareket").addEventListener("click", () => { hareket = !hareket; depo.koy("bi.hareket", hareket ? "acik" : "kapali"); hareketUygula(); });
-  for (const [ad, f] of [["dokuma", dokumaKur], ["ucus", ucusKur], ["misafir", misafirKur], ["iplik", iplikKur]]) {
+  for (const [ad, f] of [["kumas", kumasArayuz], ["ucus", ucusKur], ["misafir", misafirKur]]) {
     try { f(); } catch (e) { console.error(ad, e); }
   }
 }
