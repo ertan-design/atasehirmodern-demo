@@ -1,0 +1,164 @@
+{
+  "schema": "publication.directory.v1",
+  "site": "ATAŞEHİR / ŞEHİR",
+  "domain": "www.xn--ataehirmodern-ktc.com",
+  "source_repo": "ertan-design/atasehirmodern-demo",
+  "checked_count": 14,
+  "method": "Independent static bundle; no external runtime data feed; route checks are timestamped reachability, not service acceptance.",
+  "pages": [
+    {
+      "site": "city",
+      "path": "/cati-rotalari/",
+      "label": "Çatı rotaları",
+      "url": "https://www.xn--ataehirmodern-ktc.com/cati-rotalari/",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/cati-rotalari/",
+      "title": "ATAŞEHİR MODERN · Çatıdan şehre bak.",
+      "checked_at": "2026-11-25T02:53:34.745Z",
+      "elapsed_ms": 255
+    },
+    {
+      "site": "city",
+      "path": "/gaia-ucus/",
+      "label": "Üç blok · Sanal uçuş",
+      "url": "https://www.xn--ataehirmodern-ktc.com/gaia-ucus/",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/gaia-ucus/",
+      "title": "Başka İstanbul Yok · Üç blok, üç rota",
+      "checked_at": "2026-11-25T02:53:34.750Z",
+      "elapsed_ms": 260
+    },
+    {
+      "site": "city",
+      "path": "/baska-istanbul-yok/",
+      "label": "Başka İstanbul Yok",
+      "url": "https://www.xn--ataehirmodern-ktc.com/baska-istanbul-yok/",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/baska-istanbul-yok/",
+      "title": "Başka İstanbul Yok",
+      "checked_at": "2026-11-25T02:53:34.748Z",
+      "elapsed_ms": 258
+    },
+    {
+      "site": "city",
+      "path": "/sehir",
+      "label": "3B kent maketi",
+      "url": "https://www.xn--ataehirmodern-ktc.com/sehir",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/sehir",
+      "title": "ATAŞEHİR / PİLOT · 3B şehir",
+      "checked_at": "2026-11-25T02:53:34.997Z",
+      "elapsed_ms": 507
+    },
+    {
+      "site": "city",
+      "path": "/uc-cati/",
+      "label": "Üç çatı",
+      "url": "https://www.xn--ataehirmodern-ktc.com/uc-cati/",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/uc-cati/",
+      "title": "Üç Çatı — Başka İstanbul Yok",
+      "checked_at": "2026-11-25T02:53:34.740Z",
+      "elapsed_ms": 250
+    },
+    {
+      "site": "city",
+      "path": "/uc-yon/",
+      "label": "Üç yön",
+      "url": "https://www.xn--ataehirmodern-ktc.com/uc-yon/",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/uc-yon/",
+      "title": "Ataşehir · Üç Yön",
+      "checked_at": "2026-11-25T02:53:35.306Z",
+      "elapsed_ms": 309
+    },
+    {
+      "site": "city",
+      "path": "/uc-yon/istanbul",
+      "label": "İstanbul yaşam halkası",
+      "url": "https://www.xn--ataehirmodern-ktc.com/uc-yon/istanbul",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/uc-yon/istanbul",
+      "title": "Başka İstanbul Yok · Yaşam Halkası",
+      "checked_at": "2026-11-25T02:53:35.336Z",
+      "elapsed_ms": 338
+    },
+    {
+      "site": "city",
+      "path": "/rota/",
+      "label": "Ataşehir yaşam atlası",
+      "url": "https://www.xn--ataehirmodern-ktc.com/rota/",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/rota/",
+      "title": "Üç Çatı · Ataşehir Yaşam Atlası",
+      "checked_at": "2026-11-25T02:53:35.172Z",
+      "elapsed_ms": 174
+    },
+    {
+      "site": "city",
+      "path": "/rota/istanbul",
+      "label": "İstanbul üst halkası",
+      "url": "https://www.xn--ataehirmodern-ktc.com/rota/istanbul",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/rota/istanbul",
+      "title": "Başka İstanbul Yok · Üst Halka",
+      "checked_at": "2026-11-25T02:53:35.390Z",
+      "elapsed_ms": 392
+    },
+    {
+      "site": "city",
+      "path": "/yasam/",
+      "label": "Şehir ve yaşam",
+      "url": "https://www.xn--ataehirmodern-ktc.com/yasam/",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/yasam/",
+      "title": "Bir şehir, üç çatı · Ataşehir",
+      "checked_at": "2026-11-25T02:53:35.341Z",
+      "elapsed_ms": 343
+    },
+    {
+      "site": "city",
+      "path": "/dila/",
+      "label": "Dila atölyesi",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/dila/",
+      "title": "DİLA × AFAIR STUDIO — AI Sanat Galerisi, İki-Mezura Terzi &amp; 8-Konsept Sıçrama Sistemi",
+      "checked_at": "2026-11-25T02:53:35.059Z",
+      "elapsed_ms": 61
+    },
+    {
+      "site": "city",
+      "path": "/dila/iki-mezura",
+      "label": "Terzi · İki mezura",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/iki-mezura",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/dila/iki-mezura",
+      "title": "DİLA · FRONT #2 — Evde İki-Mezura Terzi Ritüeli &amp; Milimetre Kalıp Laboratuvarı",
+      "checked_at": "2026-11-25T02:53:35.306Z",
+      "elapsed_ms": 308
+    },
+    {
+      "site": "city",
+      "path": "/dila/yasam-alani",
+      "label": "Yaşam alanı",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/yasam-alani",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/dila/yasam-alani",
+      "title": "DİLA · FRONT #3 — Yan-Yana Kromatik Ayna, Yaşam Alanı &amp; Gardırop Kürasyonu",
+      "checked_at": "2026-11-25T02:53:35.059Z",
+      "elapsed_ms": 61
+    },
+    {
+      "site": "city",
+      "path": "/dila/sinema",
+      "label": "Sinema",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/sinema",
+      "status": 200,
+      "final_url": "https://www.xn--ataehirmodern-ktc.com/dila/sinema",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre &amp; Açık Kapı Motoru",
+      "checked_at": "2026-11-25T02:53:35.570Z",
+      "elapsed_ms": 180
+    }
+  ]
+}
