@@ -1,0 +1,33 @@
+:root {
+  --bg: #090f1f;
+  --panel: #111b36;
+  --line: #283c6b;
+  --ink: #f3f6fc;
+  --muted: #a1b2d8;
+  --copper: #f2a75c;
+  --sea: #5cc3ed;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-ui, sans-serif; line-height: 1.5; }
+.u-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; padding: 14px 24px; border-bottom: 1px solid var(--line); font-size: 12px; letter-spacing: 0.12em; color: var(--copper); }
+.u-back { color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px; font-size: 12px; }
+.u-back:hover { border-color: var(--copper); color: var(--copper); }
+.u-wrap { max-width: 1360px; margin: 22px auto; padding: 0 20px 44px; }
+.u-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.85fr); gap: 20px; }
+.u-card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+.eyebrow { margin: 0 0 6px; font-size: 11px; letter-spacing: 0.14em; color: var(--sea); }
+h1, h2 { margin: 0 0 12px; font-family: Georgia, serif; font-weight: 500; }
+h1 { font-size: clamp(24px, 3.2vw, 38px); }
+h2 { font-size: 20px; margin-top: 12px; }
+#ist-cv { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--line); background: #060b16; }
+.node-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.ubtn { background: #172447; color: var(--ink); border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px; font-size: 12px; cursor: pointer; }
+.ubtn.is-on { background: var(--copper); color: #120c07; border-color: var(--copper); font-weight: 700; }
+.node-box { background: #0a1124; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font-size: 13px; color: var(--muted); }
+.node-box strong { display: block; color: var(--copper); font-size: 15px; margin-bottom: 4px; }
+.u-img { width: 100%; height: 210px; object-fit: cover; border-radius: 12px; display: block; border: 1px solid var(--line); }
+label { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); margin: 8px 0 4px; }
+label strong { color: var(--copper); font-family: ui-monospace, monospace; }
+input[type="range"] { width: 100%; accent-color: var(--copper); }
+.calc-out { margin-top: 12px; background: #0a1124; border: 1px solid var(--line); border-radius: 10px; padding: 12px; font-family: ui-monospace, monospace; font-size: 12px; color: var(--sea); white-space: pre-wrap; }
+@media (max-width: 920px) { .u-grid { grid-template-columns: 1fr; } }

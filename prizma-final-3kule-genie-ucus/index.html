@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATAŞEHİR MODERN · 3 Kule Genie Referans & Rüzgârlı 3B Uçuş Final</title>
+  <meta name="description" content="Kurtarılan final sürüm: 3 kule çatıdan haritasız 3B süzülüş, WebAudio rüzgâr sesi, gerçek Genie atlayış referans filmi ve altın saat hava levhası.">
+  <link rel="stylesheet" href="./genieucus.css">
+  <script defer src="./genieucus.js"></script>
+</head>
+<body>
+  <header class="g-head">
+    <strong>ATAŞEHİR MODERN · 3 KULE GENİE UÇUŞ FİNAL</strong>
+    <a class="g-back" href="../">← Ana Sayfaya Dön</a>
+  </header>
+
+  <main class="g-wrap">
+    <section class="deck-grid">
+      <div class="stage-box">
+        <div class="mode-bar">
+          <button type="button" class="mchip is-on" id="m-3d">1 · Canlı 3B Süzülüş</button>
+          <button type="button" class="mchip" id="m-genie">2 · Gerçek Genie Filmi (MP4)</button>
+          <button type="button" class="mchip" id="m-plate">3 · Altın Saat 3-Kule Levha</button>
+          <button type="button" class="mchip" id="m-wind">Rüzgâr Sesi: Kapalı</button>
+        </div>
+
+        <canvas id="wing-cv" width="1100" height="560" aria-label="3 kule çatıdan yönlendirilebilir 3B uçuş sahnesi"></canvas>
+        <video id="genie-vid" class="media-pane is-hidden" controls playsinline preload="none" poster="./genie_ucus_referans.jpg" aria-label="Genie 3 kule çatı atlayış referans filmi"></video>
+        <img id="aerial-img" class="media-pane is-hidden" src="./levha_01_atasehir_kuleler.jpg" alt="Ataşehir 3 kule altın saat hava levhası" width="1100" height="560">
+
+        <div class="hud-bar">
+          <span id="h-tower">Flex Tower · 43 Kat</span>
+          <span id="h-dest">Hedef: İFM / Finanskent (~2.8 km KD)</span>
+          <span id="h-alt">İrtifa: 162 m</span>
+          <span id="h-ring">Halka: 0</span>
+        </div>
+      </div>
+
+      <aside class="side-box">
+        <h1>Üç çatıdan özgür uçuş.</h1>
+        <p class="sub">Google Maps kullanmadan sürükle veya <strong>W/A/S/D</strong> ile yönlendir; dilediğin an gerçek Genie atlayış filmine veya altın saat levhasına geç.</p>
+        <div class="routes" id="route-btns"></div>
+        <label for="spd-sl">Süzülüş Hızı <strong id="spd-txt">1.2x</strong></label>
+        <input id="spd-sl" type="range" min="4" max="26" value="12">
+        <p class="coord-note">Atatürk Mah., Ahmet Yesevi Cad. · 40.98° K, 29.12° D · 0 harici harita API</p>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
