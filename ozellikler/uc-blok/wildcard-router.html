@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AFFFAIR × ATAŞEHİR MODERN · Sıfır-Klasör Wildcard Alt-Domain Motoru (r27)</title>
+<style>
+:root{--bg:#06060a;--card:#101018;--ivory:#f4efe6;--mut:rgba(244,239,230,.58);--gold:#d5b476;--ok:#5be4a8;--bdr:rgba(213,180,118,.22);--serif:Georgia,"Times New Roman",serif;--sans:"Segoe UI",system-ui,sans-serif;--mono:Consolas,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ivory);font:14px/1.55 var(--sans);min-height:100vh;padding:24px;max-width:1180px;margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--bdr);margin-bottom:24px}
+.brand{font:600 12px/1 var(--sans);letter-spacing:4px;text-transform:uppercase;color:var(--gold)}
+.nav a{color:var(--mut);text-decoration:none;font-size:11.5px;letter-spacing:1.8px;text-transform:uppercase;margin-left:16px}.nav a:hover{color:var(--ivory)}
+h1{margin:0 0 8px;font:400 clamp(26px,4vw,44px)/1.08 var(--serif)}
+.lead{color:var(--mut);max-width:720px;margin:0 0 22px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+input{flex:1;min-width:240px;background:#0c0c14;color:var(--ivory);border:1px solid var(--bdr);border-radius:999px;padding:11px 18px;font:13.5px var(--mono)}
+button{background:var(--gold);color:#07070b;border:none;border-radius:999px;padding:10px 20px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;cursor:pointer}
+.presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.chip{background:var(--card);color:var(--ivory);border:1px solid var(--bdr);border-radius:999px;padding:6px 13px;font:12px var(--mono);cursor:pointer;transition:border-color .2s}
+.chip:hover{border-color:var(--gold);color:var(--gold)}
+.stage{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;align-items:stretch}
+@media(max-width:860px){.stage{grid-template-columns:1fr}}
+.portal{background:linear-gradient(145deg,#13131f,#090910);border:1px solid var(--bdr);border-radius:18px;padding:26px;position:relative;overflow:hidden}
+.portal .tag{font:11px var(--mono);letter-spacing:2.4px;text-transform:uppercase;color:var(--gold)}
+.portal h2{margin:10px 0 8px;font:400 30px/1.12 var(--serif)}
+.portal p{margin:0 0 18px;color:var(--mut)}
+.meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.mbox{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px}
+.mbox .k{font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--mut)}
+.mbox .v{font:600 13.5px var(--mono);color:var(--ok);margin-top:4px}
+.side{background:var(--card);border:1px solid var(--bdr);border-radius:18px;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+.side h3{margin:0 0 10px;font:400 18px var(--serif);color:var(--gold)}
+.side ul{margin:0;padding-left:18px;color:var(--mut);font-size:13px;line-height:1.7}
+pre{background:#08080e;border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px;font:11.5px/1.45 var(--mono);color:#bfe6ff;overflow:auto;margin-top:12px}
+</style></head><body>
+
+<header class="top">
+  <div class="brand">GAIA × AFFFAIR · SIFIR-KLASÖR WILDCARD MOTORU</div>
+  <nav class="nav">
+    <a href="./index.html">← 360° Kumaş</a>
+    <a href="./baska-istanbul-atasehir.html">Ataşehir 3-Blok</a>
+    <a href="./gpt.json">GPT</a>
+  </nav>
+</header>
+
+<h1>Tek Motor. Sınırsız Alt Domain. Sıfır Klasör.</h1>
+<p class="lead">Her tasarımcı, her sokak ve 1.000 konut için ayrı klasör açmak bitti. Herhangi bir alt domain yaz — tek kenar motoru (Edge) o kimliği <b>&lt;1 ms</b>'de sessiz lüks deneyimine dönüştürsün.</p>
+
+<div class="bar">
+  <input id="hostIn" type="text" value="rufat.afair.studio" placeholder="örn: rufat.afair.studio veya blok-a-104.modernatasehir.com">
+  <button onclick="coz()">Alt Domaini Aç</button>
+</div>
+<div class="presets">
+  <span class="chip" onclick="sec('rufat.afair.studio')">rufat.afair.studio</span>
+  <span class="chip" onclick="sec('dila.afair.studio')">dila.afair.studio</span>
+  <span class="chip" onclick="sec('blok-a-104.modernatasehir.com')">blok-a-104.modernatasehir.com</span>
+  <span class="chip" onclick="sec('blok-c-312.modernatasehir.com')">blok-c-312.modernatasehir.com</span>
+  <span class="chip" onclick="sec('watergarden.atasehirmodern.com')">watergarden.atasehirmodern.com</span>
+  <span class="chip" onclick="sec('finanskent.atasehirmodern.com')">finanskent.atasehirmodern.com</span>
+  <span class="chip" onclick="sec('runway.afair.live')">runway.afair.live</span>
+</div>
+
+<div class="stage">
+  <div class="portal" id="portal">
+    <div class="tag" id="pTag"></div>
+    <h2 id="pTitle"></h2>
+    <p id="pDesc"></p>
+    <div class="meta-grid" id="pMeta"></div>
+    <pre id="pJson"></pre>
+  </div>
+  <div class="side">
+    <div>
+      <h3>Neden Devrimsel Sıçrama?</h3>
+      <ul>
+        <li><b>*.afair.studio:</b> <code>rufat.afair.studio</code>, <code>dila.afair.studio</code> — her tasarımcıya anında 360° atölye + vitrin.</li>
+        <li><b>*.modernatasehir.com:</b> 1.000 konutun her biri için 0 klasörlü yapay zekâ misafir kapısı.</li>
+        <li><b>*.atasehirmodern.com:</b> AIOS 3D City pilotunda her sokak &amp; meydan tek wildcard'dan açılır.</li>
+        <li><b>afair.live:</b> AFFFAIR canlı defile, backstage &amp; anlık terzi köprüsü.</li>
+      </ul>
+    </div>
+    <div style="font:11.5px var(--mono);color:var(--gold);margin-top:14px">Zaman: 2026-11-25T05:51:28 · Diskte Klasör Maliyeti: 0</div>
+  </div>
+</div>
+
+<script>
+function hash12(s){
+  var h=2166136261;
+  for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}
+  return ("00000000"+(h>>>0).toString(16)).slice(-8);
+}
+function sec(h){document.getElementById("hostIn").value=h;coz();}
+function coz(){
+  var raw=(document.getElementById("hostIn").value||"rufat.afair.studio").trim().toLowerCase();
+  var parts=raw.split(".");
+  var sub=parts.length>=3?parts[0]:"merkez";
+  var root=parts.length>=3?parts.slice(1).join("."):raw;
+  var t0=performance.now();
+  var tip="GENEL", baslik=sub.toUpperCase()+" · "+root, aciklama="Tek wildcard motoruyla anında çözümlenen alt domain.", renk="PANTONE 19-5420 TCX";
+  if(root.indexOf("afair.studio")>=0){
+    tip="TASARIMCI ATÖLYE & SERGİ";
+    baslik=sub.toUpperCase()+" · AFFFAIR STUDIO";
+    aciklama="Tasarımcının aynı anda üretim yapıp 360° rüzgârlı kumaş sahnesinde sergilediği özel alt domain.";
+    renk=sub==="rufat"?"PANTONE 19-4024 TCX (Gece Çiviti)":"PANTONE 19-5420 TCX (Zümrüt İpek)";
+  } else if(root.indexOf("modernatasehir")>=0){
+    tip="1.000 KONUT MİSAFİR AI KAPISI";
+    baslik=sub.toUpperCase()+" · ATAŞEHİR MODERN";
+    aciklama="Daire misafirine özel online terzi (afair.live), tarım danışmanı (tarim.online), toplantı odası ve stüdyo erişimi.";
+    renk="PANTONE 11-0604 TCX (Kaymaktaşı)";
+  } else if(root.indexOf("atasehirmodern")>=0){
+    tip="AIOS 3D CITY · SOKAK / UFUK DÜĞÜMÜ";
+    baslik=sub.toUpperCase()+" · 3D CITY PİLOT";
+    aciklama="Ataşehir 3D City pilotunda sıfır Google Maps ile anında açılan sokak/bölge uçuş düğümü.";
+    renk="PANTONE 18-1442 TCX (Yanık Toprak)";
+  } else if(root.indexOf("afair.live")>=0){
+    tip="CANLI DEFİLE & YAYIN SAHNESİ";
+    baslik=sub.toUpperCase()+" · AFFFAIR LIVE";
+    aciklama="Dünya moda haftaları, canlı defile akışı, iki mezura evde randevu ve anlık koleksiyon bağlantısı.";
+    renk="PANTONE 19-0303 TCX (Loş Sahne)";
+  }
+  var ms=(performance.now()-t0).toFixed(2);
+  var kimlik="WC-"+hash12(raw).toUpperCase();
+  document.getElementById("pTag").textContent=tip+" · "+kimlik;
+  document.getElementById("pTitle").textContent=baslik;
+  document.getElementById("pDesc").textContent=aciklama;
+  document.getElementById("pMeta").innerHTML=
+    '<div class="mbox"><div class="k">Alt Domain</div><div class="v">'+sub+'</div></div>'+
+    '<div class="mbox"><div class="k">Kök Domain</div><div class="v">'+root+'</div></div>'+
+    '<div class="mbox"><div class="k">Çözümleme</div><div class="v">'+ms+' ms (0 klasör)</div></div>'+
+    '<div class="mbox"><div class="k">İmza Pantone</div><div class="v">'+renk+'</div></div>';
+  var obj={schema:"gaia.wildcard.tenant.v1",host:raw,tenant:sub,root:root,id:kimlik,foldersCreatedOnDisk:0,pantone:renk};
+  document.getElementById("pJson").textContent=JSON.stringify(obj,null,2);
+}
+var qp=new URLSearchParams(window.location.search).get("host");
+if(qp) document.getElementById("hostIn").value=qp;
+coz();
+</script></body></html>

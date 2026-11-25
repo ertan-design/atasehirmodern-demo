@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🎬 DİLA × AFAIR · Video Stüdyo &amp; Higgsfield Entegrasyonu (Argon r23)</title>
+<style>
+:root{--bg:#08080e;--card:#13131f;--bdr:#282840;--txt:#f3efe8;--mut:#9f9bb5;--gold:#e6c27a;--ok:#5be4a8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 "Segoe UI",system-ui,sans-serif;padding:24px;max-width:1320px;margin:auto}
+.hero{background:linear-gradient(135deg,#181529,#0d0d16);border:1px solid var(--bdr);border-radius:16px;padding:24px;margin-bottom:20px}
+h1{margin:0 0 8px;font-size:24px;color:var(--gold)}h2{font-size:16px;margin:24px 0 10px;color:var(--ok)}
+.sub{color:var(--mut);font-size:12.5px}.nav a{color:var(--ok);text-decoration:none;margin-right:14px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:16px}
+.card h3{margin:0 0 10px;font-size:15px;color:#fff}
+video{width:100%;border-radius:10px;background:#000;border:1px solid #2b2b42}
+.meta{margin-top:10px;font-size:12px;color:var(--mut);line-height:1.5}code{font-family:Consolas,monospace;color:var(--ok)}
+.box{background:var(--card);border:1px solid var(--bdr);border-radius:12px;padding:16px;margin-top:16px;font-size:13px}
+</style></head><body>
+<div class="hero">
+<h1>🎬 DİLA × AFAIR · Video Stüdyo &amp; Higgsfield API Köprüsü (r23)</h1>
+<div class="sub">Zaman: 2026-11-25T01:06:45 | Higgsfield API Durumu: <b>KÖPRÜ HAZIR (HF_API_KEY_ID/SECRET bekleniyor → Yerel FFmpeg Aktif)</b> | 3 Gerçek H.264 MP4 Üretildi</div>
+<div class="nav" style="margin-top:12px"><a href="./index.html">← Canlı Hub</a><a href="./dila-4front-senkron.html">4-Front Stüdyo</a><a href="./video_manifest.json">video_manifest.json</a></div>
+</div>
+<div class="grid"><div class="card"><h3>01 · Yasak Siyah Kafesi &amp; Zümrüt Işık (Galeri Art)</h3><video controls playsinline preload="metadata" src="./dila_01_yasak_siyah_galeri.mp4"></video><div class="meta">1280x720 · 30 fps · 6.0 sn · 439.4 KB · Render: <b>423.6 ms</b> (424.9 fps)<br>SHA-16: <code>ebafd8febd6c0767</code> · Motor: Yerel FFmpeg H.264 + Alt-Ajan Görsel</div></div><div class="card"><h3>02 · İki Mezura &amp; Affair Terzi Atölyesi</h3><video controls playsinline preload="metadata" src="./dila_02_iki_mezura_atolye.mp4"></video><div class="meta">1280x720 · 30 fps · 6.0 sn · 341.3 KB · Render: <b>429.6 ms</b> (419.0 fps)<br>SHA-16: <code>1d1e2fa5a99f6c54</code> · Motor: Yerel FFmpeg H.264 + Alt-Ajan Görsel</div></div><div class="card"><h3>03 · Dila × Afair Birleşik Sıçrama Reel (XFade)</h3><video controls playsinline preload="metadata" src="./dila_03_afair_sicrama_reel.mp4"></video><div class="meta">1280x720 · 30 fps · 11.0 sn · 854.2 KB · Render: <b>734.3 ms</b> (449.4 fps)<br>SHA-16: <code>1b07a089982728ac</code> · Motor: Yerel FFmpeg XFade H.264</div></div></div>
+<div class="box">
+<h2>🔌 Higgsfield Üretimlerini Siteye Entegre Etmenin 3 Temiz Yolu</h2>
+<ol>
+<li><b>Sunucu-Tarafı Köprü (Önerilen):</b> <code>HF_API_KEY_ID</code> ve <code>HF_API_KEY_SECRET</code> yalnız sunucu/yerel ortamda kalır; <code>POST https://api.higgsfield.ai/...</code> → <code>GET /requests/{id}/status</code> ile MP4 iner, SHA-256 mühürlenir ve <code>video_manifest.json</code>'a yazılır.</li>
+<li><b>Hibrit Yedek (Şu An Çalışan):</b> Higgsfield anahtarı yoksa veya kota dolduğunda alt-ajan görsel motoru + yerel <code>FFmpeg H.264</code> anında web-uyumlu (<code>+faststart</code>) MP4 üretip aynı <code>video_manifest.json</code> şemasına basar.</li>
+<li><b>Statik CDN / Sıfır Sunucu Oynatıcı:</b> Site yalnızca <code>video_manifest.json</code>'ı okuyup HTML5 <code>&lt;video&gt;</code> kartlarını oluşturur; API anahtarı asla tarayıcıya sızmaz.</li>
+</ol>
+</div>
+</body></html>

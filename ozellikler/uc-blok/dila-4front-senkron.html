@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🎨 DİLA × AFAIR · Canlı 4-Front Senkron Stüdyo (r22)</title>
+<style>
+:root{--bg:#09090f;--card:#13131e;--bdr:#28283e;--txt:#f4f0e8;--mut:#9e9ab5;--gold:#e6c27a;--ok:#5be4a8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 "Segoe UI",system-ui,sans-serif;padding:22px;max-width:1320px;margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+h1{margin:0;font-size:22px;color:var(--gold)}.nav a{color:var(--ok);text-decoration:none;margin-left:12px;font-size:13px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.panel{background:var(--card);border:1px solid var(--bdr);border-radius:14px;padding:16px}
+.panel h2{margin:0 0 10px;font-size:15px;color:var(--gold)}
+label{display:block;font-size:12px;color:var(--mut);margin:8px 0 4px}
+input,select,button{width:100%;background:#0c0c15;color:var(--txt);border:1px solid #30304a;border-radius:8px;padding:8px 10px;font-size:13px}
+button{cursor:pointer;background:#1f2e4d;border-color:#35528a;font-weight:600;margin-top:10px}button:hover{background:#29406b}
+.swatches{display:flex;gap:8px;margin-top:8px}.sw{flex:1;height:36px;border-radius:8px;border:1px solid #ffffff22;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+pre{background:#0a0a12;border:1px solid #242438;border-radius:8px;padding:10px;font:11.5px/1.4 Consolas,monospace;color:#bfe6ff;overflow:auto;max-height:240px;margin:8px 0 0}
+.artbox{background:#07070c;border:1px solid #2a2a40;border-radius:10px;padding:10px;text-align:center}
+</style></head><body>
+<div class="top">
+<h1>🎨 DİLA × AFAIR · Canlı 4-Front Senkron Stüdyo (r22)</h1>
+<div class="nav"><a href="./index.html">← Ana Hub</a><a href="./dila-8konsept.html">8 Konsept</a><a href="./gpt.json">gpt.json</a></div>
+</div>
+<div class="grid">
+<div class="panel">
+<h2>1️⃣ Front-1 · İki Mezura &amp; Terzi (afair.live)</h2>
+<label>Omuz / Statik Ölçü (cm)</label><input id="omuz" type="number" value="42" min="30" max="60" oninput="senkron()">
+<label>Hareket Payı (cm · 2. Mezura)</label><input id="pay" type="number" value="4" min="1" max="15" oninput="senkron()">
+<label>Ev Işığı Sıcaklığı</label>
+<select id="isik" onchange="senkron()"><option value="Sicak_3000K">Sıcak Ev Işığı (3000K)</option><option value="Gun_Isigi_5500K">Doğal Gün Işığı (5500K)</option><option value="Galeri_4000K">Galeri Nötr (4000K)</option></select>
+</div>
+
+<div class="panel">
+<h2>3️⃣ Front-3 · Renk Analizi &amp; Yasak Ton</h2>
+<label>Yasaklanan Renk ("Asla Giyme")</label>
+<select id="yasak" onchange="senkron()">
+<option value="#111116|Siyah">Siyah (Asla giymemen gerekiyor)</option>
+<option value="#7d8491|Soguk_Gri">Soğuk Gri (Cildi soldurur)</option>
+<option value="#d8ff2a|Neon_Sari">Neon Sarı (Alt-tonla çatışır)</option>
+</select>
+<label>Önerilen 3 Sıçrama Rengi</label>
+<select id="palet" onchange="senkron()">
+<option value="#0f6b54|#d9a959|#f4ede2|Zümrüt · Altın · Krem">Zümrüt · Altın · Krem</option>
+<option value="#7a1f3d|#e09f7d|#f7f2eb|Bordo · Şeftali · Fildişi">Bordo · Şeftali · Fildişi</option>
+<option value="#1d3f73|#c97a40|#ece6da|Gece Mavisi · Tarçın · Ekru">Gece Mavisi · Tarçın · Ekru</option>
+</select>
+<div class="swatches" id="sw"></div>
+</div>
+
+<div class="panel">
+<h2>2️⃣ Front-2 · AI Galeri Art (afair.studio)</h2>
+<div class="artbox"><svg id="art" viewBox="0 0 320 200" width="100%" height="190" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div style="font-size:12px;color:var(--mut);margin-top:8px">Dış çerçeve: <b>Yasak Renk Kafesi</b> · İçten taşan 3 ışık katmanı: <b>Sıçrama Paleti</b></div>
+</div>
+
+<div class="panel">
+<h2>4️⃣ Front-4 · Sıçrama Hafızası (Ortak JSON)</h2>
+<div style="font-size:12px;color:var(--ok)">Tüm 4 front aynı JSON olayından senkron beslenir (0 çakışma)</div>
+<pre id="out"></pre>
+<button onclick="kopyala()">JSON Sıçrama Kartını Kopyala</button>
+</div>
+</div>
+<script>
+function senkron(){
+  var omuz=+document.getElementById("omuz").value||42;
+  var pay=+document.getElementById("pay").value||4;
+  var isik=document.getElementById("isik").value;
+  var y=document.getElementById("yasak").value.split("|");
+  var p=document.getElementById("palet").value.split("|");
+  var sw=document.getElementById("sw");
+  sw.innerHTML='<div class="sw" style="background:'+p[0]+'">Ana</div><div class="sw" style="background:'+p[1]+';color:#111">Vurgu</div><div class="sw" style="background:'+p[2]+';color:#111">Işık</div>';
+  var r1=40+(omuz-30)*1.2, r2=24+pay*3.5;
+  document.getElementById("art").innerHTML=
+    '<rect width="320" height="200" rx="10" fill="'+y[0]+'"/>'+
+    '<rect x="18" y="18" width="284" height="164" rx="8" fill="none" stroke="'+p[1]+'" stroke-width="2" stroke-dasharray="6 4"/>'+
+    '<circle cx="120" cy="100" r="'+r1.toFixed(1)+'" fill="'+p[0]+'" opacity="0.88"/>'+
+    '<circle cx="190" cy="100" r="'+r2.toFixed(1)+'" fill="'+p[1]+'" opacity="0.82"/>'+
+    '<circle cx="160" cy="100" r="24" fill="'+p[2]+'" opacity="0.92"/>'+
+    '<text x="26" y="38" fill="'+p[2]+'" font-size="11" font-family="Consolas,monospace">KAFES: '+y[1]+' (YASAK)</text>'+
+    '<text x="26" y="172" fill="'+p[2]+'" font-size="11" font-family="Consolas,monospace">PALET: '+p[3]+' · '+omuz+'+'+pay+'cm</text>';
+  var kart={
+    schema:"dila.afair.8konsept.v1",
+    zaman:"2026-11-25T00:36:39",
+    front1_iki_mezura:{omuz_cm:omuz,hareket_payi_cm:pay,toplam_kalip_cm:omuz+pay,isik:isik},
+    front3_renk_karari:{yasak_renk:y[1],yasak_hex:y[0],sicrama_paleti:p[3],hexler:[p[0],p[1],p[2]]},
+    front2_galeri_art:{cerceve:"yasak_renk_kafesi",katman_sayisi:3},
+    sonraki_sicrama_etkisi:"Bu secim bir sonraki koleksiyon ve vitrin siralamasini gunceller."
+  };
+  document.getElementById("out").textContent=JSON.stringify(kart,null,2);
+}
+function kopyala(){navigator.clipboard&&navigator.clipboard.writeText(document.getElementById("out").textContent);}
+senkron();
+</script></body></html>

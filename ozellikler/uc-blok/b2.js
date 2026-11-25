@@ -1,0 +1,1 @@
+function toggleArgonDrawer(){var d=document.getElementById("argonDrawer");if(d)d.classList.toggle("open");}

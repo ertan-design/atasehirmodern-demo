@@ -1,0 +1,25 @@
+{
+ "schema": "gaia.afffair-atasehir.final.v1",
+ "version": "r28-final",
+ "zaman": "2026-11-25T19:38:39",
+ "canli_url": "https://ertan-design.github.io/argon-ryte-canli/",
+ "kural": "Ana sayfalar korunur; tum 9 ozellik 0 kayipla ust butonlar ve cekmeceden tek tikla acilir.",
+ "canli_sayfalar": {
+  "index.html": "https://ertan-design.github.io/argon-ryte-canli/index.html",
+  "baska-istanbul-atasehir.html": "https://ertan-design.github.io/argon-ryte-canli/baska-istanbul-atasehir.html",
+  "wildcard-router.html": "https://ertan-design.github.io/argon-ryte-canli/wildcard-router.html",
+  "dila-4front-senkron.html": "https://ertan-design.github.io/argon-ryte-canli/dila-4front-senkron.html",
+  "dila-8konsept.html": "https://ertan-design.github.io/argon-ryte-canli/dila-8konsept.html",
+  "dila-video-studyo.html": "https://ertan-design.github.io/argon-ryte-canli/dila-video-studyo.html",
+  "selinahbap-450k.html": "https://ertan-design.github.io/argon-ryte-canli/selinahbap-450k.html",
+  "takim-11slot.html": "https://ertan-design.github.io/argon-ryte-canli/takim-11slot.html",
+  "canli-nabiz.html": "https://ertan-design.github.io/argon-ryte-canli/canli-nabiz.html"
+ },
+ "bagli_vercel_domainleri": [
+  "https://afair.studio/",
+  "https://afair.live/",
+  "https://selinahbap.com/nexus"
+ ],
+ "edge_middleware": "https://ertan-design.github.io/argon-ryte-canli/middleware.js",
+ "video_manifest": "https://ertan-design.github.io/argon-ryte-canli/video_manifest.json"
+}
