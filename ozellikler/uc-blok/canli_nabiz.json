@@ -1,0 +1,109 @@
+{
+ "sema": "argon.canli-nabiz.r24",
+ "zaman": "2026-11-25T01:16:47",
+ "http200": "10/10",
+ "ortalama_ms": 848.7,
+ "toplam_bayt": 923179,
+ "uclar": [
+  {
+   "alan": "afair.studio",
+   "barindirma": "Vercel",
+   "url": "https://afair.studio/",
+   "http": 200,
+   "bayt": 3935,
+   "sha16": "eb1b60699d3d06de",
+   "sure_ms": 654.4,
+   "hata": ""
+  },
+  {
+   "alan": "afair.live",
+   "barindirma": "Vercel",
+   "url": "https://afair.live/",
+   "http": 200,
+   "bayt": 3842,
+   "sha16": "d8f07a12ade99015",
+   "sure_ms": 2851.3,
+   "hata": ""
+  },
+  {
+   "alan": "selinahbap.com",
+   "barindirma": "Vercel",
+   "url": "https://selinahbap.com/",
+   "http": 200,
+   "bayt": 16567,
+   "sha16": "865a23b93802e1cf",
+   "sure_ms": 725.6,
+   "hata": ""
+  },
+  {
+   "alan": "selinahbap.com",
+   "barindirma": "Vercel",
+   "url": "https://selinahbap.com/nexus",
+   "http": 200,
+   "bayt": 8349,
+   "sha16": "8135beee106a2477",
+   "sure_ms": 696.2,
+   "hata": ""
+  },
+  {
+   "alan": "argon-ryte-canli",
+   "barindirma": "GitHub Pages (FREE)",
+   "url": "https://ertan-design.github.io/argon-ryte-canli/",
+   "http": 200,
+   "bayt": 3374,
+   "sha16": "3a0f3a03e6a1017e",
+   "sure_ms": 506.5,
+   "hata": ""
+  },
+  {
+   "alan": "argon-ryte-canli",
+   "barindirma": "GitHub Pages (FREE)",
+   "url": "https://ertan-design.github.io/argon-ryte-canli/dila-4front-senkron.html",
+   "http": 200,
+   "bayt": 6240,
+   "sha16": "d9ee3979a1773f0d",
+   "sure_ms": 491.9,
+   "hata": ""
+  },
+  {
+   "alan": "argon-ryte-canli",
+   "barindirma": "GitHub Pages (FREE)",
+   "url": "https://ertan-design.github.io/argon-ryte-canli/dila-video-studyo.html",
+   "http": 200,
+   "bayt": 3987,
+   "sha16": "19693d8fcd725e47",
+   "sure_ms": 476.7,
+   "hata": ""
+  },
+  {
+   "alan": "argon-ryte-canli",
+   "barindirma": "GitHub Pages (FREE)",
+   "url": "https://ertan-design.github.io/argon-ryte-canli/dila_03_afair_sicrama_reel.mp4",
+   "http": 200,
+   "bayt": 874738,
+   "sha16": "1b07a089982728ac",
+   "sure_ms": 534.4,
+   "hata": ""
+  },
+  {
+   "alan": "argon-ryte-canli",
+   "barindirma": "GitHub Pages (FREE)",
+   "url": "https://ertan-design.github.io/argon-ryte-canli/gpt.json",
+   "http": 200,
+   "bayt": 729,
+   "sha16": "8fb51d7bb24b9533",
+   "sure_ms": 310.2,
+   "hata": ""
+  },
+  {
+   "alan": "argon-ryte-canli",
+   "barindirma": "GitHub Pages (FREE)",
+   "url": "https://ertan-design.github.io/argon-ryte-canli/video_manifest.json",
+   "http": 200,
+   "bayt": 1418,
+   "sha16": "a1b191a5a83efd10",
+   "sure_ms": 1239.5,
+   "hata": ""
+  }
+ ]
+}

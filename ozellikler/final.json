@@ -367,5 +367,6 @@
       "sha256": "93a096ff5ea824eb33658cce017811c420d49bbdc50892c79f60d5b9ccadc956"
     }
   ],
-  "hash_normalization": "UTF-8 text; CRLF normalized to LF as in Git publication"
+  "hash_normalization": "UTF-8 text; CRLF normalized to LF as in Git publication",
+  "recovery_record": "/ozellikler/kurtarma-kaydi.json"
 }

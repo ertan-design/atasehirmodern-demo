@@ -1,0 +1,48 @@
+{
+ "sema": "dila.afair.video-manifest.v1",
+ "zaman": "2026-11-25T01:06:45",
+ "higgsfield_api_hazir": false,
+ "higgsfield_base_url": "https://api.higgsfield.ai",
+ "aktif_motor": "Yerel FFmpeg H.264 + Alt-Ajan Görsel Motoru",
+ "videolar": [
+  {
+   "ad": "dila_01_yasak_siyah_galeri.mp4",
+   "baslik": "01 · Yasak Siyah Kafesi & Zümrüt Işık (Galeri Art)",
+   "cozunurluk": "1280x720",
+   "fps": 30,
+   "sure_sn": 6.0,
+   "kare": 180,
+   "render_ms": 423.6,
+   "render_fps": 424.9,
+   "bayt": 449988,
+   "sha256": "ebafd8febd6c0767b4534062facae9d48eaec4f615a1bdbfed1aa76ae9838ae8",
+   "motor": "Yerel FFmpeg H.264 + Alt-Ajan Görsel"
+  },
+  {
+   "ad": "dila_02_iki_mezura_atolye.mp4",
+   "baslik": "02 · İki Mezura & Affair Terzi Atölyesi",
+   "cozunurluk": "1280x720",
+   "fps": 30,
+   "sure_sn": 6.0,
+   "kare": 180,
+   "render_ms": 429.6,
+   "render_fps": 419.0,
+   "bayt": 349492,
+   "sha256": "1d1e2fa5a99f6c54d39daa496d10b37cddc0abe0da5443408eada08ee700220b",
+   "motor": "Yerel FFmpeg H.264 + Alt-Ajan Görsel"
+  },
+  {
+   "ad": "dila_03_afair_sicrama_reel.mp4",
+   "baslik": "03 · Dila × Afair Birleşik Sıçrama Reel (XFade)",
+   "cozunurluk": "1280x720",
+   "fps": 30,
+   "sure_sn": 11.0,
+   "kare": 330,
+   "render_ms": 734.3,
+   "render_fps": 449.4,
+   "bayt": 874738,
+   "sha256": "1b07a089982728ac1c2cd5d30ebb472fdcf2e0ff64c7534857dfd3dd3eafd121",
+   "motor": "Yerel FFmpeg XFade H.264"
+  }
+ ]
+}

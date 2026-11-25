@@ -1,0 +1,47 @@
+{
+  "schema": "afair.recovery.v1",
+  "source_commit": "dce6037f467359afff64d13e099f80740c6ed93c",
+  "homepage_preserved": true,
+  "added_buttons": [
+    {
+      "url": "/ozellikler/uc-blok/dila-video-studyo",
+      "title": "Üç blok · Dila filmleri"
+    },
+    {
+      "url": "/ozellikler/uc-kule/",
+      "title": "Üç kuleyi keşfet"
+    }
+  ],
+  "html_repairs": [
+    {
+      "path": "ozellikler/uc-blok/canli-nabiz.html",
+      "sha256": "0a9c10425c56d90de15f09bcfd8487e668e75438471e3f086425a16418901bbb"
+    },
+    {
+      "path": "ozellikler/uc-kule/index.html",
+      "sha256": "0a67f1db94693b3b423cc5ce26f8bd63ef3e0edef51e07c6f2fe7a5fc1a007e3"
+    },
+    {
+      "path": "ozellikler/uc-blok/dila-video-studyo.html",
+      "sha256": "ec89e71e127601fb36cf4df00fab073e475720daafc65bddce1de29731255f47"
+    }
+  ],
+  "restored_assets": [
+    {
+      "path": "ozellikler/uc-blok/dila_01_yasak_siyah_galeri.mp4",
+      "git_blob": "3b6b5634df67a9698c86c9cb80cc974956ff68fa",
+      "source_path": "dila/medya/dila_01_yasak_siyah_galeri.mp4"
+    },
+    {
+      "path": "ozellikler/uc-blok/dila_02_iki_mezura_atolye.mp4",
+      "git_blob": "9ec53fc10c3132da5a07c6bd3ac85014669ddc46",
+      "source_path": "dila/medya/dila_02_iki_mezura_atolye.mp4"
+    },
+    {
+      "path": "ozellikler/uc-blok/dila_03_afair_sicrama_reel.mp4",
+      "git_blob": "592aea619c4dfd7cbd945d12ec50c5cf4410304d",
+      "source_path": "dila/medya/dila_03_afair_sicrama_reel.mp4"
+    }
+  ],
+  "scope": "Asset and navigation recovery; not a complete acceptance test for all legacy product functions."
+}
