@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Ataşehir Modern’den Watergarden, Finanskent ve Maltepe’ye üç kurgusal uçuş. Moda, sanat ve şehir yaşamı için gerçek girişler.">
 <title>Başka İstanbul Yok · Üç blok, üç rota</title>
-<link rel="stylesheet" href="/gaia-ucus/sahne.css">
-<script src="/gaia-ucus/sahne.js" defer></script>
+<link rel="stylesheet" href="/gaia-ucus/sahne.3ab0c5763e.css">
+<script src="/gaia-ucus/sahne.4d7dbdeeb6.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#ana">İçeriğe geç</a>
@@ -16,14 +16,14 @@
 </header>
 <main id="ana">
 <section class="intro" aria-labelledby="baslik">
-  <div><p class="eyebrow">ATAŞEHİR MODERN / İSTANBUL</p><h1 id="baslik">Eve geldin.<br><em>Şehre açıl.</em></h1></div>
-  <p class="lead">İlk günün. GAIA’yı üç çatıdan birine al, şehrin neresine açılacağını seç.</p>
+  <div><p class="eyebrow">ATAŞEHİR MODERN / İSTANBUL</p><h1 id="baslik">Uç ve<br><em>şehri gör.</em></h1></div>
+  <p class="lead">Bir çatı seç. GAIA ile uç.</p>
 </section>
 <section id="rotalar" aria-labelledby="rota-baslik">
   <h2 id="rota-baslik" class="sr">Sanal uçuşu seç</h2>
   <div class="flight">
     <div class="stage">
-      <canvas id="sahne" width="1200" height="620" aria-label="GAIA ile İstanbul’un temsili üç boyutlu uçuş sahnesi"></canvas>
+      <canvas tabindex="0" id="sahne" width="1200" height="620" aria-label="GAIA ile İstanbul’un temsili üç boyutlu uçuş sahnesi"></canvas>
       <div class="hud"><span id="hud-clock">HAZIR</span><span>GAIA / İSTANBUL</span></div>
       <div class="arrival" id="arrival" hidden><p class="eyebrow" id="arrival-block"></p><strong id="arrival-name"></strong></div>
     </div>
@@ -35,6 +35,12 @@
     <div class="flight-info">
       <div><h3 id="rota-adi">Watergarden İstanbul</h3><p id="rota-adres">Barbaros Mahallesi, Kızılbegonya Sokak 10/1, Ataşehir.</p><a id="rota-kaynak" href="https://watergarden.com.tr/iletisim">Adres ve ulaşım kaynağı ↗</a> · <a id="rota-devam" href="https://watergarden.com.tr/">Watergarden’ı keşfet ↗</a></div>
       <div class="flight-actions"><button class="action" id="uc" type="button">GAIA ile uç</button><button class="outline" id="direkt" type="button">Doğrudan varışa geç</button></div>
+    </div>
+    <div class="ucus-kumanda" aria-label="Uçuş kumandaları">
+      <button type="button" class="outline" id="ucus-sol" aria-label="Uçuş kamerasını sola çevir">←</button>
+      <button type="button" class="outline" id="ucus-sag" aria-label="Uçuş kamerasını sağa çevir">→</button>
+      <button type="button" class="outline" id="ucus-dur" aria-pressed="false">Oynat</button>
+      <label for="ucus-konum">İlerleme <output id="ucus-konum-deger" for="ucus-konum">%0</output></label><input id="ucus-konum" type="range" min="0" max="100" value="0">
     </div>
     <p id="ucus-durum" class="status" role="status">Blok A seçili. Görsel rota temsili.</p>
   </div>
@@ -65,7 +71,7 @@
   </div>
 </section>
 <section id="doku" class="sheet" aria-labelledby="doku-baslik">
-  <div class="section-head"><p class="eyebrow">AFAIR / NUMUNE MASASI</p><h2 id="doku-baslik">Rengi ipliğinden ayır.</h2><p>Ekran rengi, gerçek lif ve fiziksel Pantone TCX kartı üç ayrı kayıt.</p></div>
+  <div class="section-head"><p><a href="https://www.afair.studio/#dokuma">Rüzgârda kumaşı 360° çevir ↗</a></p><p class="eyebrow">AFAIR / NUMUNE MASASI</p><h2 id="doku-baslik">Rengi ipliğinden ayır.</h2><p>Ekran rengi, gerçek lif ve fiziksel Pantone TCX kartı üç ayrı kayıt.</p></div>
   <div class="samples">
     <figure><img src="/gaia-ucus/tartan.webp" alt="Çapraz sıraları belirgin, renkli dimi dokuma kumaşın yakın çekimi" width="960" height="830" loading="lazy"><figcaption><strong>Dimi dokuma</strong><span>SMcCandlish · <a href="https://commons.wikimedia.org/wiki/File:Tartan_cloth_closeup.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> · küçültüldü</span></figcaption></figure>
     <figure><img src="/gaia-ucus/denim.jpg" alt="Mikroskop altında görülen kot lifleri" width="640" height="480" loading="lazy"><figcaption><strong>Kot lifleri</strong><span>Rickfrombaltimore · <a href="https://commons.wikimedia.org/wiki/File:Denim_Fibers.jpg">Fotoğraf</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · küçültüldü</span></figcaption></figure>
