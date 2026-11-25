@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ATAŞEHİR · FİNAL 1 — Üç çatıdan şehre uç.</title>
-  <meta name="description" content="Arya 25K → Watergarden, Beste 35K → Finanskent, Opera 43K → Maltepe Sahil aerodinamik uçuş ve süzülüş simülatörü.">
+  <title>Üç çatı · sanal rota</title>
+  <meta name="description" content="Üç çatıdan üç kurgu sahneye geç. Gerçek uçuş planı içermez.">
   <link rel="stylesheet" href="./final.css">
 </head>
 <body>
@@ -21,21 +21,17 @@
   </header>
 
   <section class="atolye-panel" id="atolye-panel" aria-label="3-Blok Wingsuit Uçuş & Rüzgâr Final" hidden>
-    <p>Etkileşimli senaryo. Gerçek müsaitlik, randevu, ölçüm veya doğrulanmış rota değildir; varsayımlı sonuçlar kullanılır.</p><h2>3-Blok Wingsuit Uçuş & Rüzgâr Final</h2>
-    <p class="aciklama">Arya 25K → Watergarden, Beste 35K → Finanskent, Opera 43K → Maltepe Sahil aerodinamik uçuş ve süzülüş simülatörü.</p>
+    <p>Olası senaryoları keşfedin. Gerçek hizmet, müsaitlik, ölçüm ve rezervasyon onayı yoktur.</p><h2>Üç çatı · sanal rota</h2>
+    <p class="aciklama">Üç çatıdan üç kurgu sahneye geç. Gerçek uçuş planı içermez.</p>
     
         <div class="form-izgara">
           <div class="alan"><label for="inp-blok">Kalkış Bloğu &amp; Hedef</label>
-            <select id="inp-blok">
-              <option value="arya">Blok 1 · Arya (25. Kat) → Watergarden Su-Işık</option>
-              <option value="beste">Blok 2 · Beste (35. Kat) → Finanskent Kuleleri</option>
-              <option value="opera">Blok 3 · Opera (43. Kat) → Maltepe Sahil Konser</option>
-            </select>
+            <select id="inp-blok"><option value="arya">A · Watergarden</option><option value="beste">B · Finanskent</option><option value="opera">C · Maltepe sahili</option></select>
           </div>
-          <div class="alan"><label for="inp-suzulme">Kanat Süzülüş Oranı (L/D ×10)</label>
+          <div class="alan"><label for="inp-suzulme">Sahne hareketi</label>
             <input id="inp-suzulme" type="range" min="22" max="42" value="31">
           </div>
-          <div class="alan"><label for="inp-ruzgar-knot">Karşı/Yan Rüzgâr (km/sa)</label>
+          <div class="alan"><label for="inp-ruzgar-knot">Kumaş dalgası</label>
             <input id="inp-ruzgar-knot" type="range" min="4" max="36" value="14">
           </div>
         </div>
@@ -44,18 +40,16 @@
     <div class="aksiyon-bar">
       <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-uc-blok-ucus-cikti.json">Çıktıyı İndir (.json)</a>
       <a class="indir-bag" id="btn-svg-indir" href="data:image/svg+xml;charset=utf-8," download="final-uc-blok-ucus-plan.svg" hidden>Paftayı İndir (.svg)</a>
-      <button type="button" class="dugme" id="btn-senkron-yay">Senkron Zincirine Yaz</button>
+      <button type="button" class="dugme" id="btn-senkron-yay">Bu tarayıcıya kaydet</button>
       <button type="button" class="dugme" id="atolye-kapat">Kapat ✕</button>
     </div>
     <pre class="kod-cikti" id="zincir-cikti"></pre>
   </section>
 
-  <section class="baslik" aria-label="Sahne özeti">
-    <h1>Üç çatıdan şehre uç.</h1>
-    <p>Arya, Beste ve Opera bloklarından 360° rüzgâr kanadı rotası.</p>
+  <section class="baslik" aria-label="Sahne özeti"><h1>Üç çatı · sanal rota</h1><p>Üç çatıdan üç kurgu sahneye geç. Gerçek uçuş planı içermez.</p>
   </section>
 
-  <footer class="alt"><span>Örnek senaryo · Hizmet onayı yok</span>
+  <footer class="alt">
     <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
       <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
       <button type="button" class="dugme" id="btn-isik">Işık</button>
