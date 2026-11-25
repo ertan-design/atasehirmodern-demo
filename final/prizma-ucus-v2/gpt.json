@@ -1,0 +1,175 @@
+{
+  "schema": "afffair.dila.8kural.gpt.v3",
+  "updated": "2026-11-25T05:31:56+03:00",
+  "brand": "AFFFAIR",
+  "purpose": {
+    "why_built": "Ataşehir Modern'in 3 kulesine yeni taşınan bir sakinin ve lüks moda/sanat ziyaretçisinin: (1) gerçek Pantone dokumaları loş galeri ışığında 360° çevirip rüzgârla dalgalandırması (afair.studio), (2) çatıdan Watergarden, Finanskent, Maltepe Sahili ve tüm İstanbul'a Google Maps kullanmadan kendi parmağıyla uçması (dokuma-ufuk & baskaistanbulyok), (3) seçtiği kumaşla eve iki-mezura canlı terzi ve tarım danışmanı çağırması (afair.live) — insanlar için sıfır karmaşa, GPT ajanlar için %100 makine-okunur kontrol.",
+    "dila_8_laws_verified": {
+      "1_no_clutter_le_8_controls": true,
+      "2_instant_entry_webgl2_motion": true,
+      "3_gen_z_mobile_and_inertia": true,
+      "4_quiet_luxury_afffair_le_3_fonts": true,
+      "5_short_child_clear_copy_le_30_words": true,
+      "6_zero_cognitive_load": true,
+      "7_real_webgl2_pleated_cloth_and_3d_flight_8d_shadows": true,
+      "8_zero_toggle_direct_360_and_wind_flight_steering": true
+    },
+    "pure_black_veto": "STRICT_ZERO_PURE_BLACK_LIFTED_OBSIDIAN_0E1016",
+    "pending_tasks_in_memory": 0,
+    "ryte_subagents_live_endpoint": "/ryte-canli.json",
+    "pii_stored": 0
+  },
+  "programmatic_browser_api": {
+    "globals": [
+      "window.AFAIR_GPT_API",
+      "window.AFAIR_STUDIO_API"
+    ],
+    "webmcp_tool": "afair_control_8d_stage",
+    "url_query_controls": "?fabric=0..3&yaw=0..360&pitch=-65..65&wind=0..200&tower=0..3"
+  },
+  "fabrics_pantone_tcx": [
+    {
+      "id": 0,
+      "code": "PANTONE 16-1342 TCX",
+      "name": "Bakır Atlas",
+      "sub": "22 Momme İpek Saten · Loş Spot Yansımalı",
+      "rgb": [
+        0.76,
+        0.44,
+        0.26
+      ],
+      "spec": [
+        0.98,
+        0.85,
+        0.66
+      ],
+      "sheen": 0.88,
+      "trans": 0.34,
+      "weave": 88.0
+    },
+    {
+      "id": 1,
+      "code": "PANTONE 13-1008 TCX",
+      "name": "Şampanya İpek",
+      "sub": "Ham Organze & Keten Karışımı · 185 g/m²",
+      "rgb": [
+        0.85,
+        0.79,
+        0.69
+      ],
+      "spec": [
+        1.0,
+        0.96,
+        0.88
+      ],
+      "sheen": 0.72,
+      "trans": 0.46,
+      "weave": 72.0
+    },
+    {
+      "id": 2,
+      "code": "PANTONE 19-2428 TCX",
+      "name": "Mürdüm Kadife",
+      "sub": "Kesik Hav İpek Kadife · 320 g/m²",
+      "rgb": [
+        0.46,
+        0.17,
+        0.33
+      ],
+      "spec": [
+        0.95,
+        0.68,
+        0.8
+      ],
+      "sheen": 0.78,
+      "trans": 0.22,
+      "weave": 68.0
+    },
+    {
+      "id": 3,
+      "code": "PANTONE 19-3924 TCX",
+      "name": "Gece İpeği",
+      "sub": "Saf Siyah Yasağı İkamesi · Derin İndigo",
+      "rgb": [
+        0.19,
+        0.27,
+        0.44
+      ],
+      "spec": [
+        0.76,
+        0.84,
+        0.98
+      ],
+      "sheen": 0.9,
+      "trans": 0.3,
+      "weave": 96.0
+    }
+  ],
+  "atasehir_3tower_routes": [
+    {
+      "id": 0,
+      "name": "Watergarden",
+      "tower": "Kule 1 · 43. Kat",
+      "to": "Watergarden AVM & Sanat",
+      "rgb": [
+        0.82,
+        0.56,
+        0.3
+      ],
+      "tx": -1.65,
+      "ty": -0.55,
+      "tz": -1.35
+    },
+    {
+      "id": 1,
+      "name": "Finanskent",
+      "tower": "Kule 2 · 35. Kat",
+      "to": "Finanskent Fırsat & Ses",
+      "rgb": [
+        0.38,
+        0.68,
+        0.82
+      ],
+      "tx": 1.65,
+      "ty": -0.45,
+      "tz": -1.55
+    },
+    {
+      "id": 2,
+      "name": "Maltepe Sahil",
+      "tower": "Kule 3 · 25. Kat",
+      "to": "Sahil Konser & Spor",
+      "rgb": [
+        0.36,
+        0.74,
+        0.62
+      ],
+      "tx": -0.65,
+      "ty": -0.62,
+      "tz": 1.45
+    },
+    {
+      "id": 3,
+      "name": "İstanbul",
+      "tower": "Üst Halka · +420m",
+      "to": "Başka İstanbul Yok",
+      "rgb": [
+        0.78,
+        0.46,
+        0.66
+      ],
+      "tx": 0.15,
+      "ty": 0.82,
+      "tz": -1.75
+    }
+  ],
+  "live_surfaces": [
+    "https://www.afair.studio/",
+    "https://www.afair.studio/dokuma-ufuk/",
+    "https://www.afair.studio/karbon-8d/",
+    "https://www.afair.studio/karbon-ucus/",
+    "https://www.afair.live/",
+    "https://www.afair.live/karbon-8d/",
+    "https://ertanaraz.com/baskaistanbulyok"
+  ]
+}

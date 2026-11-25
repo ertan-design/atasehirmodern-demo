@@ -1,0 +1,10 @@
+# AFFFAIR (Quiet Luxury 8D Kumaş, Canlı Terzi & Ataşehir 3-Kule Uçuş Ekosistemi)
+
+- Yapılış Amacı: İnsanlar için 3 yaşındaki çocuğun anlayacağı sadelikte, loş galeri ışığında 360° yönlendirilebilir gerçek WebGL2 ipek/kadife kumaş dalgası ve Google Maps'siz 3-Kule İstanbul yaşam uçuşu; GPT ajanlar için sıfır-PII tam otomasyon.
+- Kumaş Sahnesi: https://www.afair.studio/
+- 3-Kule Uçuş Sahnesi: https://www.afair.studio/dokuma-ufuk/
+- Canlı Terzi & Yaşam Masası: https://www.afair.live/
+- Üst Halka (Başka İstanbul Yok): https://ertanaraz.com/baskaistanbulyok
+- GPT Sözleşmesi: /gpt.json
+- Canlı RYTE Alt-Ajan Nabzı: /ryte-canli.json
+- Tarayıcı API: `window.AFAIR_GPT_API` (`purpose()`, `getState()`, `setFabric(0..3)`, `setOrbit360(yaw,pitch,zoom)`, `setWind(strength,deg)`, `selectTower(0..3)`, `steerFlight(dx,dy,progress)`, `book(service)`).

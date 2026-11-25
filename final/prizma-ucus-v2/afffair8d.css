@@ -1,0 +1,196 @@
+/* afffair8d.css — AFFFAIR Quiet Luxury v3 · Strictly 3 Font Sizes · Zero Pure Black · 390px Mobile Proof */
+:root {
+  --obsidian: #0e1016;
+  --velvet-night: #17141f;
+  --glass: rgba(19, 18, 26, 0.68);
+  --line: rgba(239, 231, 218, 0.16);
+  --ivory: #efe7da;
+  --muted: rgba(239, 231, 218, 0.66);
+  --champagne: #cfa972;
+  --mint: #84cbb2;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: var(--obsidian);
+  color: var(--ivory);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  overflow-x: hidden;
+}
+.stage-wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  user-select: none;
+  background: radial-gradient(circle at 50% 28%, var(--velvet-night) 0%, var(--obsidian) 76%);
+}
+.gl-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+  touch-action: none;
+}
+.gl-canvas:active { cursor: grabbing; }
+
+/* Font Size 1: 12px (Unified minimal luxury controls, brand mark, pills) */
+.top-whisper {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  pointer-events: none;
+  z-index: 10;
+}
+.brand-mark, .ghost-pill, .pill-btn {
+  pointer-events: auto;
+  font-size: 12px;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--ivory);
+}
+.brand-mark {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+.top-actions {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ghost-pill, .pill-btn {
+  appearance: none;
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 9px 14px;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+.ghost-pill:hover, .pill-btn:hover, .pill-btn.on, .ghost-pill.on {
+  background: var(--champagne);
+  color: var(--obsidian);
+  border-color: var(--champagne);
+}
+
+/* Font Size 2 (42px Desktop / 30px Mobile) & Font Size 3 (14px Subtitle) */
+.hero-copy {
+  position: absolute;
+  top: 78px;
+  left: 24px;
+  right: 24px;
+  max-width: 460px;
+  pointer-events: none;
+  z-index: 8;
+}
+.hero-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: var(--ivory);
+  margin-bottom: 8px;
+}
+.hero-sub {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Ultra-Clean Quiet Luxury Capsule (<= 5 items inside dock -> total <= 7 on screen!) */
+.dock {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: calc(100vw - 24px);
+  background: var(--glass);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+  backdrop-filter: blur(18px);
+}
+.sw-dot {
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(239, 231, 218, 0.32);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+.sw-dot:hover, .sw-dot.on {
+  transform: scale(1.16);
+  border-color: var(--ivory);
+}
+.sw-dot.f0 { background: #c27042; }
+.sw-dot.f1 { background: #d9c9b0; }
+.sw-dot.f2 { background: #752b54; }
+.sw-dot.f3 { background: #304570; }
+
+/* Below-the-fold Bespoke Concierge & GPT/RYTE Verification (Zero first-screen clutter!) */
+.below-fold {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 44px 24px 68px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+.q-card {
+  background: rgba(22, 20, 30, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+.q-card h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--ivory);
+}
+.q-card p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.q-status {
+  font-size: 12px;
+  color: var(--mint);
+  min-height: 16px;
+}
+@media (max-width: 680px) {
+  .top-whisper { padding: 14px 14px; }
+  .hero-copy { top: 68px; left: 14px; right: 14px; }
+  .hero-title { font-size: 30px; }
+  .dock { bottom: 14px; padding: 7px 10px; gap: 6px; flex-wrap: wrap; justify-content: center; border-radius: 22px; }
+  .pill-btn, .ghost-pill { padding: 8px 11px; }
+}

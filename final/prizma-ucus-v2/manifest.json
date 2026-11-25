@@ -1,0 +1,97 @@
+{
+  "schema": "prizma.afffair.dila8.v3",
+  "updated": "2026-11-25T05:31:56+03:00",
+  "slogan": "Çatıdan uç. Şehre in.",
+  "files": [
+    {
+      "path": "site/afair-8d.css",
+      "bytes": 4757,
+      "sha256": "409efa36fb86c2a32368335b3024cf751259ab9d58afcda71c5eb16b812b809c"
+    },
+    {
+      "path": "site/afair-8d.js",
+      "bytes": 29635,
+      "sha256": "b2b5cfa56d064f9bca8ba1206ef766cd219f6105334b384950a8dc79c5f5f7ec"
+    },
+    {
+      "path": "site/afffair8d.css",
+      "bytes": 4800,
+      "sha256": "7ef19c615998a06c93d3e5bcbd02252f369de636388ef5cd893d03ecd4112e82"
+    },
+    {
+      "path": "site/atolye-veri.js",
+      "bytes": 3842,
+      "sha256": "7d4829aa14648f1f8e243f24069d4300caae433b97f2b9162ae5ab8de45670b7"
+    },
+    {
+      "path": "site/atolye-webgl-kumas.js",
+      "bytes": 24214,
+      "sha256": "422c66c420c27903fc8b99630ee3343013cd8199113683e7dded6142fa55bf3a"
+    },
+    {
+      "path": "site/atolye-webgl-ucus.js",
+      "bytes": 12686,
+      "sha256": "1b6731bd1b01387c4ebf63ae5de13f1f40348f26db6bc814b417875dd5fc7258"
+    },
+    {
+      "path": "site/atolye.css",
+      "bytes": 10047,
+      "sha256": "22ada76d8a8724cfac07b8f4c41e278e5269a6cebaa57861eb84077abe9228d5"
+    },
+    {
+      "path": "site/gpt.json",
+      "bytes": 4348,
+      "sha256": "625417963a4fb58c336e81cb6d6fc87decf8ca13b8b7e6a156639f22685f7eb4"
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 3367,
+      "sha256": "b5ae8ca3cdf1b250fa9de8fd3c213b5ea9938d36efc76675c14b91099bc5853f"
+    },
+    {
+      "path": "site/llms.txt",
+      "bytes": 895,
+      "sha256": "f4dd4f4590a2bedfa60e04f12c5e76cbac8e522ef4e5fccd95a5bd91d2d8db38"
+    },
+    {
+      "path": "site/manifest.json",
+      "bytes": 3011,
+      "sha256": "4dcd9b609397da82eafb35112a44b238aa1557c1a98582d79108321e32c9cdc4"
+    },
+    {
+      "path": "site//prizma-atolye/medya/genie_ucus_referans.jpg",
+      "bytes": 45591,
+      "sha256": "3638133d280d55df781124c7740ce12256bd1e4c11dcdc606e4d94bb3f87d401"
+    },
+    {
+      "path": "site//uc-cati/referans.mp4",
+      "bytes": 1763220,
+      "sha256": "2c4aea45214cc7476488d6a4274064bb537ede2b467bae042ec96ac78f25214d"
+    },
+    {
+      "path": "site//prizma-atolye/medya/levha_01_atasehir_kuleler.jpg",
+      "bytes": 173325,
+      "sha256": "2de785ec379e41714092565f6ae739dad3f7945420200a4c606ef31801e7ce0e"
+    },
+    {
+      "path": "site//prizma-atolye/medya/levha_02_zumrut_keten_makro.jpg",
+      "bytes": 287036,
+      "sha256": "6b287b8bdfc72530412a46d901b9855f8e43a2b40c3ef61572dc7ba821406009"
+    },
+    {
+      "path": "site//prizma-atolye/medya/levha_03_espresso_murdum_makro.jpg",
+      "bytes": 124823,
+      "sha256": "13ff71d544a07472657c93d3ebfdcd53bd4e44156ed1c3b5243d4b33cc89cf67"
+    },
+    {
+      "path": "site/ryte-canli.json",
+      "bytes": 11366,
+      "sha256": "6697e421080b8e3c76e6304e4ab33e9dfbd0873698113a8a54dabd413896e11e"
+    },
+    {
+      "path": "site/ufuk8d.js",
+      "bytes": 20817,
+      "sha256": "27b27cfe71ea01ae5b7abccb3ffcc3e52ffefc4220f1197a40f01f2e909c384a"
+    }
+  ]
+}

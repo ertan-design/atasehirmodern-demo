@@ -2,6 +2,48 @@
   "site": "atasehirmodern-demo",
   "entries": [
     {
+      "path": "final/kumas-360-dimi/index.html",
+      "title": "360° Dimi & İndigo Kot Tezgâhı",
+      "description": "Depoda yetim kalan dimi ve kot dokularını 360° rüzgâr ve ışık açısıyla inceleyen stüdyo.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/cielab-iplik-ucus/index.html",
+      "title": "CIELAB ΔE00 9-İplik & Uçuş Şeması",
+      "description": "Üç bloktan üç yöne dokuma uçuş şeması ve 9 iplik için canlı ΔE00 algısal renk farkı ölçümü.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/huseyinbey-rolove-kaniti/index.html",
+      "title": "1238×976 cm DXF Rölöve & 1:50 Plan",
+      "description": "Hüseyinbey AutoCAD DXF rölövesi, Sakinler 1:50 vektör planları ve topolojik fotoğraf kanıtı.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/masa-169-parsel-dokuma/index.html",
+      "title": "169-Bina OSM Parsel Dimi Dokuma",
+      "description": "Ataşehir Modern çevresindeki gerçek 169 bina izini dimi kumaş ve ayrık renk plakası olarak dokur.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/prizma-ucus-v2/index.html",
+      "title": "60×60 İpek Kanat & Halka Uçuşu",
+      "description": "Kurtarılan 3.114 satırlık WASD/sürükle yönlendirmeli 3-kule halka sayaçlı uçuş ve Genie videosu.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/serdar-mimari-arsiv/index.html",
+      "title": "Serdar 167-Kaynak Mimari & Maket",
+      "description": "Vaziyet planı, 1/75 mimari maket, cephe renderları ve Şubat 2026 sokak doğrulama atlası.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "dokuma-ucus/index.html",
       "title": "Dokuma şehir",
       "description": "Çatıdan uç, şehre kon: rüzgârda dalgalanan kumaş, elle sürülen üç uçuş, 360° çevrilen bez.",

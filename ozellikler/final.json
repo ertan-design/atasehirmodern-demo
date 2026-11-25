@@ -3,9 +3,63 @@
   "site": "atasehirmodern-demo",
   "origin": "https://www.xn--ataehirmodern-ktc.com",
   "homepage_preserved": true,
-  "entry_count": 33,
-  "restored_count": 3,
+  "entry_count": 39,
+  "restored_count": 9,
   "entries": [
+    {
+      "path": "final/kumas-360-dimi/index.html",
+      "title": "360° Dimi & İndigo Kot Tezgâhı",
+      "description": "Depoda yetim kalan dimi ve kot dokularını 360° rüzgâr ve ışık açısıyla inceleyen stüdyo.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/final/kumas-360-dimi/index.html",
+      "sha256": "6e8a7b40bbf99f985e9d02288281e64b3c667ce89a0c03cd97eaff10f44f3760"
+    },
+    {
+      "path": "final/cielab-iplik-ucus/index.html",
+      "title": "CIELAB ΔE00 9-İplik & Uçuş Şeması",
+      "description": "Üç bloktan üç yöne dokuma uçuş şeması ve 9 iplik için canlı ΔE00 algısal renk farkı ölçümü.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/final/cielab-iplik-ucus/index.html",
+      "sha256": "811cb614e2f011b1ce24d50831936885c9ddfe8c9f204fde1cc9d7868701b8c7"
+    },
+    {
+      "path": "final/huseyinbey-rolove-kaniti/index.html",
+      "title": "1238×976 cm DXF Rölöve & 1:50 Plan",
+      "description": "Hüseyinbey AutoCAD DXF rölövesi, Sakinler 1:50 vektör planları ve topolojik fotoğraf kanıtı.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/final/huseyinbey-rolove-kaniti/index.html",
+      "sha256": "d63e1650d5fff532ea4c62767992462c590c15887078bb9d68ca5e28e46d3a5b"
+    },
+    {
+      "path": "final/masa-169-parsel-dokuma/index.html",
+      "title": "169-Bina OSM Parsel Dimi Dokuma",
+      "description": "Ataşehir Modern çevresindeki gerçek 169 bina izini dimi kumaş ve ayrık renk plakası olarak dokur.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/final/masa-169-parsel-dokuma/index.html",
+      "sha256": "fe28505e682489a00995cf1f46c1ce974bb2331f191a62ffdf9b400a31a2330f"
+    },
+    {
+      "path": "final/prizma-ucus-v2/index.html",
+      "title": "60×60 İpek Kanat & Halka Uçuşu",
+      "description": "Kurtarılan 3.114 satırlık WASD/sürükle yönlendirmeli 3-kule halka sayaçlı uçuş ve Genie videosu.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/final/prizma-ucus-v2/index.html",
+      "sha256": "3d9b284b48af9380fa619a3c8e787f5aca0d0db49cb033f11760912a9b3bba0f"
+    },
+    {
+      "path": "final/serdar-mimari-arsiv/index.html",
+      "title": "Serdar 167-Kaynak Mimari & Maket",
+      "description": "Vaziyet planı, 1/75 mimari maket, cephe renderları ve Şubat 2026 sokak doğrulama atlası.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/final/serdar-mimari-arsiv/index.html",
+      "sha256": "44d5900f87f4daedbde96e4f2faceafee58c22a5ad6158371b82e30ab5408e4a"
+    },
     {
       "path": "dokuma-ucus/index.html",
       "title": "Dokuma şehir",

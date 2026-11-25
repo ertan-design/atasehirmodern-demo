@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ataşehir Modern · Serdar Mimari, Maket &amp; 360° Konum Atlası</title>
+<link rel="stylesheet" href="./final-style.css">
+<script src="./final-app.js" defer></script>
+</head>
+<body>
+<div class="karbon-final-topbar">
+  <span class="kf-title">ATAŞEHİR MODERN · Serdar 167-Kaynaklı Mimari, Maket &amp; Konum Atlası</span>
+  <div><a href="/">← Ana Sayfa</a> <a href="/gulnihal-sokak">3B Gülnihal Sokak</a> <a href="/ozellikler/">Tüm Özellikler</a></div>
+</div>
+<main class="wrap">
+  <section class="hero">
+    <h1>Ataşehir Modern Doğrulanmış Mimari, 1/75 Maket ve Sokak Konum Arşivi</h1>
+    <p>Resmî adres: <strong>Atatürk Mah., Gülnihal Sok., Ataşehir Modern Sitesi, Ataşehir / İstanbul</strong> · OpenStreetMap Way <code>732839949</code> (<code>40.989818°K, 29.120751°D</code>) ve Ahmet Yesevi Caddesi (<code>40.987980°K, 29.117088°D</code>) sokak doğrulamaları. Görsellere tıklayarak tam boy inceleyebilirsiniz.</p>
+    <div class="meta-row">
+      <button type="button" class="pill on" data-fcat="all">Tümü (16 Seçki Görsel)</button>
+      <button type="button" class="pill" data-fcat="Resmî Vaziyet">Vaziyet Planı</button>
+      <button type="button" class="pill" data-fcat="1/75 Maket">1/75 Mimari Maket</button>
+      <button type="button" class="pill" data-fcat="Sokak Doğrulama">Sokak &amp; Cephe Doğrulama</button>
+      <button type="button" class="pill" data-fcat="Resmî Mimari">Resmî Mimari Renderlar</button>
+      <a class="pill" href="https://www.xn--modernataehir-qtc.com/final/kat-planlari-32tip/">32 Daire Kat Planı Seçici ↗</a>
+    </div>
+  </section>
+
+  <section class="gallery" id="galGrid" aria-label="Mimari ve konum görselleri"></section>
+
+  <section class="box">
+    <h2>Doğrulanmış Coğrafi &amp; 360° Kaynak Bağlantıları (Google Maps Karosu Kullanılmadan)</h2>
+    <div class="meta-row">
+      <a class="pill" href="https://www.openstreetmap.org/way/732839949" target="_blank" rel="noopener">OpenStreetMap Way 732839949 ↗</a>
+      <a class="pill" href="https://webgis.atasehir.bel.tr/keos/" target="_blank" rel="noopener">Ataşehir Belediyesi KEOS Kent Rehberi ↗</a>
+      <a class="pill" href="https://www.netcad.com/blog/atasehir-sokaklari-3600-olarak-ekranlarda" target="_blank" rel="noopener">Ataşehir 360° Sokak Çekimleri Kaynağı ↗</a>
+      <a class="pill" href="/gulnihal-sokak">Özgün WebGL2 3B Kent İkizini Aç →</a>
+    </div>
+  </section>
+
+  <section class="box">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px">
+      <h2>SHA-256 Mühürlü Kaynak Envanteri (167 Kayıt)</h2>
+      <input id="catSearch" class="inp" type="search" placeholder="Kaynak veya tür ara...">
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Tür</th><th>SHA-256 (12h)</th><th>Kaynak Adresi</th></tr></thead>
+        <tbody id="catBody"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<dialog id="zoomDlg">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px">
+    <strong id="zoomCap"></strong>
+    <button type="button" id="closeDlg" class="pill on">Kapat ✕</button>
+  </div>
+  <img id="zoomImg" alt="Büyütülmüş mimari görsel">
+</dialog>
+</body>
+</html>

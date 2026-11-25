@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Başka İstanbul yok · Ataşehir'in üst halkası</title>
+<link rel="stylesheet" href="./final-style.css">
+<script src="./final-app.js" defer></script>
+</head><body>
+<div class="karbon-final-topbar"><span class="kf-title">ATAŞEHİR MODERN · Dokuma Uçuş Şeması &amp; CIELAB ΔE00 9-İplik Masası</span><div style="display:flex;gap:8px;flex-wrap:wrap"><a href="/">← Ana Sayfa</a><a href="/ozellikler/">Tüm Özellikler Dizini</a></div></div>
+<header><b>BAŞKA İSTANBUL YOK</b><nav><a href="#bloklar">Üç blok</a><a href="#misafir">Yeni misafir</a><a href="#randevu">Randevu</a><a href="#iplik">İplik kartı</a></nav></header>
+
+<div class="hero">
+ <div class="yazi">
+  <div class="ust">Ataşehir'in bir üst halkası</div>
+  <h1>Çatıdan atla.<br><em>Başka İstanbul yok.</em></h1>
+  <p>Üç blok, üç çatı, üç yön. Kanatlı giysiyle çatıdan atlayan sakin, her blokta başka bir yöne süzülür: alışverişe, işe, sahile.</p>
+  <div class="dugme sans" role="group" aria-label="Blok seç">
+   <button type="button" data-b="0" aria-pressed="false"><i style="background:#B5562B"></i>A Blok → Watergarden AVM</button>
+   <button type="button" data-b="1" aria-pressed="false"><i style="background:#E3A22B"></i>B Blok → Finanskent fırsatları</button>
+   <button type="button" data-b="2" aria-pressed="false"><i style="background:#2E6F8E"></i>C Blok → Maltepe sahil, miting ve konser alanı</button>
+  </div>
+  <div id="durum" role="status" aria-live="polite">Bir blok seçin; sakin o çatıdan atlar.</div>
+  <p class="not">Harita şematiktir ve ölçeksizdir. Hiçbir harita servisinin görüntüsü kullanılmadı; bölge dokuma kumaş, rotalar dikiş izi olarak çizildi.</p>
+ </div>
+ <div class="sahne"><svg id="harita" viewBox="0 0 1200 800" role="img" aria-label="Ataşehir çevresinin dokuma kumaş olarak çizilmiş şematik haritası; üç bloktan üç hedefe uçuş rotaları"></svg></div>
+</div>
+
+<section id="bloklar">
+ <div class="ust">Üç blok, üç yön</div><h2>Her çatı başka bir şehre açılır</h2>
+ <div class="uc">
+  <div class="kart"><div class="ust" style="color:#B5562B">A Blok · kuzeybatı</div><h3>Watergarden AVM</h3><p class="sans">Moda, sanat ve akşam yürüyüşü. Yeni taşınan misafir şehirle ilk burada tanışır: kumaşa dokunur, bir vitrinin önünde durur.</p></div>
+  <div class="kart"><div class="ust" style="color:#9a6a00">B Blok · batı</div><h3>Finanskent fırsatları</h3><p class="sans">İş, görüşme, yeni bağlantılar. Sabah çatıdan çıkan rota, finans merkezinin kulelerine iner.</p></div>
+  <div class="kart"><div class="ust" style="color:#2E6F8E">C Blok · güney</div><h3>Maltepe sahili</h3><p class="sans">Miting ve konser alanı, deniz kıyısı. Hafta sonu rota Marmara'ya, sesin ve kalabalığın olduğu yere uzanır.</p></div>
+ </div>
+</section>
+
+<section id="misafir" style="background:var(--ket);max-width:none">
+ <div style="max-width:1280px;margin:0 auto">
+ <div class="ust">Binaya yeni taşınan misafir</div><h2>Hayatla dört kapıdan tanışır</h2>
+ <div class="dort">
+  <div class="kapi" style="background:#B5562B"><h3>Moda</h3><p>Online terzi: ölçü, prova, tadilat. Kumaş ve iplik rengi aşağıdaki iplik kartıyla konuşulur.</p></div>
+  <div class="kapi" style="background:#1F2A44"><h3>Sanat</h3><p>Sergi, atölye, sahne. Watergarden'dan Maltepe konser alanına kadar.</p></div>
+  <div class="kapi" style="background:#2E6F8E"><h3>Elektronik</h3><p>Taşınma günü kurulum: internet, aydınlatma, ev cihazları.</p></div>
+  <div class="kapi" style="background:#6B7A3A"><h3>Tarım</h3><p>Balkon, teras ve bahçe için tarım danışmanı: toprak, sulama, bitki sağlığı.</p></div>
+ </div>
+ <p class="not" style="margin-top:14px">Ataşehir ana sitesi: atasehirmodern.com</p>
+ </div>
+</section>
+
+<section id="randevu">
+ <div class="ust">Online terzi müsait mi? Tarım danışmanından nasıl randevu alırım?</div><h2>Randevu talebi</h2>
+ <p class="sans" style="font-size:16px">Bu sayfa henüz bir terziye ya da danışmana bağlı değil. Bu yüzden müsaitlik göstermiyoruz ve randevuyu kesinleştirmiyoruz. Formu doldurduğunuzda, hizmet sağlayıcıya iletilmeye hazır bir talep kartı oluşur; kartı kopyalayıp gönderebilirsiniz.</p>
+ <form id="form" autocomplete="off">
+  <label>Hizmet<select id="hizmet" required>
+   <option value="Terzi · ölçü alma">Terzi · ölçü alma</option><option value="Terzi · prova">Terzi · prova</option><option value="Terzi · tadilat">Terzi · tadilat</option>
+   <option value="Tarım danışmanı · toprak ve gübre">Tarım danışmanı · toprak ve gübre</option><option value="Tarım danışmanı · sulama">Tarım danışmanı · sulama</option><option value="Tarım danışmanı · bitki sağlığı">Tarım danışmanı · bitki sağlığı</option>
+  </select></label>
+  <label>Blok<select id="blok"><option>A Blok</option><option>B Blok</option><option>C Blok</option></select></label>
+  <label>Tercih edilen gün<input id="gun" type="date" required></label>
+  <label>Zaman aralığı<select id="aralik"><option>09:00–12:00</option><option>12:00–15:00</option><option>15:00–18:00</option><option>18:00–21:00</option></select></label>
+  <label>Görüşme biçimi<select id="bicim"><option>Görüntülü görüşme</option><option>Dairede ziyaret</option><option>Telefon</option></select></label>
+  <label>İplik / kumaş rengi (isteğe bağlı)<select id="renk"></select></label>
+  <label class="tam">Not<textarea id="not" rows="3" maxlength="500" placeholder="Örn. ceket kol boyu 2 cm kısalacak; terasta 6 saksı domates yaprakları sararıyor"></textarea></label>
+  <button class="gonder tam" type="submit">Talep kartını oluştur</button>
+ </form>
+ <div id="talep" aria-live="polite"></div>
+</section>
+
+<section id="iplik">
+ <div class="ust">Pantone ayrımı gibi: gerçek kumaş, gerçek iplik</div><h2>İplik kartı</h2>
+ <p class="sans" style="font-size:16px">Sitenin bütün renkleri bu dokuz iplikten gelir. Her rengin CIELAB değeri (D65) tarayıcınızda hesaplanır. ΔE00, bir önceki iplikle aradaki algısal farktır. Bu değerler ekran rengini tanımlar. Kumaş ya da iplik eşleşmesi için numunenin spektrofotometreyle ölçülmesi gerekir; burada hiçbir Pantone kodu eşleşmesi öne sürülmüyor.</p>
+ <table id="tablo"><thead><tr><th>Numune</th><th>İplik</th><th>Hex</th><th>L*</th><th>a*</th><th>b*</th><th>ΔE00 (öncekiyle)</th><th>Kullanım</th></tr></thead><tbody></tbody></table>
+</section>
+
+<footer>Başka İstanbul yok · baskaistanbulyok.com · Ataşehir, İstanbul. Harita şematiktir; konumlar yön göstermek içindir, ölçü değildir. Hiçbir harita servisinin görüntüsü kullanılmamıştır. Sayfa dış kaynağa bağlanmaz.</footer>
+
+
+</body></html>
