@@ -1,0 +1,298 @@
+{
+  "schema": "gaia.feature-directory.v1",
+  "site": "atasehirmodern-demo",
+  "origin": "https://www.xn--ataehirmodern-ktc.com",
+  "homepage_preserved": true,
+  "entry_count": 32,
+  "restored_count": 2,
+  "entries": [
+    {
+      "path": "ozellikler/dokunmus-yasam/index.html",
+      "title": "Dokunmuş yaşam",
+      "description": "Üç blok, yaşam halkası ve dokuma anlatımına geri dön.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/ozellikler/dokunmus-yasam/index.html",
+      "sha256": "1f7d944598f942dacc7cce33166c96e1819860e5950eead265611801d9ba084a"
+    },
+    {
+      "path": "ozellikler/kent-pilotu/index.html",
+      "title": "Etkileşimli kent pilotu",
+      "description": "Döndür, yakınlaştır, blok seç ve seçilen noktanın bağlantısını paylaş.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/ozellikler/kent-pilotu/index.html",
+      "sha256": "44734b6f91fa85d195d04c576af12171fd5d79216ccf41a51588e03f14e1336d"
+    },
+    {
+      "path": "arya-watergarden/index.html",
+      "title": "Arya’dan suya süzül.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/arya-watergarden/index.html",
+      "sha256": "ed7aeff36f863d7f44a78af7460d5176e0f52cf8b5f6a73f837856c620057351"
+    },
+    {
+      "path": "baska-istanbul-yok/index.html",
+      "title": "Başka İstanbul yok.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/baska-istanbul-yok/index.html",
+      "sha256": "ab1e430cee80c78b25785c4cfcb3f0a73a7579a4e491c845b06e29a20ad77806"
+    },
+    {
+      "path": "yasam/baska-istanbul.html",
+      "title": "Başka İstanbul Yok.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/yasam/baska-istanbul.html",
+      "sha256": "bce5b62a1932d26b49ea7ef29f2e6d3a2f0b366401923c2a1e5f39e5b9bede0c"
+    },
+    {
+      "path": "beste-finanskent/index.html",
+      "title": "Beste’den kulelere uç.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/beste-finanskent/index.html",
+      "sha256": "9b32569ea746cbdf1e4e3643ac5af8c46285c5fcf3bcdc97d5f6b9657bd16a14"
+    },
+    {
+      "path": "yasam/bina.html",
+      "title": "Bir şehir, üç çatı.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/yasam/bina.html",
+      "sha256": "694182ee4c608609d542ee0c3bef262fbca57933965731dbb46719d2c714cfe1"
+    },
+    {
+      "path": "yasam/index.html",
+      "title": "Bir şehir, üç çatı.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/yasam/index.html",
+      "sha256": "694182ee4c608609d542ee0c3bef262fbca57933965731dbb46719d2c714cfe1"
+    },
+    {
+      "path": "uc-yon/istanbul.html",
+      "title": "Bir şehir. Birbirine değen hayatlar.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/uc-yon/istanbul.html",
+      "sha256": "fc04cffe8266f0a883d478c388b94128f207ce9530b5ca90b674f2b508dd65ac"
+    },
+    {
+      "path": "uc-cati/index.html",
+      "title": "Burada yaşam yere sığmaz.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/uc-cati/index.html",
+      "sha256": "8735b68af096731e79014d33438bc12b44b7aa26c7ca70071a5ca62a19c0d24e"
+    },
+    {
+      "path": "dila/sinema.html",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/sinema.html",
+      "sha256": "9ae89d0a96f2c9ce259064231b43ae8201290ad786863f37b187848dfa62702c"
+    },
+    {
+      "path": "uc-yon/index.html",
+      "title": "Evinden çık. Şehri keşfet.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/uc-yon/index.html",
+      "sha256": "3596882436857a533e863376cbc675a6c7d25904114fb26ec825196b1c4d0bab"
+    },
+    {
+      "path": "calisma-rehberi/gaia-rotalari.html",
+      "title": "GAIA rotaları",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/calisma-rehberi/gaia-rotalari.html",
+      "sha256": "61119229ba18e764d34cae4d7dd461d78785b5ef695e9b0b09acb0fd7e0e52e1"
+    },
+    {
+      "path": "calisma-notu.html",
+      "title": "Gördüğün ne?",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/calisma-notu.html",
+      "sha256": "1acb4b0c5a9bb791c0a128281908e81cc79062cc819e22b7721a97daaa654f29"
+    },
+    {
+      "path": "gulnihal-sokak.html",
+      "title": "Gülnihal Sokak Üç Kule",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/gulnihal-sokak.html",
+      "sha256": "eb308128591a2c8f1406e3b382fcafad9c95f83d886d8665aaf13e5985514811"
+    },
+    {
+      "path": "dokuma-ufuk/ilk-kurgu.html",
+      "title": "Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dokuma-ufuk/ilk-kurgu.html",
+      "sha256": "eb59fa9d44864374720db5979cf84df4eb23eb1fd5dcff2058a73799733ade76"
+    },
+    {
+      "path": "aios-sokaklar.html",
+      "title": "Her sokağa canlı düğüm.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/aios-sokaklar.html",
+      "sha256": "85576e15cb07875e8eacf28d337a2e222a237b97e659cc07393636a6355a97fb"
+    },
+    {
+      "path": "dila/yasam-alani.html",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/yasam-alani.html",
+      "sha256": "444f7f62411b649e872a7ddc0465718a5f54883899a0b0ed24ca079767132f64"
+    },
+    {
+      "path": "calisma-rehberi/mahalle.html",
+      "title": "Mahallede ilk tur",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/calisma-rehberi/mahalle.html",
+      "sha256": "7f6755ea2f635120db2e08051d2b52b8e9d04fca9f10a35e74dfbfd19404750a"
+    },
+    {
+      "path": "sehir.html",
+      "title": "Mahalleden şehre. Üç boyutta.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/sehir.html",
+      "sha256": "70e64a61283ad4aebe518aa554c58fa462e1a1fcaa3fabe1e9a534b98e1220d4"
+    },
+    {
+      "path": "dila/iki-mezura.html",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/iki-mezura.html",
+      "sha256": "d55b7f9255dc0601647f0cd44a973a3f413a30725f2740147ed7d22d2df1cf1f"
+    },
+    {
+      "path": "opera-maltepe/index.html",
+      "title": "Opera’dan denize in.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/opera-maltepe/index.html",
+      "sha256": "a6851c48ef03e0a2049666d278152492b58ca0f52acb27a53e49e533ae0f2bbe"
+    },
+    {
+      "path": "dokuma-ufuk/index.html",
+      "title": "Rota seçici",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dokuma-ufuk/index.html",
+      "sha256": "9483df08394838fb47e95e394b36bb11d169617cf15446985f26c42f9de9b96f"
+    },
+    {
+      "path": "sokak-agi/index.html",
+      "title": "Sokak ağını çevir.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/sokak-agi/index.html",
+      "sha256": "fef2b248b2963aa3152ea5f152844b50cc1823ee37fa3538e850d7c5bacd0bcc"
+    },
+    {
+      "path": "calisma-rehberi/su-is-sahne.html",
+      "title": "Su, iş ve sahne",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/calisma-rehberi/su-is-sahne.html",
+      "sha256": "84887cbe35546a94d81eb8580b0cdad2e9b62c59e1e98051630cbc1ccb9b1703"
+    },
+    {
+      "path": "gaia-ucus/index.html",
+      "title": "Uç ve şehri gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/gaia-ucus/index.html",
+      "sha256": "ec8888959fe6e2e02398fcecf44767d6c3e8721ae3fb0a3c8e2784fec9371ff1"
+    },
+    {
+      "path": "dila/index.html",
+      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/index.html",
+      "sha256": "46d92253e2a8f17da39f0846f298f78c4da728a3d3fd98dbdce9e5b65b0c6654"
+    },
+    {
+      "path": "prizma-atolye/index.html",
+      "title": "Çatıdan süzül. İstanbul'a açıl.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/prizma-atolye/index.html",
+      "sha256": "b812635c79c7d975f9da444390564a40f94c03855f85b0ceb71ff559f7df8d5a"
+    },
+    {
+      "path": "cati-rotalari/index.html",
+      "title": "Çatıdan şehre bak.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/cati-rotalari/index.html",
+      "sha256": "5c5153960e9aeeb3831a007fff55170329cdfbcf72768614b94ea749d0108ee0"
+    },
+    {
+      "path": "dila/canli-podyum.html",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/dila/canli-podyum.html",
+      "sha256": "da91be215307a48dddfc54f6e6f7c73d780cfab72133579238f77e28bc4ff5ed"
+    },
+    {
+      "path": "rota/index.html",
+      "title": "Üç çatı. Üç rota.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/rota/index.html",
+      "sha256": "32ef951a32b86138f476d53d3c90a5efbf12862b9b934a56ea7045451930ae6f"
+    },
+    {
+      "path": "rota/istanbul.html",
+      "title": "Şehir bir dokuma.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç.",
+      "url": "https://www.xn--ataehirmodern-ktc.com/rota/istanbul.html",
+      "sha256": "7279e1aeb19d3406c8c9181444500fc35e24bb3be5a9d8e9ebc5ecad1622c9f9"
+    }
+  ]
+}

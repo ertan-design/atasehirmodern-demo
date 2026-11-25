@@ -2,13 +2,6 @@
   "site": "atasehirmodern-demo",
   "entries": [
     {
-      "path": "ozellikler/kent-pilotu/index.html",
-      "title": "Etkileşimli kent pilotu",
-      "description": "Döndür, yakınlaştır, blok seç ve seçilen noktanın bağlantısını paylaş.",
-      "category": "Geri getirilen",
-      "restored": true
-    },
-    {
       "path": "ozellikler/dokunmus-yasam/index.html",
       "title": "Dokunmuş yaşam",
       "description": "Üç blok, yaşam halkası ve dokuma anlatımına geri dön.",
@@ -16,116 +9,11 @@
       "restored": true
     },
     {
-      "path": "aios-sokaklar.html",
-      "title": "Her sokağa canlı düğüm.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "calisma-notu.html",
-      "title": "Gördüğün ne?",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "calisma-rehberi/gaia-rotalari.html",
-      "title": "GAIA rotaları",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "calisma-rehberi/mahalle.html",
-      "title": "Mahallede ilk tur",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "calisma-rehberi/su-is-sahne.html",
-      "title": "Su, iş ve sahne",
-      "category": "Sahne ve film",
-      "restored": false,
-      "description": "Sahne ve film deneyimini aç."
-    },
-    {
-      "path": "dila/canli-podyum.html",
-      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
-      "category": "Sahne ve film",
-      "restored": false,
-      "description": "Sahne ve film deneyimini aç."
-    },
-    {
-      "path": "dila/iki-mezura.html",
-      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
-      "category": "Ölçü ve atölye",
-      "restored": false,
-      "description": "Ölçü ve atölye deneyimini aç."
-    },
-    {
-      "path": "dila/sinema.html",
-      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
-      "category": "Sahne ve film",
-      "restored": false,
-      "description": "Sahne ve film deneyimini aç."
-    },
-    {
-      "path": "dila/yasam-alani.html",
-      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "dokuma-ufuk/ilk-kurgu.html",
-      "title": "Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "gulnihal-sokak.html",
-      "title": "Gülnihal Sokak Üç Kule",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "rota/istanbul.html",
-      "title": "Şehir bir dokuma.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "sehir.html",
-      "title": "Mahalleden şehre. Üç boyutta.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "uc-yon/istanbul.html",
-      "title": "Bir şehir. Birbirine değen hayatlar.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "yasam/baska-istanbul.html",
-      "title": "Başka İstanbul Yok.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "yasam/bina.html",
-      "title": "Bir şehir, üç çatı.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
+      "path": "ozellikler/kent-pilotu/index.html",
+      "title": "Etkileşimli kent pilotu",
+      "description": "Döndür, yakınlaştır, blok seç ve seçilen noktanın bağlantısını paylaş.",
+      "category": "Geri getirilen",
+      "restored": true
     },
     {
       "path": "arya-watergarden/index.html",
@@ -142,6 +30,13 @@
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
+      "path": "yasam/baska-istanbul.html",
+      "title": "Başka İstanbul Yok.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
       "path": "beste-finanskent/index.html",
       "title": "Beste’den kulelere uç.",
       "category": "Şehir ve yaşam",
@@ -149,57 +44,22 @@
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "cati-rotalari/index.html",
-      "title": "Çatıdan şehre bak.",
+      "path": "yasam/bina.html",
+      "title": "Bir şehir, üç çatı.",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "dila/index.html",
-      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "path": "yasam/index.html",
+      "title": "Bir şehir, üç çatı.",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "dokuma-ufuk/index.html",
-      "title": "Rota seçici",
-      "category": "Kumaş ve tasarım",
-      "restored": false,
-      "description": "Kumaş ve tasarım deneyimini aç."
-    },
-    {
-      "path": "gaia-ucus/index.html",
-      "title": "Uç ve şehri gör.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "opera-maltepe/index.html",
-      "title": "Opera’dan denize in.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "prizma-atolye/index.html",
-      "title": "Çatıdan süzül. İstanbul'a açıl.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "rota/index.html",
-      "title": "Üç çatı. Üç rota.",
-      "category": "Şehir ve yaşam",
-      "restored": false,
-      "description": "Şehir ve yaşam deneyimini aç."
-    },
-    {
-      "path": "sokak-agi/index.html",
-      "title": "Sokak ağını çevir.",
+      "path": "uc-yon/istanbul.html",
+      "title": "Bir şehir. Birbirine değen hayatlar.",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
@@ -212,6 +72,13 @@
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
+      "path": "dila/sinema.html",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
       "path": "uc-yon/index.html",
       "title": "Evinden çık. Şehri keşfet.",
       "category": "Şehir ve yaşam",
@@ -219,8 +86,141 @@
       "description": "Şehir ve yaşam deneyimini aç."
     },
     {
-      "path": "yasam/index.html",
-      "title": "Bir şehir, üç çatı.",
+      "path": "calisma-rehberi/gaia-rotalari.html",
+      "title": "GAIA rotaları",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-notu.html",
+      "title": "Gördüğün ne?",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "gulnihal-sokak.html",
+      "title": "Gülnihal Sokak Üç Kule",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dokuma-ufuk/ilk-kurgu.html",
+      "title": "Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "aios-sokaklar.html",
+      "title": "Her sokağa canlı düğüm.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/yasam-alani.html",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/mahalle.html",
+      "title": "Mahallede ilk tur",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "sehir.html",
+      "title": "Mahalleden şehre. Üç boyutta.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/iki-mezura.html",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "opera-maltepe/index.html",
+      "title": "Opera’dan denize in.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dokuma-ufuk/index.html",
+      "title": "Rota seçici",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "sokak-agi/index.html",
+      "title": "Sokak ağını çevir.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/su-is-sahne.html",
+      "title": "Su, iş ve sahne",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "gaia-ucus/index.html",
+      "title": "Uç ve şehri gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/index.html",
+      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prizma-atolye/index.html",
+      "title": "Çatıdan süzül. İstanbul'a açıl.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "cati-rotalari/index.html",
+      "title": "Çatıdan şehre bak.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/canli-podyum.html",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "rota/index.html",
+      "title": "Üç çatı. Üç rota.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "rota/istanbul.html",
+      "title": "Şehir bir dokuma.",
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
