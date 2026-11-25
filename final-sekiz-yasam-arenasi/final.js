@@ -79,9 +79,9 @@
   var indeksler = new Uint16Array(idxArr);
 
   function yuzeyHesapla(t) {
-    var wGuc = 0.20 + durum.ruzgarGuc * 0.22 + durum.itki * 0.55;
+    var wGuc = 0.16 + durum.ruzgarGuc * 0.16 + durum.itki * 0.55;
     durum.itki *= 0.93;
-    var faz = t * (0.48 + durum.ruzgarGuc * 0.32);
+    var faz = t * (0.32 + durum.ruzgarGuc * 0.22);
     for (var j = 0; j < N; j++) {
       var v = j / (N - 1);
       for (var i = 0; i < N; i++) {
