@@ -42,5 +42,6 @@
       "destination": "/gaia-ucus/index.html"
     }
   ],
-  "buildCommand": "node yayin-kontrol.cjs"
+  "buildCommand": "",
+  "outputDirectory": "."
 }
