@@ -41,5 +41,6 @@
       "source": "/gaia-ucus/",
       "destination": "/gaia-ucus/index.html"
     }
-  ]
+  ],
+  "buildCommand": "node yayin-kontrol.cjs"
 }

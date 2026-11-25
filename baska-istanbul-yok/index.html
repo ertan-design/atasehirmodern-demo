@@ -1,14 +1,12 @@
-<!doctype html>
-<html lang="tr">
-<head>
+<!DOCTYPE html><html lang="tr"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark">
 <title>Başka İstanbul Yok</title>
 <meta name="description" content="Üç kule. Üç uçuş. Bir kumaş. Ataşehir'in üst halkası.">
-<link rel="stylesheet" href="bi.css">
-<script type="module" src="bi.js"></script>
-</head>
+<link rel="stylesheet" href="/baska-istanbul-yok/bi.css">
+<script type="module" src="/baska-istanbul-yok/bi.js"></script>
+<meta name="site-identity" content="atasehirmodern-demo"></head>
 <body>
 <a class="atla" href="#icerik">İçeriğe geç</a>
 <header class="ust">
@@ -54,21 +52,22 @@
   <h2 id="misafir-b">Yeni mi taşındın?</h2>
   <p class="aciklama">Terzi, sanat, elektronik, tarım. Bir saat seç, takvimine ekle.</p>
   <div class="kapilar" id="kapilar"></div>
-  <form id="randevu" class="kart randevu" novalidate>
+  <form id="randevu" class="kart randevu" novalidate="">
     <fieldset><legend id="randevu-baslik">Kapı seç</legend>
-      <label>Adın <input name="ad" maxlength="60" autocomplete="name" required></label>
-      <label>İhtiyaç <select name="ihtiyac" required></select></label>
+      <label>Adın <input name="ad" maxlength="60" autocomplete="name" required=""></label>
+      <label>İhtiyaç <select name="ihtiyac" required=""></select></label>
       <div class="ikili">
-        <label>Gün <input name="gun" type="date" required></label>
-        <label>Saat <select name="saat" required></select></label>
+        <label>Gün <input name="gun" type="date" required=""></label>
+        <label>Saat <select name="saat" required=""></select></label>
       </div>
       <label>Not <textarea name="not" rows="2" maxlength="600" placeholder="İsteğe bağlı"></textarea></label>
     </fieldset>
-    <div class="satir"><button class="dugme" type="submit">Talep hazırla</button><button class="dugme bos" type="button" id="ics-indir" disabled>Takvime ekle</button></div>
+    <div class="satir"><button class="dugme" type="submit">Talep hazırla</button><button class="dugme bos" type="button" id="ics-indir" disabled="">Takvime ekle</button></div>
     <p id="randevu-durum" class="kucuk" role="status"></p>
   </form>
 </section>
 </main>
 <footer class="alt"><p class="kucuk">Harita yok, iplik var. Randevu talebi tarayıcıda hazırlanır; canlı müsaitlik bağlı değil. Konumlar yaklaşık.</p></footer>
-</body>
-</html>
+
+
+</body></html>
