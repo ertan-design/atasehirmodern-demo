@@ -1,6 +1,6 @@
 {
   "schema": "afffair.prizma.atelier.v2",
-  "generated_utc": "2026-11-25T01:20:54.280Z",
+  "generated_utc": "2026-11-25T01:21:46.052873+00:00",
   "slogan": "Kumaşına dokun. Evinden uç.",
   "dila_8_rules_verified": true,
   "webgl_360_wind_cloth": true,
@@ -44,15 +44,15 @@
     },
     {
       "file": "index.html",
-      "bytes": 11716,
-      "sha256": "2e5f9cf0c892239eb27f0c279d406e61bbc5b4697df3b6a0d26f31b1076c1ea5",
-      "sha16": "2e5f9cf0c892239e"
+      "bytes": 11948,
+      "sha256": "a790072b3b5785becbe96e92912993b433304f332fa6ad8d99f23fe937312183",
+      "sha16": "a790072b3b5785be"
     },
     {
       "file": "llms.txt",
-      "bytes": 630,
-      "sha256": "def81ea606810e829f96591260ee249143bebb2d0c59cdfea9ab2301d16b9344",
-      "sha16": "def81ea606810e82"
+      "bytes": 579,
+      "sha256": "6de33ac2f4f6b1ebe3923b0b887177b02f847290df46b5c120f7919056b2a9ee",
+      "sha16": "6de33ac2f4f6b1eb"
     },
     {
       "file": "medya/genie_ucus_referans.jpg",

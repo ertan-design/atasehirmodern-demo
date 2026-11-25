@@ -1,5 +1,5 @@
 # AFFFAIR × PRIZMA ATELIER — GPT / LLM Kısa Giriş
-Slogan: Kumaşına dokun. Evinden uç. (Sana özel kumaş. Üç kule. Özgür İstanbul.)
+Slogan: Evinden çık. Şehri keşfet.
 
 - Makine-okunur tam kontrat: ./gpt.json
 - Canlı 360° WebGL Kumaş + Sürreal 8D + 3-Kule Uçuş:

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AFFFAIR × PRIZMA — Kumaşına Dokun. Evinden Uç.</title>
   <meta name="description" content="Sana özel kumaş. Üç kule. Özgür İstanbul. 360° rüzgarlı WebGL 3D kumaş, Sürreal 8D atmosfer, yönlendirilebilir Ataşehir Modern uçuşu ve 4-site yaşam.">
-  <link rel="stylesheet" href="./atolye.css">
-  <script src="./atolye-veri.js" defer></script>
-  <script src="./atolye-webgl-kumas.js" defer></script>
-  <script src="./atolye-webgl-ucus.js" defer></script>
+  <link rel="stylesheet" href="/prizma-atolye/atolye.css">
+  <script src="/prizma-atolye/atolye-veri.js" defer></script>
+  <script src="/prizma-atolye/atolye-webgl-kumas.js" defer></script>
+  <script src="/prizma-atolye/atolye-webgl-ucus.js" defer></script>
 </head>
 <body>
   <header class="top-nav">
@@ -20,7 +20,7 @@
       <a href="#sahne-kumas">360° Kumaş</a>
       <a href="#sahne-ucus">3 Kule Uçuş</a>
       <a href="#sahne-yasam">Yaşam</a>
-      <a href="./gpt.json">GPT API</a>
+      <a href="/prizma-atolye/gpt.json">GPT API</a>
     </nav>
   </header>
 
@@ -90,7 +90,7 @@
 
         <div class="flight-viewport">
           <canvas id="flight-webgl" class="flight-canvas" width="1280" height="672" aria-label="Sürükleyerek veya ok tuşlarıyla yönlendirilebilen 3D uçuş sahnesi"></canvas>
-          <video id="genie-video" class="flight-video is-hidden" controls playsinline loop muted preload="metadata" poster="./medya/genie_ucus_referans.jpg" src="./medya/genie_ucus_referans.mp4"></video>
+          <video id="genie-video" class="flight-video is-hidden" controls playsinline loop muted preload="metadata" poster="/prizma-atolye/medya/genie_ucus_referans.jpg" src="/prizma-atolye/medya/genie_ucus_referans.mp4"></video>
 
           <div class="flight-hud-bar">
             <div class="hud-stats" aria-live="polite">
@@ -124,15 +124,15 @@
 
         <div class="macro-triptych">
           <figure class="macro-card" data-pick-fabric="zumrut">
-            <img src="./medya/levha_02_zumrut_keten_makro.jpg" alt="Oksitlenmiş zümrüt ipek ve organik keten makro dokusu">
+            <img src="/prizma-atolye/medya/levha_02_zumrut_keten_makro.jpg" alt="Oksitlenmiş zümrüt ipek ve organik keten makro dokusu">
             <figcaption><span>PANTONE 19-5918 · 12-0710</span><span>3D Sahneye Al ↑</span></figcaption>
           </figure>
           <figure class="macro-card" data-pick-fabric="espresso">
-            <img src="./medya/levha_03_espresso_murdum_makro.jpg" alt="Gece espressosu gabardin ve patlıcan ipek krep makro dokusu">
+            <img src="/prizma-atolye/medya/levha_03_espresso_murdum_makro.jpg" alt="Gece espressosu gabardin ve patlıcan ipek krep makro dokusu">
             <figcaption><span>PANTONE 19-1111 · 19-2024</span><span>3D Sahneye Al ↑</span></figcaption>
           </figure>
           <figure class="macro-card" data-pick-fabric="antrasit">
-            <img src="./medya/levha_01_atasehir_kuleler.jpg" alt="Ataşehir Modern üç kulesi ve Marmara Adaları günbatımı">
+            <img src="/prizma-atolye/medya/levha_01_atasehir_kuleler.jpg" alt="Ataşehir Modern üç kulesi ve Marmara Adaları günbatımı">
             <figcaption><span>Flex 43K · Balance 35K · Grand 25K</span><span>Başka İstanbul Yok</span></figcaption>
           </figure>
         </div>
@@ -142,16 +142,16 @@
             <div>
               <span class="whisper-tag">01 · AFAIR.LIVE</span>
               <h3>Online terzi</h3>
-              <p>Müsait. İki mezura ve seçtiğin kumaş evine gelir.</p>
-              <select class="mini-select" id="sel-terzi-slot" aria-label="Terzi müsaitlik saati">
+              <p>Çevrimiçi görüşme, ev ziyareti veya renk analizi için taslak oluştur.</p>
+              <select class="mini-select" id="sel-terzi-slot" aria-label="Örnek görüşme saati">
                 <option value="Bugun 11:00 · Online">Bugün 11:00 · Online</option>
                 <option value="Bugun 15:30 · Eve Ziyaret">Bugün 15:30 · Eve Ziyaret</option>
                 <option value="Yarin 10:30 · Renk Analizi">Yarın 10:30 · Renk Analizi</option>
               </select>
-              <p class="tile-receipt" id="out-terzi-rec"></p>
+              <p aria-live="polite" class="tile-receipt" id="out-terzi-rec"></p>
             </div>
             <div class="tile-actions">
-              <button type="button" class="btn-dark" id="btn-book-terzi">Randevu Fişi Al</button>
+              <button type="button" class="btn-dark" id="btn-book-terzi">Taslak Fişi Al</button>
               <a class="btn-quiet-light" href="https://www.afair.live/prizma/front2">Ölçü Defteri ↗</a>
             </div>
           </article>
@@ -172,16 +172,16 @@
             <div>
               <span class="whisper-tag">03 · TARIM.ONLINE</span>
               <h3>Tarım danışmanı</h3>
-              <p>Gökçeada 189/2 hassasiyetiyle teras ve hasat randevusu.</p>
+              <p>Teras, hasat veya doğal lif hakkında görüşme taslağı oluştur.</p>
               <select class="mini-select" id="sel-tarim-slot" aria-label="Tarım danışmanı konusu">
                 <option value="Teras Permakultur · Video 20dk">Teras Permakültür · 20 dk</option>
                 <option value="Gokceada 189/2 Hasat">Gökçeada 189/2 Hasat</option>
                 <option value="Dogal Lif & Boya Kokeni">Doğal Lif &amp; Boya Kökeni</option>
               </select>
-              <p class="tile-receipt" id="out-tarim-rec"></p>
+              <p aria-live="polite" class="tile-receipt" id="out-tarim-rec"></p>
             </div>
             <div class="tile-actions">
-              <button type="button" class="btn-dark" id="btn-book-tarim">Danışman Randevusu</button>
+              <button type="button" class="btn-dark" id="btn-book-tarim">Danışmanlık Taslağı</button>
               <a class="btn-quiet-light" href="https://www.tarim.online/">tarim.online ↗</a>
             </div>
           </article>
@@ -194,7 +194,7 @@
             </div>
             <div class="tile-actions">
               <a class="btn-dark" href="https://ertanaraz.com/prizma/front4">50K Pasaport ↗</a>
-              <a class="btn-quiet-light" href="./gpt.json">gpt.json (GPT API) ↗</a>
+              <a class="btn-quiet-light" href="/prizma-atolye/gpt.json">gpt.json (GPT API) ↗</a>
             </div>
           </article>
         </div>
@@ -210,7 +210,7 @@
       <a href="https://www.xn--ataehirmodern-ktc.com/prizma-atolye/">ataşehirmodern</a>
       <a href="https://www.xn--modernataehir-qtc.com/prizma-atolye/">modernataşehir</a>
       <a href="https://ertanaraz.com/prizma-atolye/">ertanaraz</a>
-      <a href="./gpt.json">gpt.json</a>
+      <a href="/prizma-atolye/gpt.json">gpt.json</a>
     </nav>
   </footer>
 </body>
