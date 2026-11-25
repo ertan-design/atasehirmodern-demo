@@ -1,0 +1,66 @@
+
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ip:#e8e2d6;--zemin:#0b0c0f;--kat:#14161b;--cizgi:#2a2e37;--sol:#8a8578;
+--a:#c2703d;--b:#2f7d6b;--c:#4a5fa8}
+html{scroll-behavior:smooth}
+body{background:var(--zemin);color:var(--ip);
+font:16px/1.65 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;overflow-x:hidden}
+.k{max-width:1180px;margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.ust{position:fixed;top:0;left:0;right:0;z-index:40;background:rgba(11,12,15,.82);
+backdrop-filter:blur(10px);border-bottom:1px solid var(--cizgi)}
+.ust .k{display:flex;align-items:center;justify-content:space-between;height:60px}
+.mark{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--sol);
+font-family:ui-sans-serif,system-ui,sans-serif}
+.mark b{color:var(--ip);font-weight:600}
+.ust nav a{color:var(--sol);text-decoration:none;font-size:12px;letter-spacing:.16em;
+text-transform:uppercase;margin-left:26px;font-family:ui-sans-serif,system-ui,sans-serif}
+.ust nav a:hover{color:var(--ip)}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+padding:108px 0 56px;position:relative}
+.hero h1{font-size:clamp(44px,9vw,116px);line-height:.94;font-weight:400;letter-spacing:-.03em}
+.hero h1 i{font-style:italic;color:var(--sol)}
+.hero .alt{margin-top:26px;max-width:54ch;color:#b4ae9f;font-size:clamp(16px,1.6vw,19px)}
+.dokuma{margin-top:40px}
+.bolum{padding:clamp(70px,11vh,130px) 0;border-top:1px solid var(--cizgi)}
+.etiket{font:11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.26em;
+text-transform:uppercase;color:var(--sol);margin-bottom:18px}
+h2{font-size:clamp(28px,4.4vw,52px);line-height:1.06;font-weight:400;letter-spacing:-.02em}
+.giris{margin-top:18px;max-width:62ch;color:#b4ae9f}
+.ucus{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);
+align-items:center;margin-top:46px}
+.ucus:nth-of-type(even) .gorsel{order:2}
+.cip{display:inline-flex;align-items:stretch;border:1px solid var(--cizgi);border-radius:3px;
+overflow:hidden;background:var(--kat);margin-bottom:22px}
+.cip .renk{width:66px}
+.cip .bilgi{padding:11px 16px;font:11px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;
+letter-spacing:.06em;color:var(--sol)}
+.cip .bilgi b{display:block;color:var(--ip);font-size:12.5px;letter-spacing:.14em;margin-bottom:3px}
+.ucus h3{font-size:clamp(23px,2.9vw,34px);font-weight:400;line-height:1.14;letter-spacing:-.01em}
+.ucus p{margin-top:14px;color:#b4ae9f;max-width:46ch}
+.olcu{margin-top:22px;display:flex;gap:30px;flex-wrap:wrap}
+.olcu div{font:11px/1.5 ui-monospace,Menlo,monospace;color:var(--sol);letter-spacing:.05em}
+.olcu div b{display:block;color:var(--ip);font-size:19px;font-family:inherit;
+letter-spacing:-.01em;margin-bottom:2px}
+.ray{margin-top:42px;border-top:1px solid var(--cizgi)}
+.ray a{display:grid;grid-template-columns:52px 1fr auto;gap:22px;align-items:center;
+padding:24px 4px;border-bottom:1px solid var(--cizgi);text-decoration:none;color:inherit;
+transition:background .2s,padding .2s}
+.ray a:hover{background:#101217;padding-left:14px}
+.ray .no{font:11px/1 ui-monospace,Menlo,monospace;color:var(--sol);letter-spacing:.1em}
+.ray .ad{font-size:clamp(18px,2.3vw,25px)}
+.ray .ad span{display:block;font-size:13.5px;color:var(--sol);margin-top:5px;
+font-family:ui-sans-serif,system-ui,sans-serif}
+.ray .ok{color:var(--sol);font-size:20px}
+.ray a:hover .ok{color:var(--ip)}
+.kapanis{padding:clamp(80px,14vh,150px) 0;border-top:1px solid var(--cizgi);text-align:center}
+.kapanis p{font-size:clamp(22px,3.4vw,40px);line-height:1.22;max-width:20ch;margin:0 auto;font-weight:400}
+footer{border-top:1px solid var(--cizgi);padding:26px 0 40px}
+footer .k{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+font:11px/1.6 ui-sans-serif,system-ui,sans-serif;letter-spacing:.14em;
+text-transform:uppercase;color:var(--sol)}
+@media(max-width:860px){.ucus{grid-template-columns:1fr}.ucus:nth-of-type(even) .gorsel{order:0}
+.ust nav{display:none}.ray a{grid-template-columns:38px 1fr auto;gap:14px}}
+
+.fs-1{background:#c2703d !important}
+.fs-2{background:#2f7d6b !important}
+.fs-3{background:#4a5fa8 !important}

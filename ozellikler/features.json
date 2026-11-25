@@ -280,6 +280,55 @@
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "final-terazi/uc-blok-pantone-gemini/index.html",
+      "title": "Üç blok uçuş · Gemini",
+      "description": "Üç bloğun çatısından üç yöne uçuş ve Pantone kumaş atölyesi.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final-terazi/uc-blok-gaia-karbon/index.html",
+      "title": "Üç blok Gaia uçuşu · Karbon",
+      "description": "3 blok Gaia uçuşu, gerçek iplik kartelası ve 4 site yaşam rehberi.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final-terazi/uc-kule-atlas-codex/index.html",
+      "title": "Üç kule uçuş atlası · Codex",
+      "description": "Üç kule uçuş atlası, kumaş levhaları ve iplik mikroskobu.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final-terazi/ust-halka-wingsuit/index.html",
+      "title": "Üst halka wingsuit",
+      "description": "Ataşehir'in üst halkasında wingsuit: çatıdan şehre süzül.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final-terazi/baska-istanbul-canli-sahne/index.html",
+      "title": "Başka İstanbul canlı sahne",
+      "description": "Başka İstanbul Yok'un canlı sahnesi: üç blok, üç yön.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final-terazi/harita-degil-dokuma/index.html",
+      "title": "Harita değil dokuma",
+      "description": "Ataşehir'i harita yerine dokuma olarak gör.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final-terazi/uc-blok-uc-iplik-science/index.html",
+      "title": "Üç blok üç iplik · Science",
+      "description": "Üç blok, üç iplik, üç yön: Science'ın ölçülü halka sahnesi.",
+      "category": "Geri getirilen",
+      "restored": true
     }
   ]
 }

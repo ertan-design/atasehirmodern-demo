@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Başka İstanbul Yok · Ataşehir Modern 3-Blok Uçuş &amp; Pantone Kumaş Atölyesi</title>
+
+<link rel="stylesheet" href="stil.css">
+<link rel="stylesheet" href="ft-nav.css">
+</head>
+<body>
+<a class="ft-geri" href="/">← Ana sayfa</a>
+<header class="topbar">
+  <div class="brand">
+    <strong>Başka İstanbul Yok</strong>
+    <span>Ataşehir Modern · 3-Blok Uçuş &amp; Pantone Atölyesi</span>
+  </div>
+  <nav class="nav">
+    <a href="#ucus" class="on">3-Blok Uçuş</a>
+    <a href="#pantone">Pantone Kumaş</a>
+    <a href="#konsiyerj">4-Site Yaşam</a>
+    <a href="/">3D / VR Sahne</a>
+    <a href="/">Dila 8-Senkron</a>
+    <a href="/">Tarım</a>
+    <a href="/">Ana OS</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="kicker">İstanbul · Ataşehir Modern → Üst Halka: baskaistanbulyok.com</div>
+      <h1 class="serif">Üç çatıdan <em>uç.</em> Şehri seç.</h1>
+      <p>Google Maps yok. Karmaşa yok. Üç bloktan üç yöne uç: Watergarden, Finanskent veya Maltepe Sahil. Terzin, sanatın ve tarım danışmanın tek kapıda.</p>
+      <div class="cta-row">
+        <a class="btn" href="#ucus">Çatıdan Uçuşu Başlat</a>
+        <a class="btn ghost" href="#pantone">Pantone İplik Laboratuvarı</a>
+        <a class="btn ghost" href="#konsiyerj">Online Terzi &amp; Tarım Randevusu</a>
+      </div>
+    </div>
+    <div class="film-frame">
+      <video src="atasehir_genie4_ucus.mp4" autoplay muted loop playsinline controls></video>
+      <div class="film-cap">
+        <span><b>Genie4 Çatıdan Süzülüş</b> · 3 Blok → 3 Yön</span>
+        <span>%0 Saf Siyah · Doğal Traverten &amp; Keten</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="ucus">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">01 · Özgün Topoloji (Sıfır Google Maps)</div>
+        <h2 class="serif">Ataşehir Modern: 3 Bloktan 3 Ayrı Yöne Uçuş</h2>
+      </div>
+      <p>Her bloğun çatısından farklı bir rüzgâr koridoruna atlayış: Batıda <strong>Watergarden</strong>, kuzeydoğuda <strong>Finanskent</strong>, güneyde <strong>Maltepe Sahil Konser Alanı</strong> — üst halkada <strong>Başka İstanbul Yok</strong>.</p>
+    </div>
+
+    <div class="flight-grid">
+      <div class="canvas-box">
+        <canvas id="flightCanvas"></canvas>
+        <div class="flight-hud">
+          <span>AKTİF ROTA: <b id="fRoute">BLOK A → WATERGARDEN AVM</b></span>
+          <span>İRTİFA: <b id="fAlt">142 m</b></span>
+          <span>SÜZÜLÜŞ HIZI: <b id="fSpd">118 km/s</b></span>
+          <span>SÜRE: <b id="fDur">48 sn</b></span>
+        </div>
+      </div>
+      <div class="flight-side">
+        <button class="block-card on" data-b="0">
+          <div class="btag">BLOK A · BATI ÇATISI (258° WSW)</div>
+          <h3>Watergarden AVM &amp; Yaşam</h3>
+          <p>1,4 km süzülüş · Gastronomi, su sahnesi, moda buluşmaları ve akşam sosyal hattı.</p>
+        </button>
+        <button class="block-card" data-b="1">
+          <div class="btag">BLOK B · KUZEY-DOĞU ÇATISI (052° NE)</div>
+          <h3>Finanskent &amp; İFM Fırsatları</h3>
+          <p>2,1 km süzülüş · Finans merkezi, teknoloji ofisleri, elektronik &amp; yatırım kapıları.</p>
+        </button>
+        <button class="block-card" data-b="2">
+          <div class="btag">BLOK C · GÜNEY ÇATISI (174° S)</div>
+          <h3>Maltepe Sahil &amp; Konser Alanı</h3>
+          <p>6,8 km süzülüş · Marmara kıyısı, açık hava konserleri, miting alanı ve deniz nefesi.</p>
+        </button>
+        <button class="ring-btn" id="btnRing">Üst Halkaya Çık: baskaistanbulyok.com ↗</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="pantone">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">02 · Tarımdaki Hassasiyet → Kumaş &amp; İplik Hassasiyeti</div>
+        <h2 class="serif">Pantone TCX Ayrık Gerçek Kumaş &amp; Dokuma Kartelası</h2>
+      </div>
+      <p>Saf siyah yasak. Her renk kodu; gerçek atkı/çözgü iplik sayısı, gramaj (GSM) ve toprağına kadar izlenebilir doğal lif kökeniyle tanımlanır. Bir karta tıkla, dokuma mikroskopu ve sayfa ip rengi anında değişsin.</p>
+    </div>
+
+    <div class="pantone-grid" id="pantoneGrid"></div>
+
+    <div class="loom-bar">
+      <canvas id="loomZoom" width="220" height="140"></canvas>
+      <div class="loom-info">
+        <div class="kicker fs-1" id="loomCode">PANTONE 19-4024 TCX</div>
+        <h3 id="loomTitle">Dress Blues — Ağır İpek Krep</h3>
+        <p id="loomDesc">Saf siyah yerine derin gece laciverti. Yüksek bükümlü ipek çözgü, ışığı emmek yerine mimari kıvrımlarda yumuşak yansıtır.</p>
+        <div class="loom-pills" id="loomPills"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="konsiyerj">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">03 · 4 Site = Tam Bir Yaşam Gereksinimi</div>
+        <h2 class="serif">Binaya Yeni Taşınan Misafir Konsiyerji</h2>
+      </div>
+      <p>Moda, sanat, tarım ve teknoloji tek kapıda: <em>"Online terzi müsait mi?"</em> veya <em>"Tarım danışmanımdan nasıl randevu alabilirim?"</em> sorularının anında çalışan karşılığı.</p>
+    </div>
+
+    <div class="concierge-tabs" id="cTabs">
+      <button class="ctab on" data-t="terzi">Moda · Online Terzi (afair.live)</button>
+      <button class="ctab" data-t="tarim">Tarım · Danışman Randevusu (tarim.online)</button>
+      <button class="ctab" data-t="sanat">Sanat · AI Galeri (afair.studio)</button>
+      <button class="ctab" data-t="elektronik">Elektronik &amp; Üst Halka (ertanaraz / baskaistanbulyok)</button>
+    </div>
+
+    <div class="concierge-body" id="cBody"></div>
+  </section>
+
+  <footer>
+    <span><strong>Başka İstanbul Yok</strong> × Ataşehir Modern × AFAIR × Tarım Online — Tek Evren Mimari Sürüm</span>
+    <span>Sıfır Google Maps · Sıfır Harici CDN · %0 Saf Siyah · Pantone TCX Dokuma Standardı</span>
+  </footer>
+</main>
+
+<script src="kod-1.js"></script>
+</body>
+</html>

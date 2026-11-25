@@ -1,0 +1,35 @@
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('[data-fo1]').forEach(el=>el.addEventListener('click',function(event){
+relaunchFlight()
+}));
+  document.querySelectorAll('[data-fo2]').forEach(el=>el.addEventListener('input',function(event){
+drawLoupe()
+}));
+  document.querySelectorAll('[data-fo3]').forEach(el=>el.addEventListener('input',function(event){
+drawAllFabrics()
+}));
+  document.querySelectorAll('[data-fo4]').forEach(el=>el.addEventListener('change',function(event){
+updateResident()
+}));
+  document.querySelectorAll('[data-fo5]').forEach(el=>el.addEventListener('change',function(event){
+updateResident()
+}));
+  document.querySelectorAll('[data-fo6]').forEach(el=>el.addEventListener('click',function(event){
+bookService('tailorMsg','✓ Terzi randevunuz ve seçili Pantone kumaş numuneniz daireniz için ayrıldı.')
+}));
+  document.querySelectorAll('[data-fo7]').forEach(el=>el.addEventListener('click',function(event){
+bookService('agroMsg','✓ Tarım danışmanı randevunuz ve daire cephenize özel fide/toprak reçetesi oluşturuldu.')
+}));
+  document.querySelectorAll('[data-fo8]').forEach(el=>el.addEventListener('input',function(event){
+updateResident()
+}));
+  document.querySelectorAll('[data-fo9]').forEach(el=>el.addEventListener('click',function(event){
+selectRoute(3)
+}));
+  document.querySelectorAll('[data-fo10]').forEach(el=>el.addEventListener('click',function(event){
+pickFabric(${i})
+}));
+  document.querySelectorAll('[data-fo11]').forEach(el=>el.addEventListener('click',function(event){
+selectRoute(${i})
+}));
+});
