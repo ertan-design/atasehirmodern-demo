@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ataşehir Modern · AIOS Kent Pilotu</title>
+<meta name="description" content="Ataşehir Modern üç blok 3B kent pilotu. Temsili blokları ve sokakları keşfet.">
+<link rel="stylesheet" href="./style-1.css">
+<link rel="stylesheet" href="../restore.css"></head>
+<body><a class="af-restore-back" href="/ozellikler/">← Tüm özellikler</a>
+<a class="skip" href="#harita">Haritaya geç</a>
+<header><div class="header-inner"><a class="brand" href="./index.html"><i class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span></i>Ataşehir Modern</a><nav aria-label="Ana menü"><a href="#rehber">Blok ve sokaklar</a><span class="status-tag">AIOS Kent Pilotu</span></nav></div></header>
+<main>
+<section class="heading"><div><h1>Mahalleye<br>bir de yukarıdan bak.</h1></div><p>Üç bloğu ve örnek sokakları 3B haritada keşfet. Bir kapı seçerek durumunu oku ve adresini paylaş.</p></section>
+<div class="workspace" id="harita">
+<section class="map" aria-label="Etkileşimli pilot haritası">
+<canvas id="canvas" aria-hidden="true"></canvas>
+<div class="map-top"><div><div class="map-id">Ataşehir · Üç Blok</div><div class="map-note">Temsili 3B yerleşim</div></div><div class="compass" aria-hidden="true">↗ KUZEY</div></div>
+<div class="map-bottom"><span class="map-note">Bir yapıya dokun veya aşağıdan seç</span><div class="controls" aria-label="Harita görünümü"><button type="button" id="left" aria-label="Sola döndür">↶</button><button type="button" id="right" aria-label="Sağa döndür">↷</button><button type="button" id="minus" aria-label="Uzaklaştır">−</button><button type="button" id="plus" aria-label="Yakınlaştır">+</button><button type="button" id="reset" class="reset">Sıfırla</button></div></div>
+</section>
+<section class="inspector" aria-labelledby="place-title" aria-live="polite">
+<div class="sub"><span class="dot" aria-hidden="true"></span><span id="place-kind"></span></div>
+<h2 id="place-title"></h2><p id="place-detail"></p>
+<dl class="facts"><div><dt>Durum</dt><dd id="place-state"></dd></div><div><dt>Örnek kullanım</dt><dd id="place-function"></dd></div></dl>
+<div class="links"><button type="button" id="share">Bu kapının adresini kopyala</button><a id="route" href="#blok-a"></a><span class="copy-state" id="copy-state" role="status"></span></div>
+</section>
+</div>
+<section class="places" id="rehber"><div class="places-head"><h2>Blok ve sokaklar</h2><span class="soft">5 temsili kapı</span></div><div id="choices" class="choices"></div>
+<p class="instruction">Kapılar örnek rotalardır. Haritadaki şekiller ve durumlar planlama provası için kullanılır.</p></section>
+<noscript><p>3B görünüm için JavaScript gerekiyor.</p></noscript>
+</main>
+<footer>Ataşehir Modern · AIOS kent pilotu. Bu plan gerçek bina konumlarını veya site güvenlik verisini göstermez.</footer>
+<script src="./script-2.js"></script>
+</body>
+</html>
