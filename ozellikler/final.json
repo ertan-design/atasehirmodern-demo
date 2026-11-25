@@ -3,9 +3,18 @@
   "site": "atasehirmodern-demo",
   "origin": "https://www.xn--ataehirmodern-ktc.com",
   "homepage_preserved": true,
-  "entry_count": 32,
-  "restored_count": 2,
+  "entry_count": 33,
+  "restored_count": 3,
   "entries": [
+    {
+      "path": "dokuma-ucus/index.html",
+      "title": "Dokuma şehir",
+      "description": "Çatıdan uç, şehre kon: rüzgârda dalgalanan kumaş, elle sürülen üç uçuş, 360° çevrilen bez.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/dokuma-ucus/index.html",
+      "sha256": "680dd65c049472accfb424474b8052b119ff446aa6fa75c729ec159020992b79"
+    },
     {
       "path": "ozellikler/dokunmus-yasam/index.html",
       "title": "Dokunmuş yaşam",

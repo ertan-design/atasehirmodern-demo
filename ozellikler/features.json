@@ -2,6 +2,13 @@
   "site": "atasehirmodern-demo",
   "entries": [
     {
+      "path": "dokuma-ucus/index.html",
+      "title": "Dokuma şehir",
+      "description": "Çatıdan uç, şehre kon: rüzgârda dalgalanan kumaş, elle sürülen üç uçuş, 360° çevrilen bez.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "ozellikler/dokunmus-yasam/index.html",
       "title": "Dokunmuş yaşam",
       "description": "Üç blok, yaşam halkası ve dokuma anlatımına geri dön.",
