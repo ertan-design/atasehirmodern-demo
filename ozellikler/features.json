@@ -2,6 +2,13 @@
   "site": "atasehirmodern-demo",
   "entries": [
     {
+      "path": "kartela/index.html",
+      "title": "Başka İstanbul Yok · Kartela",
+      "description": "Ataşehir’in gerçek planı, plaka plaka dokundu. Ayır, üfle, bak.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "final/kumas-360-dimi/index.html",
       "title": "360° Dimi & İndigo Kot Tezgâhı",
       "description": "Depoda yetim kalan dimi ve kot dokularını 360° rüzgâr ve ışık açısıyla inceleyen stüdyo.",

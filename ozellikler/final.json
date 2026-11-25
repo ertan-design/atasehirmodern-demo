@@ -3,9 +3,18 @@
   "site": "atasehirmodern-demo",
   "origin": "https://www.xn--ataehirmodern-ktc.com",
   "homepage_preserved": true,
-  "entry_count": 39,
-  "restored_count": 9,
+  "entry_count": 40,
+  "restored_count": 10,
   "entries": [
+    {
+      "path": "kartela/index.html",
+      "title": "Başka İstanbul Yok · Kartela",
+      "description": "Ataşehir’in gerçek planı, plaka plaka dokundu. Ayır, üfle, bak.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.xn--ataehirmodern-ktc.com/kartela/index.html",
+      "sha256": "63b6ce7eaf5bb3cd86fd97e40795d1d856ff1b44b581e3e04b54c4cb66e2e542"
+    },
     {
       "path": "final/kumas-360-dimi/index.html",
       "title": "360° Dimi & İndigo Kot Tezgâhı",
