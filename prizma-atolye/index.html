@@ -1,49 +1,56 @@
-<!DOCTYPE html><html lang="tr"><head>
+<!doctype html>
+<html lang="tr">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <title>Dokun. Çevir. Şehre uç. · Ataşehir Modern</title>
-  <meta name="description" content="Kumaşa dokun, 360° çevir, rüzgârla dalgalandır veya üç çatıdan Watergarden, Finanskent ve Maltepe sahiline uç.">
-  <link rel="stylesheet" href="/prizma-atolye/afair-8d.css">
-<meta name="site-identity" content="atasehirmodern-demo"><link rel="stylesheet" href="/sayfalar/kimlik.css"></head>
-<body data-baslik="Dokun. Çevir. Şehre uç.">
-  <canvas id="sahne-tuval" aria-label="360 derece yönlendirilebilir gerçek kumaş ve üç blok çatı uçuş sahnesi"></canvas>
-
-  <header class="ust-bar">
-    <div class="marka-grup">
-      <a class="marka" href="/prizma-atolye/index.html">ATAŞEHİR</a>
-    </div>
-    <nav class="kip-grup" aria-label="Sahne">
-      <button type="button" class="hap aktif" id="kip-kumas">Kumaş</button>
-      <button type="button" class="hap" id="kip-ucus">Uçuş</button>
-      <button type="button" class="hap" id="kip-yasam">Yaşam</button>
-    </nav>
+  <title>ATAŞEHİR MODERN · 3 Kule Çatıdan Haritasız Özgür Uçuş</title>
+  <meta name="description" content="Google Maps kullanmadan Ataşehir Modern üç kulesinden (Flex 43K, Balance 35K, Grand 25K) İFM, Watergarden, Maltepe Sahili ve İstanbul üst halkasına yönlendirilebilir 3B uçuş.">
+  <link rel="stylesheet" href="./ucus3b.css">
+  <script defer src="./ucus3b.js"></script>
+</head>
+<body>
+  <header class="sky-head">
+    <div class="sky-brand">ATAŞEHİR MODERN · 3B ŞEHİR PİLOTU</div>
+    <div class="sky-coords">40.98° K · 29.12° D · 0 GOOGLE MAPS</div>
   </header>
 
-  <section class="baslik-katmani" aria-live="polite">
-    <h1 id="hero-baslik">Dokun. Çevir. Şehre uç.</h1>
-    <p id="hero-alt">360° sürükle. Üç çatıdan yönünü seç.</p>
-  </section>
+  <main class="sky-wrap">
+    <section class="flight-deck">
+      <div class="viewport-wrap">
+        <canvas id="flight-canvas" width="1200" height="620" aria-label="Ataşehir üç kuleden yönlendirilebilir 3 boyutlu uçuş sahnesi"></canvas>
+        <div class="hud-top">
+          <p class="kicker">ÜÇ KULE · DÖRT KORİDOR · ÖZGÜR YÖNLENDİRME</p>
+          <h1>Çatıdan süzül. İstanbul'a açıl.</h1>
+        </div>
+        <div class="hud-bottom">
+          <span id="hud-tower">Flex Tower (43 Kat)</span>
+          <span id="hud-target">Hedef: İFM / Finanskent (~2.8 km KD)</span>
+          <span id="hud-alt">İrtifa: 162 m</span>
+          <span id="hud-rings">Halka: 0</span>
+        </div>
+      </div>
 
-  <aside class="mini-kart gizli" id="mini-cekmece" aria-live="polite">
-    <p id="cekmece-metin">Terzi görüşmesi hazırlığı · müsaitlik doğrulanmadı.</p>
-    <video id="cekmece-video" class="gizli" controls="" playsinline="" loop="" muted="" preload="none" data-src="/dokuma-ufuk/medya/genie_ucus_referans.mp4"></video>
-    <div class="mini-aksiyon">
-      <a class="cam-dugme aktif" id="cekmece-bag" href="https://www.afair.live/dila/iki-mezura.html">Aç ↗</a>
-      <button type="button" class="cam-dugme" id="cekmece-kapat">Kapat</button>
-    </div>
-  </aside>
+      <aside class="flight-panel">
+        <h2>Çıkış Kulesi &amp; Hedef Seç</h2>
+        <div class="corridor-list" id="corridor-list"></div>
 
-  <footer class="alt-bar">
-    <div class="alt-dugmeler">
-      <button type="button" class="cam-dugme" id="btn-sec">Kumaş</button>
-      <button type="button" class="cam-dugme" id="btn-ruzgar">Rüzgâr</button>
-      <button type="button" class="cam-dugme" id="btn-ses">8D Ses</button>
-    </div>
-    <span class="durum-etiket" id="canli-durum">Şampanya İpeği · 22°</span>
-  </footer>
+        <div class="steer-box">
+          <h3>Uçuş Kumandası</h3>
+          <p>Tuval üzerinde sürükle veya klavyede <strong>W/A/S/D</strong> / <strong>Ok Tuşları</strong> ile süzülüşü yönlendir.</p>
+          <div class="btn-row">
+            <button type="button" class="fbtn is-on" id="btn-pause">Uçuşu Duraklat</button>
+            <button type="button" class="fbtn" id="btn-reset">Yönü Sıfırla</button>
+          </div>
+          <label for="spd-range">Süzülüş Hızı <strong id="spd-val">1.2x</strong></label>
+          <input id="spd-range" type="range" min="4" max="26" value="12">
+        </div>
 
-  <script src="/prizma-atolye/afair-8d.js"></script>
-
-
-<footer class="sayfa-kimligi"><p>Ataşehir Modern · Şehir pilotu · Dokun. Çevir. Şehre uç.</p><a href="/sayfalar/">Ataşehir Modern deneyimlerini keşfet ↗</a></footer></body></html>
+        <div class="compass-box">
+          <h3>Özgün Koridor Pusulası</h3>
+          <canvas id="radar-canvas" width="260" height="170" aria-label="Ataşehir 3 kule koridor pusulası"></canvas>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
