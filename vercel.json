@@ -58,6 +58,38 @@
     {
       "source": "/gaia-ucus/",
       "destination": "/gaia-ucus/index.html"
+    },
+    {
+      "source": "/final-uc-blok-ucus",
+      "destination": "/final-uc-blok-ucus/index.html"
+    },
+    {
+      "source": "/final-uc-blok-ucus/",
+      "destination": "/final-uc-blok-ucus/index.html"
+    },
+    {
+      "source": "/final-baska-istanbul-kazi",
+      "destination": "/final-baska-istanbul-kazi/index.html"
+    },
+    {
+      "source": "/final-baska-istanbul-kazi/",
+      "destination": "/final-baska-istanbul-kazi/index.html"
+    },
+    {
+      "source": "/final-huseyinbey-rolove",
+      "destination": "/final-huseyinbey-rolove/index.html"
+    },
+    {
+      "source": "/final-huseyinbey-rolove/",
+      "destination": "/final-huseyinbey-rolove/index.html"
+    },
+    {
+      "source": "/final-sekiz-yasam-arenasi",
+      "destination": "/final-sekiz-yasam-arenasi/index.html"
+    },
+    {
+      "source": "/final-sekiz-yasam-arenasi/",
+      "destination": "/final-sekiz-yasam-arenasi/index.html"
     }
   ],
   "buildCommand": "",

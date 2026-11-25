@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATAŞEHİR · FİNAL 2 — Başka İstanbul. Üst halka.</title>
+  <meta name="description" content="Ataşehir üst halkasını Şerefiye Sarnıcı, Milion Taşı, Bukoleon ve Büyük Valide Han'a bağlayan 6-katmanlı derin kazı.">
+  <link rel="stylesheet" href="./final.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu final sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">ATAŞEHİR · FİNAL 2</a>
+    </div>
+    <nav class="sag" aria-label="Final sahne geçişi">
+      <button type="button" class="dugme" id="atolye-ac" aria-expanded="false">Final Atölyesi ＋</button>
+      <a class="dugme" href="/final-huseyinbey-rolove/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="atolye-panel" id="atolye-panel" aria-label="Başka İstanbul Yok · 52 Hazine Final" hidden>
+    <h2>Başka İstanbul Yok · 52 Hazine Final</h2>
+    <p class="aciklama">Ataşehir üst halkasını Şerefiye Sarnıcı, Milion Taşı, Bukoleon ve Büyük Valide Han'a bağlayan 6-katmanlı derin kazı.</p>
+    
+        <div class="form-izgara">
+          <div class="alan"><label for="inp-hazine">Doğrulanmış Hazine Seçkisi (52 Nokta)</label>
+            <select id="inp-hazine">
+              <option value="serefiye">Şerefiye Sarnıcı (428 · Doğu Roma Su Sarayı)</option>
+              <option value="milion">Milion Taşı (Sıfır Meridyeni Tetrapylon)</option>
+              <option value="bukoleon">Bukoleon Sahil Sarayı (Mermer Aslanlı Liman)</option>
+              <option value="valide">Büyük Valide Han (1651 · 210 Oda &amp; Bizans Kulesi)</option>
+              <option value="zincirli">Zincirli Han (Kuyum Kakma &amp; Şadırvan Avlusu)</option>
+              <option value="ahmed">III. Ahmed Çeşmesi (1728 · Lale Devri Rokoko)</option>
+            </select>
+          </div>
+          <div class="alan"><label for="inp-katman">Anlatı &amp; Jeofizik Katmanı</label>
+            <select id="inp-katman"><option value="uc_kat">Efsane + Tarihî Gerçek + Gizli İpucu</option><option value="muon">Müon Tomografisi &amp; Sarnıç Derinliği</option><option value="rota">Ataşehir → Üsküdar → Yarımada Üst Halka</option></select>
+          </div>
+        </div>
+    <div class="sonuc-kutu" id="canli-sonuc">Hesaplanıyor...</div>
+    <div class="svg-kutu" id="canli-svg" hidden></div>
+    <div class="aksiyon-bar">
+      <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-baska-istanbul-kazi-cikti.json">Çıktıyı İndir (.json)</a>
+      <a class="indir-bag" id="btn-svg-indir" href="data:image/svg+xml;charset=utf-8," download="final-baska-istanbul-kazi-plan.svg" hidden>Paftayı İndir (.svg)</a>
+      <button type="button" class="dugme" id="btn-senkron-yay">Senkron Zincirine Yaz</button>
+      <button type="button" class="dugme" id="atolye-kapat">Kapat ✕</button>
+    </div>
+    <pre class="kod-cikti" id="zincir-cikti"></pre>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>Başka İstanbul. Üst halka.</h1>
+    <p>52 doğrulanmış hazine ve sıfır-Google-Maps 3B kent manifoldu.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">19-2428 TCX Boğaz Ergüvan · 360°</div>
+  </footer>
+
+  <script src="./final.js"></script>
+</body>
+</html>
