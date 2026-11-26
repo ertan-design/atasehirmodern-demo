@@ -122,6 +122,14 @@
     {
       "source": "/masa-169-parsel-dokuma/",
       "destination": "/masa-169-parsel-dokuma/index.html"
+    },
+    {
+      "source": "/prizma-ryte-hece",
+      "destination": "/prizma-ryte-hece/index.html"
+    },
+    {
+      "source": "/prizma-ryte-hece/",
+      "destination": "/prizma-ryte-hece/index.html"
     }
   ],
   "buildCommand": "",
