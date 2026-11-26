@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATAŞEHİR · SOKAK 82 — 50 tarihî sokak izi.</title>
+  <meta name="description" content="Arşivdeki sokak82_raw.json dosyasından 50 tarihî sokak poligonu, eski/yeni sokak adları ve vektör harita çizimi.">
+  <link rel="stylesheet" href="./plus.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu arşiv sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">ATAŞEHİR · SOKAK 82</a>
+    </div>
+    <nav class="sag" aria-label="Arşiv paneli ve geçiş">
+      <button type="button" class="dugme" id="arsiv-ac" aria-expanded="false">Arşiv Paftası ＋</button>
+      <a class="dugme" href="/final-baska-istanbul-kazi/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="arsiv-panel" id="arsiv-panel" aria-label="Pervititch 50 Tarihî Sokak & Toponimi Final" hidden>
+    <h2>Pervititch 50 Tarihî Sokak & Toponimi Final</h2>
+    <p class="not">Arşivdeki sokak82_raw.json dosyasından 50 tarihî sokak poligonu, eski/yeni sokak adları ve vektör harita çizimi.</p>
+    
+            <div class="secim-satir">
+              <div class="kutu"><label for="sec-sokak">Tarihî Sokak Segmenti (sokak82_raw.json · 50 Kayıt)</label>
+                <select id="sec-sokak"><option value="0">1/50 · Caferiye Sokak (Eski: Cafer Ağa Çıkmazı, Medrese Sokağı)</option><option value="1">2/50 · Soğukçeşme Sokağı (Eski: Bâb-ı Hümâyûn Arkası, Ayasofya-i Kebir Sahil Yolu)</option><option value="2">3/50 · Divanyolu Caddesi (Eski: Mese Odos (Regia), Cadde-i Âmire)</option><option value="3">4/50 · Akbıyık Caddesi (Eski: Akbıyık Muhiddin Sokağı, Mangana Sarayı Aksı)</option><option value="4">5/50 · Alemdar Caddesi (Eski: Alay Köşkü Caddesi, Gülhane Kapısı Yolu)</option><option value="5">6/50 · Piyer Loti Caddesi (Eski: Meclis-i Mebusan Caddesi, Theodosius Sarnıcı Yolu)</option><option value="6">7/50 · Yerebatan Caddesi (Eski: Basilica Cistern Lane, Sarnıç Arkası)</option><option value="7">8/50 · Kabasakal Caddesi (Eski: Augustaion Meydan Kenarı, Arasta Çıkışı)</option><option value="8">9/50 · Torun Sokak (Eski: Büyük Saray Mozaik Yolu, Arasta Arkası)</option><option value="9">10/50 · Küçük Ayasofya Caddesi (Eski: Sergios & Bakhos Yolu, Kadırga Liman Yokuşu)</option><option value="10">11/50 · Nuruosmaniye Caddesi (Eski: Forum Constantini Aksı, Kuyumcular Kapısı Yolu)</option><option value="11">12/50 · Kalpakçılar Caddesi (Kapalıçarşı İçi) (Eski: Via Tecta Orientalis, Kalpakçılar Başı)</option><option value="12">13/50 · Yağlıkçılar Caddesi (Kapalıçarşı) (Eski: İpekçiler Caddesi, Bedesten Kuzey Aksı)</option><option value="13">14/50 · Mahmutpaşa Yokuşu (Eski: Kaza Yokuşu, Mahmut Paşa Camii Sokağı)</option><option value="14">15/50 · Hasırcılar Caddesi (Eski: Baharatçılar Caddesi, Rüstem Paşa Altı)</option><option value="15">16/50 · Tahmis Sokak (Eski: Kahvehane-i Âmire Sokağı, Kuru Kahveci Aksı)</option><option value="16">17/50 · Hamidiye Caddesi (Eski: Sirkeci Rıhtım Yolu, Büyük Postane Caddesi)</option><option value="17">18/50 · Ankara Caddesi (Eski Bâb-ı Âli) (Eski: Bâb-ı Âli Caddesi, Sadaret Yokuşu)</option><option value="18">19/50 · Süleymaniye Caddesi (Eski: Külliye Caddesi, Mimar Sinan Yolu)</option><option value="19">20/50 · Mimar Sinan Caddesi (Fatih) (Eski: Sinan Türbe Yolu, Ağa Kapısı Yokuşu)</option><option value="20">21/50 · Karaköy Kemeraltı Caddesi (Eski: Rue Saint Benoît, Galata Surları Dışı)</option><option value="21">22/50 · Bankalar Caddesi (Voyvoda Caddesi) (Eski: Rue Voïvoda, Bank-ı Osmanî-i Şahane Caddesi)</option><option value="22">23/50 · Kamondo Merdivenleri (Eski: Escalier de Camondo, Aşıklar Merdiveni)</option><option value="23">24/50 · Galip Dede Caddesi (Yüksek Kaldırım Devamı) (Eski: Rue de Galata, Mevlevîhane Yokuşu)</option><option value="24">25/50 · İstiklal Caddesi (Eski: Grand Rue de Péra, Cadde-i Kebîr)</option><option value="25">26/50 · Meşrutiyet Caddesi (Eski: Rue Tepe-Bachi, Tepebaşı Caddesi)</option><option value="26">27/50 · Asmalı Mescit Sokağı (Eski: Rue Asmali, Mescit Sokağı)</option><option value="27">28/50 · Çukurcuma Caddesi (Eski: Fatih Cuma Sokağı, Antikacılar Yolu)</option><option value="28">29/50 · Boğazkesen Caddesi (Eski: Rue Boghaz-Kessen, Tophane İnişi)</option><option value="29">30/50 · Necatibey Caddesi (Karaköy Sahil) (Eski: Mumhane Caddesi Devamı, Galataport Kıyı Aksı)</option><option value="30">31/50 · Meclis-i Mebusan Caddesi (Fındıklı) (Eski: Çifte Saraylar Caddesi, Fındıklı Rıhtım Yolu)</option><option value="31">32/50 · Dolmabahçe Caddesi (Eski: Dolmabahçe Saray Yolu, Asırlık Çınarlar Caddesi)</option><option value="32">33/50 · Süleyman Seba Caddesi (Akaretler) (Eski: Akaretler Caddesi, Sıraevler Yolu)</option><option value="33">34/50 · Çırağan Caddesi (Eski: Çırağan Saray Yolu, Feriye Sahil Aksı)</option><option value="34">35/50 · Muallim Naci Caddesi (Ortaköy) (Eski: Ortaköy Kuruçeşme Sahil Yolu, Yalılar Caddesi)</option><option value="35">36/50 · İskele Sokağı (Ortaköy Meydanı) (Eski: Büyük Mecidiye İskele Yolu, Balıkçılar Sokağı)</option><option value="36">37/50 · Paşalimanı Caddesi (Üsküdar) (Eski: Paşa Limanı Yolu, Fethi Paşa Kıyı Aksı)</option><option value="37">38/50 · İcadiye Caddesi (Kuzguncuk) (Eski: Kuzguncuk Ana Caddesi, Bostan Sokağı)</option><option value="38">39/50 · Salacak Sahil Yolu (Harem-Üsküdar) (Eski: Dam-ı Leandros Yolu, Kız Kulesi Seyir Kordonu)</option><option value="39">40/50 · Beylerbeyi Abdullah Ağa Caddesi (Eski: İstavroz Koyu Yolu, Beylerbeyi Saray Caddesi)</option><option value="40">41/50 · Palas Arkası Sokak (Ortaköy) (Eski: Esma Sultan Arkası, Yalı Kordonu)</option><option value="41">42/50 · Büyükparmakkapı Sokak (Beyoğlu) (Eski: Rue Parmak-Kapou, Pera Tiyatro Geçidi)</option><option value="42">43/50 · Sıraselviler Caddesi (Eski: Grand Rue des Théâtres, Selviler Caddesi)</option><option value="43">44/50 · Tünel Meydanı & Yolu (Eski: Place du Tunnel, Tünel Başı)</option><option value="44">45/50 · Kallavi Sokak (Beyoğlu) (Eski: Rue Kallavi, Elçilik Arkası)</option><option value="45">46/50 · Turnacıbaşı Caddesi (Eski: Rue de Turnadjibachi, Yeniçeri Turnacı Kışlası)</option><option value="46">47/50 · Faik Paşa Caddesi (Çukurcuma) (Eski: Rue Faik Pacha, Dr. Della Suda Yolu)</option><option value="47">48/50 · Kadırga Limanı Caddesi (Eski: Portus Iulianus, Portus Theodosiacus Sahili)</option><option value="48">49/50 · Gülhane Parkı İçi Sahil Yolu (Eski: Topkapı Hasbahçe Yolu, Sarayburnu Kordonu)</option><option value="49">50/50 · Bebek Arnavutköy Sahil Kordonu (Eski: Akıntıburnu Yolu, Megalu Revmatu Sahili)</option></select>
+              </div>
+              <div class="kutu"><label for="ara-sokak">Eski veya Yeni Sokak Adı Ara</label>
+                <input id="ara-sokak" type="text" placeholder="Örn: Caferiye, Medrese, Lonca...">
+              </div>
+            </div>
+            <div class="gorsel-cerceve"><canvas id="sokak-harita" width="620" height="240" aria-label="Sıfır Google Maps Vektör Sokak Haritası"></canvas></div>
+            
+    <div class="detay-metin" id="arsiv-detay">Arşiv verisi yüklendi.</div>
+    <div class="alt-aksiyon">
+      <a class="dugme" id="arsiv-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-pervititch-50sokak-arsiv.json">Arşiv Özeti İndir (.json)</a>
+      <button type="button" class="dugme" id="arsiv-kapat">Kapat ✕</button>
+    </div>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>50 tarihî sokak izi.</h1>
+    <p>sokak82_raw.json koordinatlarıyla sıfır-Google-Maps sokak hafızası.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">18-4043 TCX Kadastro Kobalt · 360°</div>
+  </footer>
+
+  <script src="./plus.js"></script>
+</body>
+</html>

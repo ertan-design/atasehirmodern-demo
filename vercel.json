@@ -90,6 +90,38 @@
     {
       "source": "/final-sekiz-yasam-arenasi/",
       "destination": "/final-sekiz-yasam-arenasi/index.html"
+    },
+    {
+      "source": "/final-pervititch-50sokak",
+      "destination": "/final-pervititch-50sokak/index.html"
+    },
+    {
+      "source": "/final-pervititch-50sokak/",
+      "destination": "/final-pervititch-50sokak/index.html"
+    },
+    {
+      "source": "/science-bik-iplik",
+      "destination": "/science-bik-iplik/index.html"
+    },
+    {
+      "source": "/science-bik-iplik/",
+      "destination": "/science-bik-iplik/index.html"
+    },
+    {
+      "source": "/huseyinbey-rolove-kaniti",
+      "destination": "/huseyinbey-rolove-kaniti/index.html"
+    },
+    {
+      "source": "/huseyinbey-rolove-kaniti/",
+      "destination": "/huseyinbey-rolove-kaniti/index.html"
+    },
+    {
+      "source": "/masa-169-parsel-dokuma",
+      "destination": "/masa-169-parsel-dokuma/index.html"
+    },
+    {
+      "source": "/masa-169-parsel-dokuma/",
+      "destination": "/masa-169-parsel-dokuma/index.html"
     }
   ],
   "buildCommand": "",
