@@ -1,0 +1,103 @@
+{
+  "sema": "ryte.gpt-isaret.v1",
+  "hedef": "atasehir-kent",
+  "alan": "Ataşehir Modern",
+  "canli_kok": "https://www.xn--ataehirmodern-ktc.com/",
+  "gorevler": [
+    {
+      "kimlik": "atasehir-kent-01",
+      "isaret": "HAZIR",
+      "kelime": "hazır",
+      "heceler": [
+        "ha",
+        "zır"
+      ],
+      "anlam": "Girdi ve görev tanımlandı.",
+      "olcum_durumu": "yerel_kart",
+      "teslim_id": null
+    },
+    {
+      "kimlik": "atasehir-kent-02",
+      "isaret": "ALDIM",
+      "kelime": "aldım",
+      "heceler": [
+        "al",
+        "dım"
+      ],
+      "anlam": "Hedef alındıyı döndürdü.",
+      "olcum_durumu": "yerel_kart",
+      "teslim_id": null
+    },
+    {
+      "kimlik": "atasehir-kent-03",
+      "isaret": "BEKLE",
+      "kelime": "bekle",
+      "heceler": [
+        "bek",
+        "le"
+      ],
+      "anlam": "Bağımlılık bekleniyor.",
+      "olcum_durumu": "yerel_kart",
+      "teslim_id": null
+    },
+    {
+      "kimlik": "atasehir-kent-04",
+      "isaret": "ENGEL",
+      "kelime": "engel",
+      "heceler": [
+        "en",
+        "gel"
+      ],
+      "anlam": "Devamı durduran bulgu var.",
+      "olcum_durumu": "yerel_kart",
+      "teslim_id": null
+    },
+    {
+      "kimlik": "atasehir-kent-05",
+      "isaret": "SINA",
+      "kelime": "sına",
+      "heceler": [
+        "sı",
+        "na"
+      ],
+      "anlam": "Kabul denetimi isteniyor.",
+      "olcum_durumu": "yerel_kart",
+      "teslim_id": null
+    },
+    {
+      "kimlik": "atasehir-kent-06",
+      "isaret": "MUHUR",
+      "kelime": "mühür",
+      "heceler": [
+        "mü",
+        "hür"
+      ],
+      "anlam": "Çıktı özeti kaydedildi.",
+      "olcum_durumu": "yerel_kart",
+      "teslim_id": null
+    },
+    {
+      "kimlik": "atasehir-kent-07",
+      "isaret": "YAYIN",
+      "kelime": "yayın",
+      "heceler": [
+        "ya",
+        "yın"
+      ],
+      "anlam": "Canlı sürüm doğrulandı.",
+      "olcum_durumu": "yerel_kart",
+      "teslim_id": null
+    },
+    {
+      "kimlik": "atasehir-kent-08",
+      "isaret": "DUR",
+      "kelime": "dur",
+      "heceler": [
+        "dur"
+      ],
+      "anlam": "İşlem durdu.",
+      "olcum_durumu": "yerel_kart",
+      "teslim_id": null
+    }
+  ]
+}
